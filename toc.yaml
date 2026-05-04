@@ -1,0 +1,115 @@
+toc:
+  properties:
+    subcollection: inference
+    service-name: instructlab
+    category: ai
+    audience: service
+    href: /docs/inference
+    path: inference
+    label: Red Hat AI Inference
+    version: 2
+    console-page: /rhai/overview
+    product-page: https://www.ibm.com/cloud/
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - topic: getting-started.md
+        navtitle: Getting started
+      - topic: about.md
+        navtitle: How it works
+      - topic: release-notes.md
+        navtitle: Release notes
+  - navgroup:
+      id: howto
+      topics:
+      - topic: cli-install.md
+        navtitle: Installing the CLI
+      - topicgroup:
+          label: Preparing your account
+          topics:
+          - topic: project.md
+            navtitle: Creating an InstructLab project
+          - topic: storage.md
+            navtitle: Creating an Object Storage instance
+          - topic: iam.md
+            navtitle: Assigning access
+          - topic: logging.md
+            navtitle: Setting up logging
+          - topic: event-notifications.md
+            navtitle: Enabling notifications
+      - topicgroup:
+          label: Preparing your taxonomy
+          topics:
+          - topic: taxonomy-overview.md
+            navtitle: Understanding the taxonomy structure
+          - topic: taxonomy-prep.md
+            navtitle: Preparing taxonomies
+      - topic: data-generate.md
+        navtitle: Generating data
+      - topic: model-train.md
+        navtitle: Training models
+      - topic: deploy.md
+        navtitle: Deploying models
+      - topic: inference.md
+        navtitle: Inferencing
+      - topicgroup:
+          label: Enhancing security
+          topics:
+          - topic: architecture-workload-isolation.md
+            navtitle: Learning the architecture
+          - topic: data-security.md
+            navtitle: Securing your data
+  - navgroup:
+      id: reference
+      topics:
+      - topic: responsibilities.md
+        navtitle: Your responsibilities
+      - topic: service-settings.md
+        navtitle: Service settings
+      - topic: lifecycle.md
+        navtitle: Lifecycle policy
+      - topic: ha-dr.md
+        navtitle: High availability and disaster recovery
+      - topic: data-portability.md
+        navtitle: Data portability
+      - link:
+          label: Service availability by location
+          href: /overview/overview-services_region
+      - topicgroup:
+          label: API reference
+          links:
+          - link:
+              label: IBM Cloud API docs
+              href: https://{DomainName}/apidocs/instructlab
+          - link:
+              label: Swagger
+              href: https://us-east.instructlab.ibm.com/swagger-instructlab-api/#/
+      - topic: ilab-cli.md
+        navtitle: CLI reference
+  - navgroup:
+      id: help
+      topics:
+      - topic: get-help.md
+        navtitle: Getting help and support
+      - topicgroup:
+          label: Troubleshooting
+          topics:
+          - topic: ts-debug.md
+            navtitle: Debugging
+          - topic: ts-taxonomy-retrieve.md
+            navtitle: "Failed to retrieve taxonomy from COS error"
+          - topic: ts-no-new-leaf-nodes.md
+            navtitle: "No new leaf nodes found error"
+          - topic: ts-taxonomy-invalid.md
+            navtitle: "Failed to process invalid taxonomy files error"
+          - topic: ts-taxonomy-secret-auth.md
+            navtitle: "Failed to read secret data"
+          - topic: ts-taxonomy-secret-data.md
+            navtitle: "Failed to parse secret data"
+          - topic: ts-knowledge-clone.md
+            navtitle: "Failed to clone knowledge document repository error"
+          - topic: ts-knowledge-find.md
+            navtitle: "Failed to find knowledge documents error"
+      - topic: faq.md
+        navtitle: FAQ

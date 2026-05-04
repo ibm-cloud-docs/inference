@@ -484,4 +484,3 @@ Review the following example `.jsonl` structure for skills and knowledge.
 {: #next-data}
 
 After you've generated data from your taxonomy, you can begin [training your model](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-model-train).
-

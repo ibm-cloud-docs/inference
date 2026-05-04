@@ -113,3 +113,5 @@ toc:
             navtitle: "Failed to find knowledge documents error"
       - topic: faq.md
         navtitle: FAQ
+      - topic: sitemap.md
+        navtitle: Site map

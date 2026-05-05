@@ -19,21 +19,19 @@ subcollection: instructlab
 Use inferencing to interact with foundation models and evaluate AI-powered responses for your applications. The inferencing feature provides a production-ready API that enables you to integrate conversational AI capabilities into your workflows, test model behavior, and build intelligent applications.
 {: shortdesc}
 
-This is a beta feature that is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`.
-{: beta}
-
 Inferencing solves the challenge of deploying and scaling AI models by providing immediate access to foundation models through familiar, industry-standard APIs. Whether you're prototyping a chatbot, building an AI assistant, or integrating natural language understanding into your application, inferencing eliminates the complexity of model hosting and lets you focus on creating value for your users.
 
-Currently, the supported APIs are:
+Currently, the following APIs are supported:
 
-* Chat Completions `/v1/chat/completions`:
-  * Create: [llamastack](https://llamastack.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}, [openai](https://platform.openai.com/docs/api-reference/chat/create){: external}
-  * Get: [llamastack](https://llamastack.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}, [openai](https://platform.openai.com/docs/api-reference/chat/get){: external}
-  * List: [llamastack](https://llamastack.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}, [openai](https://platform.openai.com/docs/api-reference/chat/list){: external}
-  * Delete: [openai](https://platform.openai.com/docs/api-reference/chat/delete){: external}
-* Models `/v1/models`:
-  * Get: [llamastack](https://llamastack.github.io/docs/api/get-model-v-1-models-model-id-get){: external}, [openai](https://platform.openai.com/docs/api-reference/models/retrieve){: external}
-  * List: [llamastack](https://llamastack.github.io/docs/api/openai-list-models-v-1-models-get){: external}, [openai](https://platform.openai.com/docs/api-reference/models/list){: external}
+Chat completions `/v1/chat/completions`
+:   Create - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/create){: external}
+:   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/get){: external}
+:   List - [OGX documentation](https://ogx-ai.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/list){: external}
+:   Delete - [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/delete){: external}
+
+Models `/v1/models`
+:   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-model-v-1-models-model-id-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/models/retrieve){: external}
+:   List - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-list-models-v-1-models-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/models/list){: external}
 
 ## Before you begin
 {: #inf-prereqs}
@@ -74,7 +72,7 @@ Chat history
 {: #inf-chat-api}
 {: api}
 
-With the API, you can programmatically integrate AI capabilities into your applications by using industry-standard OpenAI and Llama Stack compatible endpoints. This approach is essential for production deployments where you need to automate AI interactions, handle high volumes of requests, or embed conversational AI into existing systems. The API provides the flexibility to customize model behavior, manage conversation history, and scale your AI-powered features alongside your application.
+With the API, you can programmatically integrate AI capabilities into your applications by using industry-standard OpenAI and OGX compatible endpoints. This approach is essential for production deployments where you need to automate AI interactions, handle high volumes of requests, or embed conversational AI into existing systems. The API provides the flexibility to customize model behavior, manage conversation history, and scale your AI-powered features alongside your application.
 
 Review the following sections for examples of how to complete common inferencing tasks by using the API.
 

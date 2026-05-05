@@ -37,7 +37,7 @@ For a more detailed explanation of LLMs and how they work, see [What are LLMs?](
 ## What is inferencing?
 {: #inferencing}
 
-Inferencing is the process of using a trained AI model to generate responses, make predictions, or process inputs. With Red Hat AI on {{site.data.keyword.cloud_notm}}, inferencing provides immediate access to foundation models through industry-standard OpenAI and Llama Stack compatible APIs. This eliminates the complexity of deploying and scaling AI models, allowing you to focus on creating value for your users.
+Inferencing is the process of using a trained AI model to generate responses, make predictions, or process inputs. With Red Hat AI on {{site.data.keyword.cloud_notm}}, inferencing provides immediate access to foundation models through industry-standard OpenAI and OGX compatible APIs. This eliminates the complexity of deploying and scaling AI models, allowing you to focus on creating value for your users.
 
 Inferencing solves the challenge of integrating AI capabilities into your applications by providing:
 
@@ -68,7 +68,7 @@ Step 2. Select a model
 :   Choose from available foundation models based on your use case requirements, such as response quality, speed, or cost considerations.
 
 Step 3. Send requests
-:   Use industry-standard OpenAI or Llama Stack compatible APIs to send messages to the model and receive AI-generated responses. You can customize model behavior with system prompts and adjust parameters like randomness and response limits.
+:   Use industry-standard OpenAI or OGX compatible APIs to send messages to the model and receive AI-generated responses. You can customize model behavior with system prompts and adjust parameters like randomness and response limits.
 
 Step 4. Integrate responses
 :   Incorporate the model's responses into your application workflows, whether for conversational interfaces, content generation, or natural language processing tasks.
@@ -126,7 +126,7 @@ Cost-effective and scalable
 :   Because Red Hat AI on {{site.data.keyword.cloud_notm}} is available as a service, you can reduce unnecessary costs by paying just for what you need. Optimize IT expenditures by delivering simpler, faster, and more economical AI solutions.
 
 Industry-standard APIs
-:   Use familiar OpenAI and Llama Stack compatible endpoints to integrate AI capabilities into your existing workflows and applications without learning proprietary interfaces.
+:   Use familiar OpenAI and OGX compatible endpoints to integrate AI capabilities into your existing workflows and applications without learning proprietary interfaces.
 
 
 ## Resources for learning more

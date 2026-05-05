@@ -8,31 +8,31 @@
     "links": [
       {
         "title": "Getting started",
-        "href": "/docs/instructlab?topic=instructlab-getting-started"
+        "href": "/docs/inference?topic=inference-getting-started"
       },
       {
         "title": "Installing the CLI",
-        "href": "/docs/instructlab?topic=instructlab-cli-install"
+        "href": "/docs/inference?topic=inference-cli-install"
       },
       {
         "title": "Generating data",
-        "href": "/docs/instructlab?topic=instructlab-data-generate"
+        "href": "/docs/inference?topic=inference-data-generate"
       },
       {
         "title": "Training models",
-        "href": "/docs/instructlab?topic=instructlab-model-train"
+        "href": "/docs/inference?topic=inference-model-train"
       },
       {
         "title": "Service settings",
-        "href": "/docs/instructlab?topic=instructlab-service-settings"
+        "href": "/docs/inference?topic=inference-service-settings"
       },
       {
         "title": "Lifecycle policy",
-        "href": "/docs/instructlab?topic=instructlab-lifecycle-policy"
+        "href": "/docs/inference?topic=inference-lifecycle-policy"
       },
       {
         "title": "FAQ",
-        "href": "/docs/instructlab?topic=instructlab-faq"
+        "href": "/docs/inference?topic=inference-faq"
       }
     ]
   },
@@ -55,6 +55,6 @@
     "api": "/apidocs/instructlab"
   },
   "section_updates": {
-    "view_more": "/docs/instructlab?topic=instructlab-release-notes"
+    "view_more": "/docs/inference?topic=inference-release-notes"
   }
 }

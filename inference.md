@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: instructlab, ai, inferencing, chatting
 
@@ -45,11 +45,34 @@ Currently, the supported APIs are:
 * Make sure you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/instructlab?topic=instructlab-iam&interface=ui). 
 
 
+## Inferencing by using the console
+{: #inf-chat-ui}
+{: ui}
 
+The console provides an interactive playground where you can experiment with different models, test prompts, and refine your AI interactions before integrating them into your applications. 
+
+1. In the console, open the [{{site.data.keyword.instructlab_short}} service](/instructlab/overview){: external} and click the name of your project to open it.
+
+1. From the project page, click **Playground** to open the inferencing playground.
+
+1. Begin your chat session. You can customize your chat session with the following options:
+
+Model selection
+:   You can choose from a list of foundation models.
+
+System prompt
+:   The system prompt instructs the model on how to conduct the dialog.
+
+Inferencing settings
+:   Adjust the **Randomness**, **Repetition**, and **Response limits**.
+
+Chat history
+:   You can filter the chat history by **Model** or **Date range**.
 
 
 ## Inferencing by using the API
 {: #inf-chat-api}
+{: api}
 
 With the API, you can programmatically integrate AI capabilities into your applications by using industry-standard OpenAI and Llama Stack compatible endpoints. This approach is essential for production deployments where you need to automate AI interactions, handle high volumes of requests, or embed conversational AI into existing systems. The API provides the flexibility to customize model behavior, manage conversation history, and scale your AI-powered features alongside your application.
 
@@ -57,6 +80,7 @@ Review the following sections for examples of how to complete common inferencing
 
 ### API endpoint
 {: #inf-api-endpoint}
+{: api}
 
 All API requests use the following base URL format:
 
@@ -72,11 +96,13 @@ Replace `{project_id}` with your project ID. To find it, go to [{{site.data.keyw
 
 ### Authenticating to the API
 {: #inf-chat-auth}
+{: api}
 
 Before you can make API calls, you need to authenticate your requests. You can authenticate by using either a bearer token or an {{site.data.keyword.cloud_notm}} API key.
 
 #### Authenticating by using a bearer token
 {: #inf-chat-token}
+{: api}
 
 Bearer tokens ensure secure access to your project's inferencing capabilities and are generated from your {{site.data.keyword.cloud_notm}} API key. Bearer tokens expire after a set period, so they must be refreshed periodically.
 
@@ -95,6 +121,7 @@ The bearer token is the `access_token` in the response. These tokens have an exp
 
 #### Authenticating by using an API key
 {: #inf-chat-apikey}
+{: api}
 
 There are two ways to authenticate with an API key: You can [create a service ID](/docs/iam?topic=iam-serviceids&interface=ui), which is the recommended way to distribute access and controls. If you create a service ID, you need to [create a service ID API key](/docs/iam?topic=iam-serviceidapikeys&interface=ui) as well, which you use to authenticate. 
 
@@ -102,6 +129,7 @@ You can also authenticate by using a user API key. For more information, see [Ma
 
 ### Generating a chat completion
 {: #inf-chat-generate}
+{: api}
 
 Chat completions are the core of inferencing. They allow you to send messages to a foundation model and receive AI-generated responses. This is how you build conversational experiences, get answers to questions, generate content, or process natural language inputs. You can control the conversation flow by providing system prompts that define the model's behavior and maintain message history for context-aware interactions.
 
@@ -152,6 +180,7 @@ print(completion.choices[0].message)
 
 ### Getting a chat completion by ID
 {: #inf-chat-get-completion}
+{: api}
 
 Retrieving a specific chat completion by ID is useful for auditing, debugging, or analyzing past interactions. 
 
@@ -183,6 +212,7 @@ print(completion)
 
 ### Listing chat completions
 {: #inf-chat-list}
+{: api}
 
 Listing chat completions provides an overview of all your inferencing activity, so you can monitor usage patterns, track costs, and analyze how your application is interacting with foundation models. This is particularly valuable for understanding user behavior, identifying popular use cases, and optimizing your AI integration strategy.
 
@@ -214,6 +244,7 @@ print(completions)
 
 ### Deleting a chat completion
 {: #inf-chat-delete}
+{: api}
 
 Deleting chat completions helps you clean up test data and comply with privacy requirements. 
 
@@ -232,6 +263,7 @@ curl -X DELETE https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v
 
 ### Listing models
 {: #inf-chat-list-models}
+{: api}
 
 Discover which foundation models are accessible in your project and understand their capabilities, so you can use the best model for your specific use case and optimize for factors like response quality, speed, or cost.
 
@@ -263,6 +295,7 @@ print(models)
 
 ### Getting a model by ID
 {: #inf-chat-get-model}
+{: api}
 
 Retrieving detailed information about a specific model helps you understand its characteristics, capabilities, and limitations before using it in your application.
 
@@ -289,5 +322,3 @@ print(model)
 ```
 {: codeblock}
 {: python}
-
-

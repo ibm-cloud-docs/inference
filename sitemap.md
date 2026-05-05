@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 
 keywords: instructlab, sitemap
@@ -25,17 +25,31 @@ subcollection: instructlab
 
 [Getting started](/docs/inference?topic=inference-getting-started#getting-started)
 
-* [What is {{site.data.keyword.instructlab_short}}?](/docs/inference?topic=inference-getting-started#get-familiar)
+* [What you'll accomplish](/docs/inference?topic=inference-getting-started#objectives)
 
-* [Set up your {{site.data.keyword.cloud}} account](/docs/inference?topic=inference-getting-started#instructlab-pre)
+* [Before you begin](/docs/inference?topic=inference-getting-started#prereqs)
 
-* [Optional: Prepare a taxonomy](/docs/inference?topic=inference-getting-started#taxonomy)
+* [Get your project ID](/docs/inference?topic=inference-getting-started#get-project-id)
 
-* [Upload your taxonomy by using the console](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui)
+* [Authenticate to the API](/docs/inference?topic=inference-getting-started#authenticate)
 
-* [Add the taxonomy to {{site.data.keyword.cos_short}} by using the CLI](/docs/inference?topic=inference-getting-started&interface=cli#taxonomy-add-cli)
+    * [Create a service ID](/docs/inference?topic=inference-getting-started#create-service-id)
 
-* [What's next?](/docs/inference?topic=inference-getting-started&interface=cli#next)
+    * [Assign access to the service ID](/docs/inference?topic=inference-getting-started#assign-access)
+
+    * [Create an API key](/docs/inference?topic=inference-getting-started#create-api-key)
+
+* [Explore available models](/docs/inference?topic=inference-getting-started#explore-models)
+
+* [Generate your first chat completion](/docs/inference?topic=inference-getting-started#generate-completion)
+
+    * [Understanding the request](/docs/inference?topic=inference-getting-started#understand-request)
+
+* [Next steps](/docs/inference?topic=inference-getting-started#next-steps)
+
+    * [Continue with inferencing](/docs/inference?topic=inference-getting-started#continue-inferencing)
+
+    * [Customize models with your data](/docs/inference?topic=inference-getting-started#customize-models)
 
 
 ## How it works
@@ -46,9 +60,15 @@ subcollection: instructlab
 
 * [What are large language models?](/docs/inference?topic=inference-about#llm)
 
-* [How it works](/docs/inference?topic=inference-about#howitworks)
+* [What is inferencing?](/docs/inference?topic=inference-about#inferencing)
 
-* [Why {{site.data.keyword.instructlab_short}}?](/docs/inference?topic=inference-about#benefits)
+    * [How inferencing works](/docs/inference?topic=inference-about#how-inferencing-works)
+
+* [What is model alignment?](/docs/inference?topic=inference-about#model-alignment)
+
+    * [How model alignment works](/docs/inference?topic=inference-about#how-model-alignment-works)
+
+* [Why Red Hat AI on {{site.data.keyword.cloud_notm}}?](/docs/inference?topic=inference-about#benefits)
 
 * [Resources for learning more](/docs/inference?topic=inference-about#resources)
 
@@ -280,23 +300,25 @@ subcollection: instructlab
 
 * [Before you begin](/docs/inference?topic=inference-inference#inf-prereqs)
 
-* [Inferencing by using the API](/docs/inference?topic=inference-inference#inf-chat-api)
+* [Inferencing by using the console](/docs/inference?topic=inference-inference&interface=ui#inf-chat-ui)
 
-    * [API endpoint](/docs/inference?topic=inference-inference#inf-api-endpoint)
+* [Inferencing by using the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-api)
 
-    * [Authenticating to the API](/docs/inference?topic=inference-inference#inf-chat-auth)
+    * [API endpoint](/docs/inference?topic=inference-inference&interface=api#inf-api-endpoint)
 
-    * [Generating a chat completion](/docs/inference?topic=inference-inference#inf-chat-generate)
+    * [Authenticating to the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-auth)
 
-    * [Getting a chat completion by ID](/docs/inference?topic=inference-inference#inf-chat-get-completion)
+    * [Generating a chat completion](/docs/inference?topic=inference-inference&interface=api#inf-chat-generate)
 
-    * [Listing chat completions](/docs/inference?topic=inference-inference#inf-chat-list)
+    * [Getting a chat completion by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-completion)
 
-    * [Deleting a chat completion](/docs/inference?topic=inference-inference#inf-chat-delete)
+    * [Listing chat completions](/docs/inference?topic=inference-inference&interface=api#inf-chat-list)
 
-    * [Listing models](/docs/inference?topic=inference-inference#inf-chat-list-models)
+    * [Deleting a chat completion](/docs/inference?topic=inference-inference&interface=api#inf-chat-delete)
 
-    * [Getting a model by ID](/docs/inference?topic=inference-inference#inf-chat-get-model)
+    * [Listing models](/docs/inference?topic=inference-inference&interface=api#inf-chat-list-models)
+
+    * [Getting a model by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-model)
 
 
 ## Enhancing security
@@ -570,4 +592,3 @@ subcollection: instructlab
 * [How long does model training take?](/docs/inference?topic=inference-faq#faq-model)
 
 * [Can I import my own training data?](/docs/inference?topic=inference-faq#faq-byo-sdg)
-

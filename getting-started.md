@@ -2,9 +2,9 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
-keywords: instructlab, ai
+keywords: instructlab, ai, inferencing, chat completions
 
 subcollection: instructlab
 
@@ -12,285 +12,205 @@ content-type: tutorial
 
 services: {{site.data.keyword.subcollection}}
 account-plan: paid
-completion-time: 30m
+completion-time: 15m
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
 
-{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution, powered by Red Hat Enterprise Linux AI. 
-
 # Getting started with {{site.data.keyword.instructlab_full_notm}}
 {: #getting-started}
 {: toc-content-type="tutorial"}
 {: toc-services="{{site.data.keyword.subcollection}}"}
-{: toc-completion-time="30m"}
+{: toc-completion-time="15m"}
 
-Get ready to dive into [AI](#x3448902){: term} with {{site.data.keyword.instructlab_full}}!
+Ready to start using AI in your applications? In this tutorial, you'll learn how to use inferencing to interact with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
 {: shortdesc}
 
-{{site.data.keyword.short_name}} is an open source project from IBM and Red Hat to be a cost-effective entry point into the world of [machine learning](#x8397498){: term}. You can use {{site.data.keyword.short_name}} to make contributions to a large language model without having to own and operate hardware infrastructure. 
+{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat Enterprise Linux AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inferencing for interacting with foundation models and model alignment (InstructLab) for customizing models to your specific needs. This tutorial focuses on getting you started with inferencing, the fastest way to start using AI.
 
-[Learn more about InstructLab](https://www.redhat.com/en/topics/ai/what-is-instructlab#red-hat-enterprise-linux-ai){: external}.
+This is a beta feature that is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`.
+{: beta}
 
+## What you'll accomplish
+{: #objectives}
 
-## What is {{site.data.keyword.instructlab_short}}?
-{: #get-familiar}
+In this tutorial, you'll do the following tasks:
 
-To use {{site.data.keyword.short_name}}, you don't need to have any preexisting knowledge. You don't even need to have an idea for what to create yet. Let's start by just getting familiar with the concepts.
+* Set up your {{site.data.keyword.cloud_notm}} account and project
+* Authenticate to the inferencing API
+* Generate your first chat completion with a foundation model
+* Learn about next steps for customizing models with your own data
 
-InstructLab is a project for enhancing **large language models (LLMs)**, which are AI models that use machine learning techniques to generate human language. You start by providing knowledge and skills that matter most to your business in what's known as a **taxonomy**, or a directory of data. The taxonomy is used to generate **synthetic data**, which is then used to train the model through multiple phases of fine-tuning. This process aligns your LLM with your goals by providing not just general knowledge, but the specific skills and contexts that are most important for your unique business needs.
+## Before you begin
+{: #prereqs}
 
-For more information, see [How it works](/docs/instructlab?topic=instructlab-about). Or, jump in and get started by [preparing and uploading your first taxonomy](#instructlab-pre). 
+Make sure you have the following:
 
+* A Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
 
-## Set up your {{site.data.keyword.cloud}} account
-{: #instructlab-pre}
+* [A {{site.data.keyword.instructlab_short}} project](/docs/instructlab?topic=instructlab-project).
 
-Make sure you have the following before continuing.
+* The Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/instructlab?topic=instructlab-iam&interface=ui).
 
-* A **Pay-As-You-Go** or **Subscription** {{site.data.keyword.cloud}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
+## Get your project ID
+{: #get-project-id}
+{: step}
 
-* [An {{site.data.keyword.short_name}} project](/docs/instructlab?topic=instructlab-project).
+Your project ID is required for all API requests. 
 
-* [Access to {{site.data.keyword.short_name}} and {{site.data.keyword.cos_short}}](/docs/instructlab?topic=instructlab-iam).
+1. Go to [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/instructlab/projects){: external}.
 
-* **Optional**: If you are using a private repo to store your taxonomy knowledge documents, create [a {{site.data.keyword.secrets-manager_short}} instance](https://cloud.ibm.com/catalog/services/secrets-manager){: external}.
+1. Open your project.
 
-* [Install the CLI](/docs/instructlab?topic=instructlab-cli-install).{: cli}
+1. Click **Details**.
 
+1. Copy your project ID and save it for the next steps.
 
-## Optional: Prepare a taxonomy
-{: #taxonomy}
+## Authenticate to the API
+{: #authenticate}
+{: step}
 
-1. Fork the IBM Cloud taxonomy or create your own.
-    - If you don't already have a taxonomy, you can fork the [IBM Cloud taxonomy repo](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy){: external} and clone it to your local machine. This taxonomy has the correct file structure already created for you. You can add knowledge and skills in the corresponding directories.
+Before you can interact with foundation models, you need to authenticate your API requests. You can use either a bearer token or an {{site.data.keyword.cloud_notm}} API key. This tutorial shows how to use a service ID with an API key for programmatic access.
 
-    - To create your own taxonomy instead, see [Preparing taxonomies](/docs/instructlab?topic=instructlab-taxonomy-prep&interface=ui) for more information.
+### Create a service ID
+{: #create-service-id}
 
-    You can also use the IBM Cloud community Jupyter notebook to create your taxonomy. For more information, see [redhat-ai-instructlab-jupyter-notebooks GitHub repo](https://github.com/IBM-Cloud/redhat-ai-instructlab-jupyter-notebooks/tree/main){: external}
-    {: tip}
+1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com){: external}.
 
-1. Make updates to your taxonomy. The following example adds rhyming questions to the linguistics directory.
+2. Go to **Manage** > **Access (IAM)** > **[Service IDs](https://cloud.ibm.com/iam/serviceids){: external}** and click **Create**.
 
-    a. In your fork, in the `compositional_skills/linguistics` directory, create a `qna.yaml` file.
+3. Enter a name and description for your service ID, then click **Create**.
 
-    b. In the `qna.yml` file, add a question related to rhyming words.
-    ```yaml
-    - answer: 'Here are two rhyming words for "cave":
-        1\. Brave
+### Assign access to the service ID
+{: #assign-access}
 
-        2\. Gave'
-      question: 'Give me two words that rhyme with cave'
-    ```
-    {: codeblock}
+After creating the service ID, you need to assign it access to your {{site.data.keyword.instructlab_short}} project.
 
-    c. If your additions include reference documents, such as web articles or files in Github, you can reference the public GitHub repository and SHA of a file like in [this example](https://docs.instructlab.ai/taxonomy/knowledge/file_structure/#example-of-a-knowledge-submission).
+1. From the service ID page, click **Assign access**.
 
-    ```txt
-    document:
-    repo: https://github.com/<organization>/<repository>
-    commit: <commit_sha>
-    patterns:
-        - <filename>.md
-    ```
-    {: codeblock}
+2. Select **{{site.data.keyword.instructlab_short}}** as the service.
 
-    d. Save the changes and push the changes to the fork.
+3. Within **Resources**, select **Specific resources** and choose your project. By doing so, you limit access to a specific project. 
 
-    f. Optional: [Validate the updated taxonomy](/docs/instructlab?topic=instructlab-ts-debug#version).
+4. Within **Roles and actions**, select the appropriate service access role:
+   - Select **Writer** if you need to create chat completions.
+   - Select **Reader** if you only need to read chat completions or view model information.
 
-1. In a browser, open the **Releases** page for your Github repository. For example: `https://github.com/<my-org>/taxonomy/releases`.
+   Platform access roles are not required for API access.
 
-1. Click **Create a release**.
+5. (Optional) Add conditions such as time-based access to further scope the service ID access.
 
-1. Create a tag, select a target branch, and enter a name for the release.
+6. Review the access summary and click **Assign**.
 
-1. Click **Publish a release**.
+### Create an API key
+{: #create-api-key}
 
-1. Download the packaged `tar.gz` file that was automatically generated from the release by clicking **Source code (tar.gz)**.
+Now that your service ID has access to your {{site.data.keyword.instructlab_short}} project, create a service ID API key to use in your API calls. 
 
-1. **Optional**: If you are using a private repository for your taxonomy knowledge documents, complete the following steps.
+1. From the service ID page, click **API keys**.
 
-    1. Follow the GitHub documentation to [create a classic personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) (PAT).
+2. Click **Create** and enter a name for your API key. 
 
-    1. In the **Repository access** section, scope your PAT to your taxonomy repo.
-    
-    1. In the **Repository permissions** section, select **Contents** > `read-only` and **Metadata** > `read-only`.
+3. For leaked key handling, select **Disable the leaked key** to automatically disable the key if it's detected as leaked.
 
+4. Set an expiration date for the key. Regular key rotation is recommended for security.
 
-## Upload your taxonomy by using the console
-{: #taxonomy-add-ui}
-{: ui}
+5. Click **Create**.
 
-Complete the following steps to store your taxonomy in {{site.data.keyword.cos_short}}.
+6. Copy the API key and save it in a secure location. The key cannot be viewed again.
 
-1. From the **Projects** [page](https://cloud.ibm.com/instructlab/projects){: external}, select your project.
+You can now use that API key to authenticate your requests. In the next step, you'll use this key in the `Authorization: Bearer` header of your API calls.
 
-1. Click **Taxonomies**.
-    
-1. Click **Upload** and enter the following details.
+## Explore available models
+{: #explore-models}
+{: step}
 
-    Taxonomy file
-    :   Select your `.tar.gz` file.
-    
-    Taxonomy name
-    :   Give the taxonomy an alphanumeric name.
+Different foundation models have different strengths, so it's important to review the models that are available in your project.
 
-    Private repository access
-    :   Enable this option if your taxonomy knowledge documents are in a private repo.
-    :   **{{site.data.keyword.secrets-manager_short}} service instance**: Select an existing instance or create one.
-    :   **{{site.data.keyword.secrets-manager_short}} secret**: Select an existing secret or create one. If you are creating a secret, select the **Key-value** secret type and add your personal access token in the following format. Note that the value for `github_url` must contain`https://`. The URL is the same URL that you used in the `repo` section of the your taxonomy document reference.
-    {: tip}
+Make the following API call to list all the available models. Replace `{project_id}` with your project ID and `{api_key}` with your service ID API key:
 
-    ```json
-    {
-    "github_url": "https://...",
-    "github_pat": "xxxxx"
-    }
-    ```
-    {: codeblock}
+```bash
+curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models' \
+  -H 'Accept: application/json' \
+  -H "Authorization: Bearer {api_key}"
+```
+{: codeblock}
 
-    For more information, see [Creating Key-value secrets](/docs/secrets-manager?topic=secrets-manager-key-value&interface=ui).
-    {: tip}
-    
-    Cloud storage
-    :  Either select a {{site.data.keyword.cos_short}} instance and bucket to use or create an instance and bucket.
+The response shows you all the models you can use, along with information about their capabilities. You can experiment with different models to find the one that best fits your use case.
 
-    Service authorization
-    :   Check the box to allow InstructLab to write your taxonomy to {{site.data.keyword.cos_short}}
+## Generate your first chat completion
+{: #generate-completion}
+{: step}
 
-    Optional storage settings
-    :   Specify the path where you want to store the taxonomy `tar.gz` in {{site.data.keyword.cos_short}}.
+Now, send a message to the model and receive an AI-generated response.
 
-1. Click **Upload**
+Make the following API call, replacing `{project_id}` with your project ID and `{api_key}` with your service ID API key:
 
-## Add the taxonomy to {{site.data.keyword.cos_short}} by using the CLI
-{: #taxonomy-add-cli}
-{: cli}
+```bash
+curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer {api_key}" \
+  -d '{
+    "model": "granite-4-0-h-small",
+    "messages": [
+      {
+        "role": "developer",
+        "content": "You are a helpful assistant"
+      },
+      {
+        "role": "user",
+        "content": "Hello! Tell me about yourself"
+      }
+    ]
+  }'
+```
+{: codeblock}
 
-Complete the following steps to store your taxonomy in {{site.data.keyword.cos_short}}.
+You should receive a response from the model introducing itself. 
 
-You can use the `set` command to save {{site.data.keyword.cos_short}} bucket details and credentials, and more. This can simplify your commands going forward. Note that when using the `set` command, you must set each value individually. For more information, see the [Config command reference](/docs/instructlab?topic=instructlab-ilab-cli&interface=cli#ilab-cli-config-command).
+### Understanding the request
+{: #understand-request}
+
+Let's break down what you just did:
+
+model
+:   You specified `granite-4-0-h-small`, one of the available foundation models. Different models have different capabilities and performance characteristics.
+
+messages
+:   You provided two messages. One was a developer message that set the system prompt and instructed the model on how to behave. The user message included your actual question for the model to answer. 
+
+API endpoint
+:   The request went to your project's inferencing endpoint, which handles routing to the appropriate model.
+
+You can customize the model's behavior by adjusting the system prompt, adding more messages, or using different models for different use cases.
 {: tip}
 
+## Next steps
+{: #next-steps}
 
-{{_include-segments/login.md}}
+You've successfully started using inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}. Here's what you can do next:
 
+### Continue with inferencing
+{: #continue-inferencing}
 
-1. Create the authorization policy for {{site.data.keyword.short_name}} and {{site.data.keyword.cos_short}}.
-    ```sh
-    ibmcloud iam authorization-policy-create Writer --source-service-name instructlab --target-service-name cloud-object-storage
-    ```
-    {: pre}
+* [Learn more about inferencing](/docs/inference?topic=inference-inference) to discover advanced features like streaming responses, adjusting model parameters, and managing conversation history.
 
-1. **Optional**: If you are using a private repo to store your taxonomy knowledge documents, complete the following steps.
+* Explore the [OpenAI Chat Completion API](https://platform.openai.com/docs/api-reference/chat){: external} and [Llama Stack API](https://llamastack.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external} documentation for complete API reference.
 
-    1. Create a service authorization to allow {{site.data.keyword.short_name}} to access your {{site.data.keyword.secrets-manager_short}} instance and secrets.
-        ```sh
-        ibmcloud iam authorization-policy-create Reader --source-service-name instructlab --target-service-name secrets-manager
-        ```
-        {: pre}
+* Integrate inferencing into your applications using the Python SDK or other programming languages.
 
-    1. Add your personal access token (PAT) to {{site.data.keyword.secrets-manager_short}} by creating a **Key-value** secret. Make sure your key-value details are stored in the following format.
-        ```json
-        {
-        "github_url": "https://...",
-        "github_pat": "xxxxx"
-        }
-        ```
-        {: codeblock}
+### Customize models with your data
+{: #customize-models}
 
-        Example command for creating a key-value secret.
-        ```sh
-        ibmcloud secrets-manager secret-create --secret-prototype='{"name": "my-secret","description": "Description of my key-value secret.","secret_type": "kv","secret_group_id": "67d025e1-0248-418f-83ba-deb0ebfb9b4a","labels": ["dev","us-south"],"data": {"github_url": "https://...","github_pat": "xxxxx"},"custom_metadata": {"metadata_custom_key": "metadata_custom_value"},"version_custom_metadata": {"custom_version_key": "custom_version_value"}}'
-        ```
-        {: pre}
+Ready to go beyond general-purpose models? You can customize foundation models with your organization's specific knowledge and skills through model alignment:
 
-        For more information, see [Creating Key-value secrets](/docs/secrets-manager?topic=secrets-manager-key-value&interface=ui).
-        {: tip}
+1. [Prepare a taxonomy](/docs/instructlab?topic=instructlab-taxonomy-prep) containing your business knowledge and skills.
 
-    1. List your {{site.data.keyword.secrets-manager_short}} instances.
-        ```sh
-        ibmcloud resource service-instances --service-name secrets-manager
-        ```
-        {: pre}
+1. [Generate synthetic data](/docs/instructlab?topic=instructlab-data-generate) from your taxonomy.
 
-    1. Get your instance details.
-        ```sh
-        ibmcloud resource service-instance INSTANCE
-        ```
-        {: pre}
+1. [Train a custom model](/docs/instructlab?topic=instructlab-model-train) aligned with your specific needs.
 
 
-1. Run the `taxonomy add --help` command and review the command options.
-    ```sh
-    ibmcloud ilab taxonomy add --help
-    ```
-    {: pre}
-
-1. **Optional** If you have an existing {{site.data.keyword.cos_short}} instance that you want to use, get your service instance details.
-
-    1. List your {{site.data.keyword.cos_short}} instances.
-        ```sh
-        ibmcloud resource service-instances --service-name cloud-object-storage
-        ```
-        {: pre}
-
-    1. Get your instance details.
-        ```sh
-        ibmcloud resource service-instances INSTANCE
-        ```
-        {: pre}
-
-1. Add your taxonomy to your {{site.data.keyword.cos_short}} bucket. Review the following example commands.
-
-    [Quick start]{: tag-green} Example command to automatically create an {{site.data.keyword.cos_short}} instance and bucket in your account and upload a taxonomy from your `./taxonomy` folder to it.
-    ```sh
-    ibmcloud ilab taxonomy add \
-    --name example-taxonomy-1 \
-    --taxonomy-path "./taxonomy"
-    ```
-    {: pre}
-
-    Example command to upload a taxonomy from a `taxonomy` folder on your machine to an existing {{site.data.keyword.cos_short}} instance and bucket.
-    ```sh
-    ibmcloud ilab taxonomy add \
-	--name example-taxonomy-name-1 \
-	--taxonomy-path-cos "taxonomies/taxonomy.tar.gz" \
-	--taxonomy-path "./taxonomy" \
-	--cos-bucket example-cloud-object-storage-bucket-1 \
-	--cos-endpoint https://s3.us-east.cloud-object-storage.appdomain.cloud
-    ```
-    {: pre}
-
-
-    Example command to use an existing {{site.data.keyword.cos_short}} instance and bucket as well as {{site.data.keyword.secrets-manager_short}} credentials.
-    ```sh
-    ibmcloud ilab taxonomy add \
-    --name example-taxonomy-1 \
-    --taxonomy-path-cos taxonomies/taxonomy.tar.gz \
-    --taxonomy-path "./taxonomy" \
-    --cos-endpoint https://s3.us-east.cloud-object-storage.appdomain.cloud \
-    --secrets-manager-git-id SEC-MGR-ID
-    --secrets-manager-git-url https://URL
-    ```
-    {: pre}
-
-    Example command to upload a taxonomy from your `/Users/USER/instructlab-taxonomy` folder to an new, automatically created bucket.
-    ```sh
-    ibmcloud ilab taxonomy add \
-    --name test \
-    --taxonomy-path "/Users/USER/instructlab-taxonomy" \
-    --cos-endpoint https://s3.us-east.cloud-object-storage.appdomain.cloud \
-    --cos-id 628e4348-2183-42fa-a03a-6f0f78453530
-    ```
-    {: pre}
-
-
-## What's next?
-{: #next}
-
-Now that you've uploaded a taxonomy, the next step is to [Generate data from your taxonomy.](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-data-generate)
-
+By doing so, you can fine-tune models so they understand your business context, terminology, and requirements, which goes beyond what the general-purpose models can provide. 

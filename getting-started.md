@@ -50,9 +50,9 @@ Make sure you have the following:
 
 * A Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
 
-* [A {{site.data.keyword.instructlab_short}} project](/docs/instructlab?topic=instructlab-project).
+* [A {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 
-* The Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/instructlab?topic=instructlab-iam&interface=ui).
+* The Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/inference?topic=inference-iam&interface=ui).
 
 ## Get your project ID and API endpoint
 {: #get-project-id}
@@ -87,37 +87,32 @@ Replace `{project_id}` with your project ID.
 {: #authenticate}
 {: step}
 
-Before you can interact with foundation models, you need to authenticate your API requests. You can use either a bearer token or an {{site.data.keyword.cloud_notm}} API key. This tutorial shows how to use a service ID with an API key for programmatic access.
+Before you can interact with foundation models, you need to authenticate your API requests. You can use either a bearer token or an {{site.data.keyword.cloud_notm}} API key. This tutorial shows how to use a service ID with an API key for programmatic access. For more information on using a bearer token, see [Authenticating by using a bearer token](/docs/inference?topic=inference-inference&interface=api#inf-chat-token). 
 
-### Create a service ID
+### Create a service ID and assign access
 {: #create-service-id}
 
-1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com){: external}.
+A service ID is a useful way to control and distribute access to {{site.data.keyword.instructlab_short}} projects. Create the service ID, then assign it access to your project. 
 
-2. Go to **Manage** > **Access (IAM)** > **[Service IDs](https://cloud.ibm.com/iam/serviceids){: external}** and click **Create**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **[Service IDs](/iam/serviceids){: external}** and click **Create**.
 
-3. Enter a name and description for your service ID, then click **Create**.
+2. Enter a name and description for your service ID, then click **Create**.
 
-### Assign access to the service ID
-{: #assign-access}
+3. From the service ID page, click **Assign access**.
 
-After creating the service ID, you need to assign it access to your {{site.data.keyword.instructlab_short}} project.
+4. Select **{{site.data.keyword.instructlab_short}}** as the service.
 
-1. From the service ID page, click **Assign access**.
+5. Within **Resources**, select **Specific resources** and choose your project. By doing so, you limit access to a specific project. 
 
-2. Select **{{site.data.keyword.instructlab_short}}** as the service.
-
-3. Within **Resources**, select **Specific resources** and choose your project. By doing so, you limit access to a specific project. 
-
-4. Within **Roles and actions**, select the appropriate service access role:
+6. Within **Roles and actions**, select the appropriate service access role:
    - Select **Writer** if you need to create chat completions.
    - Select **Reader** if you only need to read chat completions or view model information.
 
    Platform access roles are not required for API access.
 
-5. (Optional) Add conditions such as time-based access to further scope the service ID access.
+7. (Optional) Add conditions such as time-based access to further scope the service ID access.
 
-6. Review the access summary and click **Assign**.
+8. Review the access summary and click **Assign**.
 
 ### Create an API key
 {: #create-api-key}
@@ -265,11 +260,11 @@ You've successfully started using inferencing with Red Hat AI on {{site.data.key
 
 Ready to go beyond general-purpose models? You can customize foundation models with your organization's specific knowledge and skills through model alignment:
 
-1. [Prepare a taxonomy](/docs/instructlab?topic=instructlab-taxonomy-prep) containing your business knowledge and skills.
+1. [Prepare a taxonomy](/docs/inference?topic=inference-taxonomy-prep) containing your business knowledge and skills.
 
-1. [Generate synthetic data](/docs/instructlab?topic=instructlab-data-generate) from your taxonomy.
+1. [Generate synthetic data](/docs/inference?topic=inference-data-generate) from your taxonomy.
 
-1. [Train a custom model](/docs/instructlab?topic=instructlab-model-train) aligned with your specific needs.
+1. [Train a custom model](/docs/inference?topic=inference-model-train) aligned with your specific needs.
 
 
 By doing so, you can fine-tune models so they understand your business context, terminology, and requirements, which goes beyond what the general-purpose models can provide. 

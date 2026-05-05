@@ -2,7 +2,7 @@
 
 copyright: 
   years: 2024, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: release notes
 
@@ -33,7 +33,7 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, sec
 {: release-note}
 
 Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
-:   You can now use inferencing to interact with foundation models and evaluate AI-powered responses for your applications. The inferencing feature provides industry-standard OpenAI and Llama Stack compatible APIs for chat completions and model management. This beta feature is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`. For more information, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/instructlab?topic=instructlab-inference).
+:   You can now use inferencing to interact with foundation models and evaluate AI-powered responses for your applications. The inferencing feature provides industry-standard OpenAI and Llama Stack compatible APIs for chat completions and model management. This beta feature is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`. For more information, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
 
 ## October 2025
 {: #oct25}
@@ -54,7 +54,7 @@ Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
 {: release-note}
 
 Version 1.5 of {{site.data.keyword.product_name}} is available
-:   For the best results, run training on newly generated synthetic data with version 1.5. Review the updated [service settings](/docs/instructlab?topic=instructlab-service-settings) in 1.5.
+:   For the best results, run training on newly generated synthetic data with version 1.5. Review the updated [service settings](/docs/inference?topic=inference-service-settings) in 1.5.
 :   For more information, see the [release notes](https://issues.redhat.com/browse/RHAIRFE-645){: external}, the [RHEL AI documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.5/html/release_notes/rhelai_release_notes#rhelai_release_notes){: external} and the [known issues](https://issues.redhat.com/browse/RHELAI-3604){: external}
 
 New base model
@@ -70,13 +70,13 @@ New base model
 {: release-note}
 
 New! Import your own training data
-:   You can now import your own training data for training models. When you import your own training data, you can specify previously generated data IDs, or add knowledge and skills files to a data generation job by uploading files from {{site.data.keyword.cos_short}} or your local machine. For more information, see [Generating data](/docs/instructlab?topic=instructlab-data-generate).
+:   You can now import your own training data for training models. When you import your own training data, you can specify previously generated data IDs, or add knowledge and skills files to a data generation job by uploading files from {{site.data.keyword.cos_short}} or your local machine. For more information, see [Generating data](/docs/inference?topic=inference-data-generate).
 
 New! Taxonomy validation
 :   When you upload a taxonomy to {{site.data.keyword.short_name}}, it's now checked for formatting and syntax errors. Also, if you reference external knowledge documents in your `qna.yaml` files, {{site.data.keyword.short_name}} checks for access to those files. Additionally, {{site.data.keyword.short_name}} checks for the proper service authorizations for services like {{site.data.keyword.cos_short}} and {{site.data.keyword.secrets-manager_short}}.
 
 {{site.data.keyword.short_name}} CLI plug-in version `0.0.24`
-:   Version `0.0.24` of the plug-in adds support for importing your own training data to the `data generate` command. For more information, see [Generating data](/docs/instructlab?topic=instructlab-data-generate) or run `ibmcloud ilab data generate --help` to see the new options.
+:   Version `0.0.24` of the plug-in adds support for importing your own training data to the `data generate` command. For more information, see [Generating data](/docs/inference?topic=inference-data-generate) or run `ibmcloud ilab data generate --help` to see the new options.
 
 ## May 2025
 {: #may25}
@@ -88,7 +88,7 @@ New! Taxonomy validation
 
 
 New! Private repo support
-:   You can now use {{site.data.keyword.secrets-manager_short}} to give {{site.data.keyword.short_name}} access to your taxonomy knowledge documents in private repositories or GitHub Enterprise repositories. You can enable private repository access when uploading your taxonomy in the console or by using the CLI. For information, see [Getting started with {{site.data.keyword.short_name}}](/docs/instructlab?topic=instructlab-getting-started&interface=ui).
+:   You can now use {{site.data.keyword.secrets-manager_short}} to give {{site.data.keyword.short_name}} access to your taxonomy knowledge documents in private repositories or GitHub Enterprise repositories. You can enable private repository access when uploading your taxonomy in the console or by using the CLI. For information, see [Getting started with {{site.data.keyword.short_name}}](/docs/inference?topic=inference-getting-started&interface=ui).
 
 
 
@@ -103,6 +103,3 @@ New! Private repo support
 
 Introducing {{site.data.keyword.instructlab_full_notm}}!
 :   Get ready to dive into AI! InstructLab is an open source project from IBM and Red Hat to be a cost-effective entry point into the world of machine learning.
-
-
-

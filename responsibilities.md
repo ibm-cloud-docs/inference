@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: responsibilities, rhel ai, instructlab
 
@@ -83,7 +83,7 @@ User is responsible for IAM controls. Ensure the data is secured and private.
 
 Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 
-For more information, see [High availability and disaster recovery](/docs/instructlab?topic=instructlab-ilab-ha-dr).
+For more information, see [High availability and disaster recovery](/docs/inference?topic=inference-ilab-ha-dr).
 
 | Area| {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
@@ -93,5 +93,3 @@ For more information, see [High availability and disaster recovery](/docs/instru
 {: row-headers}
 {: caption="Responsibilities for disaster recovery" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
-
-

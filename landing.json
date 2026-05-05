@@ -51,7 +51,7 @@
     }
   ],
   "section_devtools": {
-    "cli": "/docs/instructlab?topic=instructlab-ilab-cli",
+    "cli": "/docs/inference?topic=inference-ilab-cli",
     "api": "/apidocs/instructlab"
   },
   "section_updates": {

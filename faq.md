@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: instructlab, rhel ai, faq
 
@@ -86,7 +86,7 @@ Fit for purpose and open source, these enterprise-ready, multimodal models deliv
 {: #taxonomy-faq}
 {: faq}
 
-A taxonomy is a file directory that consists of the data you feed to the model. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/instructlab?topic=instructlab-taxonomy-overview&interface=ui){: external}. You can also view the [InstructLab taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy){: external}.
+A taxonomy is a file directory that consists of the data you feed to the model. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-taxonomy-overview&interface=ui){: external}. You can also view the [InstructLab taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy){: external}.
 
 
 ## How does taxonomy validation work?
@@ -129,7 +129,7 @@ Model alignment training
 
 1. Before you begin running anything in {{site.data.keyword.instructlab_short}}, you can use the [cost estimator](https://cloud.ibm.com/estimator) to get an estimate of what the cost might be.
 
-1. [Upload your taxonomy](/docs/instructlab?topic=instructlab-getting-started&interface=ui#taxonomy-add-ui)
+1. [Upload your taxonomy](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui)
 
 1. When you set the details for [data generation](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-data-generate), review the estimated cost before starting the job.
 

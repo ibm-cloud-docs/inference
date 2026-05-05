@@ -171,7 +171,7 @@ Complete the following steps to merge data in the console.
     ```
     {: screen}
 
-1. Optional: When the state is `completed`, you can review metrics, such as [token estimates to calculate the estimated cost](/docs/instructlab?topic=instructlab-faq#costs-ilab).
+1. Optional: When the state is `completed`, you can review metrics, such as [token estimates to calculate the estimated cost](/docs/inference?topic=inference-faq#costs-ilab).
 
     Example `data get` command with the `--output json` option
     ```sh
@@ -246,7 +246,7 @@ Complete the following steps to import your data.
     ```
     {: pre}
 
-1. [Generate data from your taxonomy](/docs/instructlab?topic=instructlab-ilab-cli&interface=cli#ilab-cli-data-generate-command). Note the ID for the data to use in the next step. Use alphanumeric characters in the name.
+1. [Generate data from your taxonomy](/docs/inference?topic=inference-ilab-cli&interface=cli#ilab-cli-data-generate-command). Note the ID for the data to use in the next step. Use alphanumeric characters in the name.
     ```sh
     ibmcloud ilab data generate [--name NAME] [--taxonomy-id TAXONOMY-ID] [--internal-ids INTERNAL-IDs]
     ```
@@ -258,7 +258,7 @@ Complete the following steps to import your data.
     ```
     {: pre}
 
-For more examples, see the next section: [Example commands for importing your own training data](/docs/instructlab?topic=instructlab-data-generate&interface=cli#data-generate-byo-cli-examples).
+For more examples, see the next section: [Example commands for importing your own training data](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-byo-cli-examples).
 
 ### Example commands for importing your own training data
 {: #data-generate-byo-cli-examples}

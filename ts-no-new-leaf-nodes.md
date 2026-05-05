@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: leaf node, taxonomy, trouble shooting
 
@@ -37,4 +37,4 @@ Use GitHub to generate a new [`tar.gz` file](https://docs.github.com/en/reposito
 
 3. In the `Upload taxonomy` menu, upload the new `tar.gz` file into your {{site.data.keyword.cos_short}} bucket. 
 
-4. Try to [generate data](/docs/instructlab?topic=instructlab-data-generate&interface=ui). 
+4. Try to [generate data](/docs/inference?topic=inference-data-generate&interface=ui). 

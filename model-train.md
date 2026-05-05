@@ -72,7 +72,7 @@ Configuration information or files cannot be passed to the model for fine tuning
     ```
     {: pre}
 
-1. Optional: When the state is `completed`, you can review metrics, such as [token estimates to calculate the estimated cost](/docs/instructlab?topic=instructlab-faq#costs-ilab).
+1. Optional: When the state is `completed`, you can review metrics, such as [token estimates to calculate the estimated cost](/docs/inference?topic=inference-faq#costs-ilab).
 
     Example `model get` command with the `--output json` option.
     ```sh
@@ -357,4 +357,4 @@ After training the model, your {{site.data.keyword.cos_short}} bucket contains a
 ## What's next?
 {: #next-model}
 
-Optional: [You can deploy the model](/docs/instructlab?topic=instructlab-deploy).
+Optional: [You can deploy the model](/docs/inference?topic=inference-deploy).

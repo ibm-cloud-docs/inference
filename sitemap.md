@@ -35,9 +35,7 @@ subcollection: instructlab
 
 * [Authenticate to the API](/docs/inference?topic=inference-getting-started#authenticate)
 
-    * [Create a service ID](/docs/inference?topic=inference-getting-started#create-service-id)
-
-    * [Assign access to the service ID](/docs/inference?topic=inference-getting-started#assign-access)
+    * [Create a service ID and assign access](/docs/inference?topic=inference-getting-started#create-service-id)
 
     * [Create an API key](/docs/inference?topic=inference-getting-started#create-api-key)
 

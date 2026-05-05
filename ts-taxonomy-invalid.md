@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: taxonomy, troubleshooting
 
@@ -52,9 +52,9 @@ Fix issues with the taxonomy.
     ```
     {: pre}
 
-1. [Upload the taxonomy updates](/docs/instructlab?topic=instructlab-getting-started&interface=ui#taxonomy-add-ui) to {{site.data.keyword.cos_short}}.
+1. [Upload the taxonomy updates](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui) to {{site.data.keyword.cos_short}}.
 
-1. Run the [data generation](/docs/instructlab?topic=instructlab-data-generate) again.
+1. Run the [data generation](/docs/inference?topic=inference-data-generate) again.
 
 
  

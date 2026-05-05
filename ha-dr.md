@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: HA for {{site.data.keyword.short_name}}, DR for {{site.data.keyword.short_name}}, {{site.data.keyword.short_name}} recovery time objective, {{site.data.keyword.short_name}} recovery point objective
 
@@ -98,7 +98,7 @@ Example checklist for Object storage replication
 ```
 {: codeblock}
 
-For more information about responsibility ownership between you and {{site.data.keyword.cloud_notm}} for {{site.data.keyword.instructlab_short}}, see [Your responsibilities](/docs/instructlab?topic=instructlab-responsibilities).
+For more information about responsibility ownership between you and {{site.data.keyword.cloud_notm}} for {{site.data.keyword.instructlab_short}}, see [Your responsibilities](/docs/inference?topic=inference-responsibilities).
 
 ## Recovery time objective (RTO) and recovery point objective (RPO)
 {: #rto-rpo-features}
@@ -135,5 +135,5 @@ If {{site.data.keyword.IBM_notm}} can’t restore the service instance, you must
 
 For more information about planned maintenance, announcements, and release notes that impact this service, see the following links.
 
-- [{{site.data.keyword.short_name}} release notes](/docs/instructlab?topic=instructlab-release-notes).
+- [{{site.data.keyword.short_name}} release notes](/docs/inference?topic=inference-release-notes).
 - [Monitoring notifications and status](/docs/account?topic=account-viewing-cloud-status).

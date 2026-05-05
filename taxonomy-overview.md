@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: instructlab, taxonomy, knowledge, skills, leaf node, branch, qna, files, documents
 
@@ -19,7 +19,7 @@ subcollection: instructlab
 
 A taxonomy is a file directory that consists of the data you feed to the model. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [About the InstructLab Taxonomy](https://docs.instructlab.ai/taxonomy/){: external} in the InstructLab docs. You can also view the [InstructLab taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy/tree/main/knowledge){: external}.
 
-For steps on creating or adding to a taxonomy, see [Preparing taxonomies](/docs/instructlab?topic=instructlab-taxonomy-prep).
+For steps on creating or adding to a taxonomy, see [Preparing taxonomies](/docs/inference?topic=inference-taxonomy-prep).
 
 ## Taxonomy data
 {: #taxonomy-data}

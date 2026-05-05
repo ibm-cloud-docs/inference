@@ -53,7 +53,7 @@ Flexible integration
 Interactive testing
 :   Experiment with different models and prompts in the console playground before integrating them into your applications.
 
-For more information about using inferencing, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/instructlab?topic=instructlab-inference).
+For more information about using inferencing, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
 
 
 ### How inferencing works
@@ -62,7 +62,7 @@ For more information about using inferencing, see [Inferencing with Red Hat AI o
 Inferencing provides immediate access to foundation models through a simple workflow:
 
 Step 1. Authenticate
-:   After you [create a {{site.data.keyword.instructlab_short}} project](/docs/instructlab?topic=instructlab-project), use a bearer token or an {{site.data.keyword.cloud_notm}} API key to securely access your project's inferencing capabilities.
+:   After you [create a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project), use a bearer token or an {{site.data.keyword.cloud_notm}} API key to securely access your project's inferencing capabilities.
 
 Step 2. Select a model
 :   Choose from available foundation models based on your use case requirements, such as response quality, speed, or cost considerations.
@@ -73,7 +73,7 @@ Step 3. Send requests
 Step 4. Integrate responses
 :   Incorporate the model's responses into your application workflows, whether for conversational interfaces, content generation, or natural language processing tasks.
 
-You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/instructlab?topic=instructlab-inference).
+You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
 
 
 ## What is model alignment?
@@ -100,7 +100,7 @@ This approach minimizes the risk of catastrophic forgetting—where models lose 
 Model alignment through InstructLab follows a structured process to customize foundation models:
 
 Step 1. Provide a taxonomy
-:   A taxonomy is a directory of diverse, human-curated data that is used to train an LLM. The data contains examples of new knowledge and skills for the model to learn from. You can use and contribute to an existing taxonomy, or you can create your own. For more information, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/instructlab?topic=instructlab-taxonomy-overview).
+:   A taxonomy is a directory of diverse, human-curated data that is used to train an LLM. The data contains examples of new knowledge and skills for the model to learn from. You can use and contribute to an existing taxonomy, or you can create your own. For more information, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-taxonomy-overview).
 
 Step 2. Generate synthetic data
 :   The information in the taxonomy is used to generate synthetic data that augments the human-provided knowledge and is used to fine-tune the model. [Learn more about the data generation process from Red Hat](https://www.redhat.com/en/blog/how-instructlabs-synthetic-data-generation-enhances-llms){: external}.

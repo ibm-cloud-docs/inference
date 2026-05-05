@@ -40,9 +40,9 @@ Currently, the supported APIs are:
 
 * Create a Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
 
-* Create [a {{site.data.keyword.instructlab_short}} project](/docs/instructlab?topic=instructlab-project).
+* Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 
-* Make sure you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/instructlab?topic=instructlab-iam&interface=ui). 
+* Make sure you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/inference?topic=inference-iam&interface=ui). 
 
 
 ## Inferencing by using the console
@@ -123,9 +123,9 @@ The bearer token is the `access_token` in the response. These tokens have an exp
 {: #inf-chat-apikey}
 {: api}
 
-There are two ways to authenticate with an API key: You can [create a service ID](/docs/iam?topic=iam-serviceids&interface=ui), which is the recommended way to distribute access and controls. If you create a service ID, you need to [create a service ID API key](/docs/iam?topic=iam-serviceidapikeys&interface=ui) as well, which you use to authenticate. 
+There are two ways to authenticate with an API key: You can [create a service ID](/docs/iam?topic=iam-serviceids&interface=ui), which is the recommended way to distribute access and controls. If you create a service ID, you need to [create a service ID API key](/docs/iam?topic=iam-serviceidapikeys&interface=ui) as well, which you use to authenticate. [Getting started with {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-getting-started#authenticate) explains how to create a service ID and an API key to authenticate programmatically. 
 
-You can also authenticate by using a user API key. For more information, see [Managing user API keys](/docs/iam?topic=iam-userapikey&interface=ui).
+You can also authenticate by using a user API key, as opposed to a service ID API key. For more information, see [Managing user API keys](/docs/iam?topic=iam-userapikey&interface=ui).
 
 ### Generating a chat completion
 {: #inf-chat-generate}

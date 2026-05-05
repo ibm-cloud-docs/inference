@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-05"
 
 keywords: instructlab, ai, project
 
@@ -60,6 +60,6 @@ To create {{site.data.keyword.cos_short}} resources:
 After creating your project, review the following links for next steps.
 
 
-- [Assign users in your account access to your project and {{site.data.keyword.cos_short}}](/docs/instructlab?topic=instructlab-project).
-- [Learn how taxonomies are structured](/docs/instructlab?topic=instructlab-taxonomy-overview).
-- [Prepare your taxonomy and upload it to {{site.data.keyword.cos_short}}](/docs/instructlab?topic=instructlab-taxonomy-prep).
+- [Assign users in your account access to your project and {{site.data.keyword.cos_short}}](/docs/inference?topic=inference-project).
+- [Learn how taxonomies are structured](/docs/inference?topic=inference-taxonomy-overview).
+- [Prepare your taxonomy and upload it to {{site.data.keyword.cos_short}}](/docs/inference?topic=inference-taxonomy-prep).

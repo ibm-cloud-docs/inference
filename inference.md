@@ -40,7 +40,7 @@ Models `/v1/models`
 
 * Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 
-* Make sure you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/inference?topic=inference-iam&interface=ui). 
+* Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/inference?topic=inference-iam&interface=ui). 
 
 
 ## Inferencing by using the console
@@ -131,12 +131,12 @@ You can also authenticate by using a user API key, as opposed to a service ID AP
 
 Chat completions are the core of inferencing. They allow you to send messages to a foundation model and receive AI-generated responses. This is how you build conversational experiences, get answers to questions, generate content, or process natural language inputs. You can control the conversation flow by providing system prompts that define the model's behavior and maintain message history for context-aware interactions.
 
-The following example shows how to generate a chat completion. For a complete list of the available parameters, see [OpenAI Chat Completion](https://llamastack.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}.
+The following example shows how to generate a chat completion. For a complete list of the available parameters, see [OpenAI Chat Completion](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}.
 
 
 
 ```bash
-curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer {bearer_token}" -d '{
+curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer {bearer_token}" -d '{
  "model": "granite-4-0-h-small",
  "messages": [
    {
@@ -154,8 +154,8 @@ curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/com
 {: curl}
 
 ```python
-from llama_stack_client import LlamaStackClient
-client = LlamaStackClient(
+from openai import OpenAI
+client = OpenAI(
   api_key="{bearer_token}",
   base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
 )
@@ -182,20 +182,20 @@ print(completion.choices[0].message)
 
 Retrieving a specific chat completion by ID is useful for auditing, debugging, or analyzing past interactions. 
 
-The following example shows how to get a chat completion by its ID. For a complete list of the available parameters, see [Get Chat Completion](https://llamastack.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}.
+The following example shows how to get a chat completion by its ID. For a complete list of the available parameters, see [Get Chat Completion](https://ogx-ai.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}.
 
 
 
 ```bash
-curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/completions/{completion_id}' \
+curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions/{completion_id}' \
 -H 'Accept: application/json' -H "Authorization: Bearer {bearer_token}"
 ```
 {: codeblock}
 {: curl}
 
 ```python
-from llama_stack_client import LlamaStackClient
-client = LlamaStackClient(
+from openai import OpenAI
+client = OpenAI(
   api_key="{bearer_token}",
   base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
 )
@@ -214,20 +214,20 @@ print(completion)
 
 Listing chat completions provides an overview of all your inferencing activity, so you can monitor usage patterns, track costs, and analyze how your application is interacting with foundation models. This is particularly valuable for understanding user behavior, identifying popular use cases, and optimizing your AI integration strategy.
 
-The following example shows how to list chat completions. For a complete list of the available parameters, see [List Chat Completions](https://llamastack.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}.
+The following example shows how to list chat completions. For a complete list of the available parameters, see [List Chat Completions](https://ogx-ai.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}.
 
 
 
 ```sh
-curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/completions' \
+curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions' \
 -H 'Accept: application/json' -H "Authorization: Bearer {bearer_token}"
 ```
 {: codeblock}
 {: curl}
 
 ```python
-from llama_stack_client import LlamaStackClient
-client = LlamaStackClient(
+from openai import OpenAI
+client = OpenAI(
   api_key="{bearer_token}",
   base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
 )
@@ -251,7 +251,7 @@ The following example shows how to delete a chat completion. For a complete list
 
 
 ```bash
-curl -X DELETE https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/completions/{completion_id} \
+curl -X DELETE https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions/{completion_id} \
 -H "Content-Type: application/json" -H "Authorization: Bearer {bearer_token}"
 ```
 {: codeblock}
@@ -265,7 +265,7 @@ curl -X DELETE https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v
 
 Discover which foundation models are accessible in your project and understand their capabilities, so you can use the best model for your specific use case and optimize for factors like response quality, speed, or cost.
 
-The following example shows how to list models. For a complete list of the available parameters, see [OpenAI List Models](https://llamastack.github.io/docs/api/openai-list-models-v-1-models-get){: external}.
+The following example shows how to list models. For a complete list of the available parameters, see [OpenAI List Models](https://ogx-ai.github.io/docs/api/openai-list-models-v-1-models-get){: external}.
 
 
 
@@ -277,8 +277,8 @@ curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models'
 {: curl}
 
 ```python
-from llama_stack_client import LlamaStackClient
-client = LlamaStackClient(
+from openai import OpenAI
+client = OpenAI(
   api_key="{bearer_token}",
   base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
 )
@@ -297,7 +297,7 @@ print(models)
 
 Retrieving detailed information about a specific model helps you understand its characteristics, capabilities, and limitations before using it in your application.
 
-The following example shows how to get a model by ID. For a complete list of the available parameters, see [Get Model](https://llamastack.github.io/docs/api/get-model-v-1-models-model-id-get){: external}.
+The following example shows how to get a model by ID. For a complete list of the available parameters, see [Get Model](https://ogx-ai.github.io/docs/api/get-model-v-1-models-model-id-get){: external}.
 
 
 
@@ -309,8 +309,8 @@ curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models/
 {: curl}
 
 ```python
-from llama_stack_client import LlamaStackClient
-client = LlamaStackClient(
+from openai import OpenAI
+client = OpenAI(
   api_key="{bearer_token}",
   base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
 )

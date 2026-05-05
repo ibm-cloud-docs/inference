@@ -149,8 +149,8 @@ curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models'
 {: curl}
 
 ```python
-from llama_stack_client import LlamaStackClient
-client = LlamaStackClient(
+from openai import OpenAI
+client = OpenAI(
   api_key="{api_key}",
   base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
 )
@@ -176,7 +176,7 @@ Make the following API call, replacing `{project_id}` with your project ID and `
 
 
 ```bash
-curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/completions \
+curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer {api_key}" \
   -d '{
@@ -197,8 +197,8 @@ curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/com
 {: curl}
 
 ```python
-from llama_stack_client import LlamaStackClient
-client = LlamaStackClient(
+from openai import OpenAI
+client = OpenAI(
   api_key="{api_key}",
   base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
 )
@@ -248,7 +248,7 @@ You've successfully started using inferencing with Red Hat AI on {{site.data.key
 
 * [Learn more about inferencing](/docs/inference?topic=inference-inference) to discover advanced features like streaming responses, adjusting model parameters, and managing conversation history.
 
-* Explore the [OpenAI Chat Completion API](https://platform.openai.com/docs/api-reference/chat){: external} and [Llama Stack API](https://llamastack.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external} documentation for complete API reference.
+* Explore the [OpenAI Chat Completion API](https://platform.openai.com/docs/api-reference/chat){: external} and [OGX API](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external} documentation for complete API reference.
 
 * Integrate inferencing into your applications using the Python SDK or other programming languages.
 

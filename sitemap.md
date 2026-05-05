@@ -29,7 +29,9 @@ subcollection: instructlab
 
 * [Before you begin](/docs/inference?topic=inference-getting-started#prereqs)
 
-* [Get your project ID](/docs/inference?topic=inference-getting-started#get-project-id)
+* [Get your project ID and API endpoint](/docs/inference?topic=inference-getting-started#get-project-id)
+
+    * [API endpoint](/docs/inference?topic=inference-getting-started#gs-api-endpoint)
 
 * [Authenticate to the API](/docs/inference?topic=inference-getting-started#authenticate)
 
@@ -202,96 +204,6 @@ subcollection: instructlab
     * [Webhooks](/docs/inference?topic=inference-event-notifications-events#event-notifications-webhook)
 
 
-## Preparing your taxonomy
-{: #sitemap_preparing_your_taxonomy}
-
-
-[Understanding the taxonomy structure](/docs/inference?topic=inference-taxonomy-overview#taxonomy-overview)
-
-* [Taxonomy data](/docs/inference?topic=inference-taxonomy-overview#taxonomy-data)
-
-* [Taxonomy files](/docs/inference?topic=inference-taxonomy-overview#taxonomy-files)
-
-* [Knowledge documents](/docs/inference?topic=inference-taxonomy-overview#knowledge-docs)
-
-* [Knowledge `qna.yaml` files](/docs/inference?topic=inference-taxonomy-overview#knowledge-qna)
-
-* [Skills `qna.yaml` files](/docs/inference?topic=inference-taxonomy-overview#skills-qna)
-
-[Preparing taxonomies](/docs/inference?topic=inference-taxonomy-prep#taxonomy-prep)
-
-* [Create or clone your taxonomy](/docs/inference?topic=inference-taxonomy-prep#taxonomy-create)
-
-* [Gather your knowledge documents](/docs/inference?topic=inference-taxonomy-prep#taxonomy-gather)
-
-* [Create `qna.yaml` files for knowledge and skills](/docs/inference?topic=inference-taxonomy-prep#taxonomy-qna)
-
-* [Upload your taxonomy to your {{site.data.keyword.cos_short}} bucket](/docs/inference?topic=inference-taxonomy-prep#taxonomy-upload)
-
-* [What's next?](/docs/inference?topic=inference-taxonomy-prep#taxonomy-next)
-
-
-## Generating data
-{: #sitemap_generating_data}
-
-
-[Generating data](/docs/inference?topic=inference-data-generate#data-generate)
-
-* [Prerequisites](/docs/inference?topic=inference-data-generate#data-generate-pre)
-
-* [Generating data by using the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-ui)
-
-* [Importing your own training data in the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-byo-ui)
-
-* [Merging training data in the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-byo-train-ui)
-
-* [Generating data by using the CLI](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-cli)
-
-* [Importing your own training data by using the CLI](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-byo-cli)
-
-    * [Example commands for importing your own training data](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-byo-cli-examples)
-
-* [Generating data by using the API](/docs/inference?topic=inference-data-generate&interface=api#data-generate-api)
-
-* [What's in my {{site.data.keyword.cos_short}} bucket after generating data?](/docs/inference?topic=inference-data-generate&interface=api#data-bucket)
-
-* [Example `.jsonl` format](/docs/inference?topic=inference-data-generate&interface=api#example-jsonl)
-
-* [Next steps](/docs/inference?topic=inference-data-generate&interface=api#next-data)
-
-
-## Training models
-{: #sitemap_training_models}
-
-
-[Training models](/docs/inference?topic=inference-model-train#model-train)
-
-* [Prerequisites](/docs/inference?topic=inference-model-train#model-train-pre)
-
-* [Aligning models by using the console](/docs/inference?topic=inference-model-train&interface=ui#model-train-ui)
-
-* [Training models by using the CLI](/docs/inference?topic=inference-model-train&interface=cli#model-train-cli)
-
-* [Training models by using the API](/docs/inference?topic=inference-model-train&interface=api#model-train-api)
-
-* [What's in my {{site.data.keyword.cos_short}} bucket after training?](/docs/inference?topic=inference-model-train&interface=api#model-bucket)
-
-* [What's next?](/docs/inference?topic=inference-model-train&interface=api#next-model)
-
-
-## Deploying models
-{: #sitemap_deploying_models}
-
-
-[Deploying models](/docs/inference?topic=inference-deploy#deploy)
-
-* [Deploying the model to RHEL-AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-deploy#deploy-rhel-ai)
-
-* [Deploying the model to Watsonx on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-deploy#deploy-watson)
-
-* [Deploying the model to Red Hat OpenShift AI](/docs/inference?topic=inference-deploy#deploy-rhoai)
-
-
 ## Inferencing
 {: #sitemap_inferencing}
 
@@ -319,6 +231,100 @@ subcollection: instructlab
     * [Listing models](/docs/inference?topic=inference-inference&interface=api#inf-chat-list-models)
 
     * [Getting a model by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-model)
+
+
+## Model training with InstructLab
+{: #sitemap_model_training_with_instructlab}
+
+
+[Installing the CLI](/docs/inference?topic=inference-cli-install#cli-install)
+
+* [Running the installation command](/docs/inference?topic=inference-cli-install#cli-install-include-step1-install-idt)
+
+* [Verifying the installation](/docs/inference?topic=inference-cli-install#cli-install-include-step2-verify-idt)
+
+* [Installing CLI plug-ins and tools](/docs/inference?topic=inference-cli-install#cli-install-include-step3-install-idt-manually)
+
+* [Updating the {{site.data.keyword.cloud_notm}} CLI](/docs/inference?topic=inference-cli-install#cli-install-include-update-ibmcloud-cli)
+
+* [Updating installed plug-ins](/docs/inference?topic=inference-cli-install#cli-install-include-cli-update-plugin)
+
+* [Logging in to the CLI](/docs/inference?topic=inference-cli-install#cli-login)
+
+
+### Preparing your taxonomy
+{: #sitemap_preparing_your_taxonomy}
+
+
+[Understanding the taxonomy structure](/docs/inference?topic=inference-taxonomy-overview#taxonomy-overview)
+
+* [Taxonomy data](/docs/inference?topic=inference-taxonomy-overview#taxonomy-data)
+
+* [Taxonomy files](/docs/inference?topic=inference-taxonomy-overview#taxonomy-files)
+
+* [Knowledge documents](/docs/inference?topic=inference-taxonomy-overview#knowledge-docs)
+
+* [Knowledge `qna.yaml` files](/docs/inference?topic=inference-taxonomy-overview#knowledge-qna)
+
+* [Skills `qna.yaml` files](/docs/inference?topic=inference-taxonomy-overview#skills-qna)
+
+[Preparing taxonomies](/docs/inference?topic=inference-taxonomy-prep#taxonomy-prep)
+
+* [Create or clone your taxonomy](/docs/inference?topic=inference-taxonomy-prep#taxonomy-create)
+
+* [Gather your knowledge documents](/docs/inference?topic=inference-taxonomy-prep#taxonomy-gather)
+
+* [Create `qna.yaml` files for knowledge and skills](/docs/inference?topic=inference-taxonomy-prep#taxonomy-qna)
+
+* [Upload your taxonomy to your {{site.data.keyword.cos_short}} bucket](/docs/inference?topic=inference-taxonomy-prep#taxonomy-upload)
+
+* [What's next?](/docs/inference?topic=inference-taxonomy-prep#taxonomy-next)
+
+[Generating data](/docs/inference?topic=inference-data-generate#data-generate)
+
+* [Prerequisites](/docs/inference?topic=inference-data-generate#data-generate-pre)
+
+* [Generating data by using the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-ui)
+
+* [Importing your own training data in the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-byo-ui)
+
+* [Merging training data in the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-byo-train-ui)
+
+* [Generating data by using the CLI](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-cli)
+
+* [Importing your own training data by using the CLI](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-byo-cli)
+
+    * [Example commands for importing your own training data](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-byo-cli-examples)
+
+* [Generating data by using the API](/docs/inference?topic=inference-data-generate&interface=api#data-generate-api)
+
+* [What's in my {{site.data.keyword.cos_short}} bucket after generating data?](/docs/inference?topic=inference-data-generate&interface=api#data-bucket)
+
+* [Example `.jsonl` format](/docs/inference?topic=inference-data-generate&interface=api#example-jsonl)
+
+* [Next steps](/docs/inference?topic=inference-data-generate&interface=api#next-data)
+
+[Training models](/docs/inference?topic=inference-model-train#model-train)
+
+* [Prerequisites](/docs/inference?topic=inference-model-train#model-train-pre)
+
+* [Aligning models by using the console](/docs/inference?topic=inference-model-train&interface=ui#model-train-ui)
+
+* [Training models by using the CLI](/docs/inference?topic=inference-model-train&interface=cli#model-train-cli)
+
+* [Training models by using the API](/docs/inference?topic=inference-model-train&interface=api#model-train-api)
+
+* [What's in my {{site.data.keyword.cos_short}} bucket after training?](/docs/inference?topic=inference-model-train&interface=api#model-bucket)
+
+* [What's next?](/docs/inference?topic=inference-model-train&interface=api#next-model)
+
+[Deploying models](/docs/inference?topic=inference-deploy#deploy)
+
+* [Deploying the model to RHEL-AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-deploy#deploy-rhel-ai)
+
+* [Deploying the model to Watsonx on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-deploy#deploy-watson)
+
+* [Deploying the model to Red Hat OpenShift AI](/docs/inference?topic=inference-deploy#deploy-rhoai)
 
 
 ## Enhancing security

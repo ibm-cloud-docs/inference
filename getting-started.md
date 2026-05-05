@@ -54,7 +54,7 @@ Make sure you have the following:
 
 * The Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/instructlab?topic=instructlab-iam&interface=ui).
 
-## Get your project ID
+## Get your project ID and API endpoint
 {: #get-project-id}
 {: step}
 
@@ -67,6 +67,21 @@ Your project ID is required for all API requests.
 1. Click **Details**.
 
 1. Copy your project ID and save it for the next steps.
+
+### API endpoint
+{: #gs-api-endpoint}
+
+All API requests use the following base URL format:
+
+
+```text
+https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference
+```
+{: codeblock}
+
+
+
+Replace `{project_id}` with your project ID. 
 
 ## Authenticate to the API
 {: #authenticate}
@@ -131,12 +146,30 @@ Different foundation models have different strengths, so it's important to revie
 
 Make the following API call to list all the available models. Replace `{project_id}` with your project ID and `{api_key}` with your service ID API key:
 
+
+
 ```bash
 curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models' \
   -H 'Accept: application/json' \
   -H "Authorization: Bearer {api_key}"
 ```
 {: codeblock}
+{: curl}
+
+```python
+from llama_stack_client import LlamaStackClient
+client = LlamaStackClient(
+  api_key="{api_key}",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+)
+
+models = client.models.list()
+print(models)
+```
+{: codeblock}
+{: python}
+
+
 
 The response shows you all the models you can use, along with information about their capabilities. You can experiment with different models to find the one that best fits your use case.
 
@@ -147,6 +180,8 @@ The response shows you all the models you can use, along with information about 
 Now, send a message to the model and receive an AI-generated response.
 
 Make the following API call, replacing `{project_id}` with your project ID and `{api_key}` with your service ID API key:
+
+
 
 ```bash
 curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/completions \
@@ -167,6 +202,30 @@ curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/v1/chat/com
   }'
 ```
 {: codeblock}
+{: curl}
+
+```python
+from llama_stack_client import LlamaStackClient
+client = LlamaStackClient(
+  api_key="{api_key}",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+)
+
+completion = client.chat.completions.create(
+  model="granite-4-0-h-small",
+  messages=[
+    {"role": "developer", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Hello! Tell me about yourself"}
+  ]
+)
+
+print(completion.choices[0].message)
+```
+{: codeblock}
+{: python}
+
+
+
 
 You should receive a response from the model introducing itself. 
 

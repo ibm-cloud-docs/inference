@@ -38,21 +38,26 @@ toc:
             navtitle: Setting up logging
           - topic: event-notifications.md
             navtitle: Enabling notifications
-      - topicgroup:
-          label: Preparing your taxonomy
-          topics:
-          - topic: taxonomy-overview.md
-            navtitle: Understanding the taxonomy structure
-          - topic: taxonomy-prep.md
-            navtitle: Preparing taxonomies
-      - topic: data-generate.md
-        navtitle: Generating data
-      - topic: model-train.md
-        navtitle: Training models
-      - topic: deploy.md
-        navtitle: Deploying models
       - topic: inference.md
         navtitle: Inferencing
+      - topicgroup:
+          label: Model training with InstructLab
+          topics:
+          - topic: cli-install.md
+            navtitle: Installing the CLI
+          - topicgroup:
+              label: Preparing your taxonomy
+              topics:
+              - topic: taxonomy-overview.md
+                navtitle: Understanding the taxonomy structure
+              - topic: taxonomy-prep.md
+                navtitle: Preparing taxonomies
+          - topic: data-generate.md
+            navtitle: Generating data
+          - topic: model-train.md
+            navtitle: Training models
+          - topic: deploy.md
+            navtitle: Deploying models
       - topicgroup:
           label: Enhancing security
           topics:

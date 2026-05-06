@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-05"
+lastupdated: "2026-05-06"
 
 keywords: instructlab, ai, project
 
@@ -16,8 +16,11 @@ subcollection: instructlab
 # Creating storage locations for {{site.data.keyword.short_name}}
 {: #storage}
 
-Complete the following steps to create one or more {{site.data.keyword.cos_short}} buckets to store {{site.data.keyword.short_name}} resources in.
+Complete the following steps to create one or more {{site.data.keyword.cos_short}} buckets to store {{site.data.keyword.short_name}} resources in. 
 {: shortdesc}
+
+{{site.data.keyword.cos_short}} buckets are only required if you want to fine-tune or align models with your own data. If you use the inference feature with pre-trained models, you do not need to create a bucket.
+{: important}
 
 [Learn more about {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage).
 

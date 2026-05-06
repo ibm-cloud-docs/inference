@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-05"
+lastupdated: "2026-05-06"
 
 
 keywords: instructlab, sitemap
@@ -124,25 +124,6 @@ subcollection: instructlab
         * Introducing {{site.data.keyword.instructlab_full_notm}}!
 
 
-## Installing the CLI
-{: #sitemap_installing_the_cli}
-
-
-[Installing the CLI](/docs/inference?topic=inference-cli-install#cli-install)
-
-* [Running the installation command](/docs/inference?topic=inference-cli-install#cli-install-include-step1-install-idt)
-
-* [Verifying the installation](/docs/inference?topic=inference-cli-install#cli-install-include-step2-verify-idt)
-
-* [Installing CLI plug-ins and tools](/docs/inference?topic=inference-cli-install#cli-install-include-step3-install-idt-manually)
-
-* [Updating the {{site.data.keyword.cloud_notm}} CLI](/docs/inference?topic=inference-cli-install#cli-install-include-update-ibmcloud-cli)
-
-* [Updating installed plug-ins](/docs/inference?topic=inference-cli-install#cli-install-include-cli-update-plugin)
-
-* [Logging in to the CLI](/docs/inference?topic=inference-cli-install#cli-login)
-
-
 ## Preparing your account
 {: #sitemap_preparing_your_account}
 
@@ -154,14 +135,6 @@ subcollection: instructlab
 * [Creating projects from the CLI for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-project&interface=cli#project-create-cli)
 
 * [What's next?](/docs/inference?topic=inference-project&interface=cli#whats-next-projects)
-
-[Creating an Object Storage instance](/docs/inference?topic=inference-storage#storage)
-
-* [Creating an {{site.data.keyword.cos_short}} instance in the console for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-storage&interface=ui#storage-ui)
-
-* [Creating an {{site.data.keyword.cos_short}} instance and bucket by using the CLI for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-storage&interface=cli#storage-cli)
-
-* [What's next?](/docs/inference?topic=inference-storage&interface=cli#whats-next-storage)
 
 [Assigning access](/docs/inference?topic=inference-iam#iam)
 
@@ -231,9 +204,17 @@ subcollection: instructlab
     * [Getting a model by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-model)
 
 
-## Model training with InstructLab
-{: #sitemap_model_training_with_instructlab}
+## Model alignment with InstructLab
+{: #sitemap_model_alignment_with_instructlab}
 
+
+[Creating an Object Storage instance](/docs/inference?topic=inference-storage#storage)
+
+* [Creating an {{site.data.keyword.cos_short}} instance in the console for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-storage&interface=ui#storage-ui)
+
+* [Creating an {{site.data.keyword.cos_short}} instance and bucket by using the CLI for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-storage&interface=cli#storage-cli)
+
+* [What's next?](/docs/inference?topic=inference-storage&interface=cli#whats-next-storage)
 
 [Installing the CLI](/docs/inference?topic=inference-cli-install#cli-install)
 

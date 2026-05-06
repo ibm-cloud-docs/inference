@@ -23,15 +23,11 @@ toc:
   - navgroup:
       id: howto
       topics:
-      - topic: cli-install.md
-        navtitle: Installing the CLI
       - topicgroup:
           label: Preparing your account
           topics:
           - topic: project.md
             navtitle: Creating an InstructLab project
-          - topic: storage.md
-            navtitle: Creating an Object Storage instance
           - topic: iam.md
             navtitle: Assigning access
           - topic: logging.md
@@ -41,8 +37,10 @@ toc:
       - topic: inference.md
         navtitle: Inferencing
       - topicgroup:
-          label: Model training with InstructLab
+          label: Model alignment with InstructLab
           topics:
+          - topic: storage.md
+            navtitle: Creating an Object Storage instance
           - topic: cli-install.md
             navtitle: Installing the CLI
           - topicgroup:

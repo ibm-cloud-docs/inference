@@ -204,8 +204,8 @@ subcollection: instructlab
     * [Getting a model by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-model)
 
 
-## Model alignment with InstructLab
-{: #sitemap_model_alignment_with_instructlab}
+## Model alignment
+{: #sitemap_model_alignment}
 
 
 [Creating an Object Storage instance](/docs/inference?topic=inference-storage#storage)
@@ -432,7 +432,7 @@ subcollection: instructlab
 {: #sitemap_api_reference}
 
 
-[IBM Cloud API docs](https://{DomainName}/apidocs/instructlab){: external}
+[IBM Cloud API docs](https://{DomainName}/apidocs/inference){: external}
 
 [Swagger](https://us-east.instructlab.ibm.com/swagger-instructlab-api/#/){: external}
 

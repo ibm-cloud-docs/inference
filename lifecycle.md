@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-11"
 
 keywords: instructlab
 
@@ -55,8 +55,3 @@ Provide the recommended version, supported version, and version policy for your 
 - [IBM Announcements](https://www.ibm.com/think){: external}
 - [End of support notices](https://cloud.ibm.com/status/announcement?query=End+of+Support+Notices){: external}
 - [Red Hat Product Life Cycles](https://access.redhat.com/product-life-cycles/){: external}
-
-## Other considerations
-{: #other-considerations-lifecycle}
-
-Use this section to describe other details to consider for your service.  

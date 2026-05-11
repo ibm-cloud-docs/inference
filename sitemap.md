@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-06"
+lastupdated: "2026-05-11"
 
 
 keywords: instructlab, sitemap
@@ -382,8 +382,6 @@ subcollection: instructlab
 * [{{site.data.keyword.instructlab_short}} recommended and supported versions](/docs/inference?topic=inference-lifecycle-policy#ilab-service-version)
 
 * [Customer communications for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-lifecycle-policy#customer-communications)
-
-* [Other considerations](/docs/inference?topic=inference-lifecycle-policy#other-considerations-lifecycle)
 
 
 ## High availability and disaster recovery

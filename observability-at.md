@@ -66,23 +66,23 @@ The following table lists the activity tracking events that are generated when y
 
 | Action                           | Description                        |
 |----------------------------------|------------------------------------|
-| `instructlab.model.read`                                 |                                    |
-| `instructlab.model.list`                                 |                                    |
-| `instructlab.model.create`                                 |                                    |
-| `instructlab.model.delete`                                 |                                    |
-| `instructlab.model.stop`                                 |                                    |
-| `cloud-object-storage.bucket.get`                                 |                                    |
-| `cloud-object-storage.object.put`                                 |                                    |
-| `cloud-object-storage.object.get`                                 |                                    |
-| `instructlab.taxonomy.read`                                 |                                    |
-| `instructlab.taxonomy.list`      |                                    |
-| `instructlab.taxonomy.create`      |                                    |
-| `instructlab.taxonomy.delete`      |                                    |
-| `instructlab.sdgdata.read`      |                                    |
-| `instructlab.sdgdata.list`      |                                    |
-| `instructlab.sdgdata.create`      |                                    |
-| `instructlab.sdgdata.delete`      |                                    |
-| `instructlab.sdgdata.stop`      |                                    |
+| `instructlab.model.read`                                 | Read details of a model training run |
+| `instructlab.model.list`                                 | List model training runs |
+| `instructlab.model.create`                                 | Create a model training run. |
+| `instructlab.model.delete`                                 | Delete a model training run. |
+| `instructlab.model.stop`                                 | Stop a model training run. |
+| `cloud-object-storage.bucket.get`                                 | List all the objects in a bucket.                                   |
+| `cloud-object-storage.object.put`                                 | Write and upload objects.                                   |
+| `cloud-object-storage.object.get`                                 | View and download objects.                                    |
+| `instructlab.taxonomy.read`                                 | Read details of a taxonomy |
+| `instructlab.taxonomy.list`      | List taxonomies |
+| `instructlab.taxonomy.create`      | Create taxonomies |
+| `instructlab.taxonomy.delete`      | Delete taxonomies. |
+| `instructlab.sdgdata.read`      | Read details of a data generation run |
+| `instructlab.sdgdata.list`      | List data generation runs. |
+| `instructlab.sdgdata.create`      | Create a data generation run. |
+| `instructlab.sdgdata.delete`      | Delete a data generation run. |
+| `instructlab.sdgdata.stop`      | Stop a data generation run. |
 {: caption="List of model alignment events" caption-side="bottom"}
 {: #modelalignment-table-1}
 {: tab-title="Model alignment events"}
@@ -96,12 +96,12 @@ The following table lists the activity tracking events that are generated when y
 
 | Action                           | Description                        |
 |----------------------------------|------------------------------------|
-| `instructlab.inference-model.read`                                |                                    |
-| `instructlab.inference-model.list`                                |                                    |
-| `instructlab.inference.create`                                |                                    |
-| `instructlab.inference.read`                                |                                    |
-| `instructlab.inference.list`                                |                                    |
-| `instructlab.inference.delete`                                |                                    |
+| `instructlab.inference-model.read`                                | Get a model by its identifier |
+| `instructlab.inference-model.list`                                | List models using the OpenAI API |
+| `instructlab.inference.create`                                | Generate an OpenAI-compatible chat completion for the given messages using the specified model |
+| `instructlab.inference.read`                                | Describe a chat completion by its ID |
+| `instructlab.inference.list`                                | List chat completions |
+| `instructlab.inference.delete`                                | Delete a stored chat completion |
 {: caption="Lists of inferencing events" caption-side="bottom"}
 {: #inferencing-table-1}
 {: tab-title="Inferencing events"}

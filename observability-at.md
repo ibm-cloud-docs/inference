@@ -66,28 +66,24 @@ The following table lists the activity tracking events that are generated when y
 
 | Action                           | Description                        |
 |----------------------------------|------------------------------------|
-| `instructlab.model.read`                                 | Read details of a model training run |
-| `instructlab.model.list`                                 | List model training runs |
-| `instructlab.model.create`                                 | Create a model training run. |
-| `instructlab.model.delete`                                 | Delete a model training run. |
-| `instructlab.model.stop`                                 | Stop a model training run. |
-| `cloud-object-storage.bucket.get`                                 | List all the objects in a bucket.                                   |
-| `cloud-object-storage.object.put`                                 | Write and upload objects.                                   |
-| `cloud-object-storage.object.get`                                 | View and download objects.                                    |
-| `instructlab.taxonomy.read`                                 | Read details of a taxonomy |
-| `instructlab.taxonomy.list`      | List taxonomies |
-| `instructlab.taxonomy.create`      | Create taxonomies |
-| `instructlab.taxonomy.delete`      | Delete taxonomies. |
-| `instructlab.sdgdata.read`      | Read details of a data generation run |
-| `instructlab.sdgdata.list`      | List data generation runs. |
-| `instructlab.sdgdata.create`      | Create a data generation run. |
-| `instructlab.sdgdata.delete`      | Delete a data generation run. |
-| `instructlab.sdgdata.stop`      | Stop a data generation run. |
+| `instructlab.model.read`                                 | An event is generated when you read details of a model training run. |
+| `instructlab.model.list`                                 | An event is generated when you list model training runs. |
+| `instructlab.model.create`                                 | An event is generated when you create a model training run. |
+| `instructlab.model.delete`                                 | An event is generated when you delete a model training run. |
+| `instructlab.model.stop`                                 | An event is generated when you stop a model training run. |
+| `cloud-object-storage.bucket.get`                                 | An event is generated when you list all the objects in a bucket.                                   |
+| `cloud-object-storage.object.put`                                 | An event is generated when you write and upload objects.                                   |
+| `cloud-object-storage.object.get`                                 | An event is generated when you view and download objects.                                    |
+| `instructlab.taxonomy.read`                                 | An event is generated when you read details of a taxonomy. |
+| `instructlab.taxonomy.list`      | An event is generated when you list taxonomies. |
+| `instructlab.taxonomy.create`      | An event is generated when you create taxonomies. |
+| `instructlab.taxonomy.delete`      | An event is generated when you delete taxonomies. |
+| `instructlab.sdgdata.read`      | An event is generated when you read details of a data generation run. |
+| `instructlab.sdgdata.list`      | An event is generated when you list data generation runs. |
+| `instructlab.sdgdata.create`      | An event is generated when you create a data generation run. |
+| `instructlab.sdgdata.delete`      | An event is generated when you delete a data generation run. |
+| `instructlab.sdgdata.stop`      | An event is generated when you stop a data generation run. |
 {: caption="List of model alignment events" caption-side="bottom"}
-{: #modelalignment-table-1}
-{: tab-title="Model alignment events"}
-{: tab-group="model alignment"}
-{: class="simple-tab-table"}
 
 ## Events for inferencing
 {: #at_actions_inferencing}
@@ -96,14 +92,14 @@ The following table lists the activity tracking events that are generated when y
 
 | Action                           | Description                        |
 |----------------------------------|------------------------------------|
-| `instructlab.inference-model.read`                                | Get a model by its identifier |
-| `instructlab.inference-model.list`                                | List models using the OpenAI API |
-| `instructlab.inference.create`                                | Generate an OpenAI-compatible chat completion for the given messages using the specified model |
-| `instructlab.inference.read`                                | Describe a chat completion by its ID |
-| `instructlab.inference.list`                                | List chat completions |
-| `instructlab.inference.delete`                                | Delete a stored chat completion |
+| `instructlab.inference-model.read`                                | An event is generated when you get a model by its identifier. |
+| `instructlab.inference-model.list`                                | An event is generated when you list models using the OpenAI API. |
+| `instructlab.inference.create`                                | An event is generated when you generate an OpenAI-compatible chat completion for the given messages using the specified model. |
+| `instructlab.inference.read`                                | An event is generated when you describe a chat completion by its ID. |
+| `instructlab.inference.list`                                | An event is generated when you list chat completions. |
+| `instructlab.inference.delete`                                | An event is generated when you delete a stored chat completion. |
+| `instructlab.inference-session.read` | An event is generated when internal APIs are used for storing session read state in the UI. |
+| `instructlab.inference-session.list` | An event is generated when internal APIs are used for storing session list state for the UI. |
+| `instructlab.inference-session.delete` | An event is generated when internal APIs are used for storing session delete state in the UI. |
+| `instructlab.inference-session.update` | An event is generated when internal APIs are used for storing session update state in the UI. |
 {: caption="Lists of inferencing events" caption-side="bottom"}
-{: #inferencing-table-1}
-{: tab-title="Inferencing events"}
-{: tab-group="inferencing"}
-{: class="simple-tab-table"}

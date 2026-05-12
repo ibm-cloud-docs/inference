@@ -54,7 +54,7 @@ The following table lists the activity tracking event actions that the {{site.da
 |------------------------------------------|---------|
 | `instructlab.instance.create`           | An event is generated when you provision a service instance. |
 | `instructlab.instance.delete`           | An event is generated when a service instance is deleted. |
-| `instructlab.instance.schedule_reclaim` | An event is generated when a service instance is pending_reclamation. |
+| `instructlab.instance.schedule_reclaim` | An event is generated when a service instance is pending reclamation. |
 {: caption="Actions that generate platform events" caption-side="bottom"}
 
 ## Events for model alignment

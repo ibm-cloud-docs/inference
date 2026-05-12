@@ -26,7 +26,7 @@ Your data is stored differently depending on how you use {{site.data.keyword.ins
 ### How model alignment data is stored and encrypted 
 {: #data-ma}
 
-{{site.data.keyword.instructlab_short}} uses an {{site.data.keyword.cos_full}} (COS) instance to store your taxonomy and training data. All objects that are stored in {{site.data.keyword.cos_short}} are encrypted by default. For added security, you can use {{site.data.keyword.keymanagementserviceshort}} or {{site.data.keyword.hscrypto}} to encrypt the data in your {{site.data.keyword.cos_short}} bucket as well. For more information, see [Encrypting your data](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) in the {{site.data.keyword.cos_short}} documentation. 
+{{site.data.keyword.instructlab_short}} uses an {{site.data.keyword.cos_full}} instance to store your taxonomy and training data. All objects that are stored in {{site.data.keyword.cos_short}} are encrypted by default. For added security, you can use {{site.data.keyword.keymanagementserviceshort}} or {{site.data.keyword.hscrypto}} to encrypt the data in your {{site.data.keyword.cos_short}} bucket as well. For more information, see [Encrypting your data](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) in the {{site.data.keyword.cos_short}} documentation. 
 
 The knowledge documents that you reference in your `qna.yaml` files are not stored by {{site.data.keyword.instructlab_short}}. 
 
@@ -38,7 +38,7 @@ You must enable {{site.data.keyword.instructlab_short}} to use {{site.data.keywo
 ### How inferencing data is stored and encrypted
 {: #data-inferencing}
 
-Chat completion responses are stored so you can retrieve them. You have full control over this data and can delete it as needed. No inferencing data is stored in a {{site.data.keyword.cost_short}} bucket. 
+Chat completion responses are stored so you can retrieve them. You have full control over this data and can delete it as needed. No inferencing data is stored in a {{site.data.keyword.cos_short}} bucket. 
 
 ## Deleting your data in {{site.data.keyword.instructlab_short}}
 {: #data-delete}

@@ -52,11 +52,9 @@ The following table lists the activity tracking event actions that the {{site.da
 
 | Action                                   | Description |
 |------------------------------------------|---------|
-| `resource-controller.instance.create`           | An event is generated when you provision a service instance. |
-| `resource-controller.instance.update`           | An event is generated when you rename a service instance or when you change the service plan. |
-| `<service-name>.instance.delete`           | An event is generated when a service instance is deleted. |
-| `<service-name>.instance.schedule_reclaim` | An event is generated when a service instance is pending_reclamation. |
-| `<service-name>.instance.restore`          | An event is generated when a service instance is restored. |
+| `instructlab.instance.create`           | An event is generated when you provision a service instance. |
+| `instructlab.instance.delete`           | An event is generated when a service instance is deleted. |
+| `instructlab.instance.schedule_reclaim` | An event is generated when a service instance is pending_reclamation. |
 {: caption="Actions that generate platform events" caption-side="bottom"}
 
 ## Events for model alignment

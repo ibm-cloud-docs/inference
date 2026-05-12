@@ -26,7 +26,7 @@ For more information about the available region and data center locations, see [
 ## High availability architecture
 {: #ha-architecture}
 
-![{{site.data.keyword.instructlab_short}} architecture](images/ha-dr.svg "{{site.data.keyword.instructlab_short}} architecture"){: caption="Architecture diagram" caption-side="bottom"}{: external download="data-isolation.svg"}
+![{{site.data.keyword.instructlab_short}} architecture](images/high-availability-architecture-light.svg "{{site.data.keyword.instructlab_short}} architecture"){: caption="Architecture diagram" caption-side="bottom"}{: external download="high-availability-architecture-light.svg"}
 
 ### High availability features
 {: #ha-features}

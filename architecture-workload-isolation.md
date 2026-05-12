@@ -31,7 +31,7 @@ After an operation completes, all data is meticulously wiped from the system. Th
 
 Review the following sample architecture for {{site.data.keyword.instructlab_full_notm}}.  
 
-![{{site.data.keyword.instructlab_short}} architecture and data isolation diagram](images/data-isolation.svg "{{site.data.keyword.instructlab_short}} architecture and data isolation diagram"){: caption="Architecture and data isolation diagram" caption-side="bottom"}{: external download="data-isolation.svg"}
+![{{site.data.keyword.instructlab_short}} architecture and data isolation diagram](images/architecture-data-isolation-light.svg "{{site.data.keyword.instructlab_short}} architecture and data isolation diagram"){: caption="Architecture and data isolation diagram" caption-side="bottom"}{: external download="architecture-data-isolation-light.svg"}
 
 
 ### Storage

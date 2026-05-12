@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-12"
 
 keywords: knowledge documents, clone, taxonomy, troubleshooting
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 
@@ -47,4 +47,3 @@ Fix issues with the knowledge QNA files.
 2. Ensure the repo exists already.
 
 3. Ensure that valid authorization was granted in the repository. 
-

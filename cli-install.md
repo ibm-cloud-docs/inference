@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-12"
 
 keywords: instructlab, ai, about, cli, ilab
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 
@@ -60,4 +60,3 @@ You can use the `ilab` CLI plug-in to manage your {{site.data.keyword.short_name
 {: #cli-login}
 
 {{_include-segments/login.md}}
-

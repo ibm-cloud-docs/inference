@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-12"
 
 keywords: knowledge documents, patterns, troubleshooting
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 
@@ -40,5 +40,3 @@ patterns:
     - <folder>/<filename>.md
 ```
 {: codeblock}
-
-

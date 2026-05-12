@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-12"
 
 keywords: instructlab, rhel ai, notifications
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 
@@ -46,4 +46,3 @@ To receive detailed information about an event notification in your email, selec
 {: #event-notifications-webhook}
 
 You can configure a webhook destination so that an incoming notification can be consumed programmatically by an app or service. For more information about setting up webhooks, check out the [{{site.data.keyword.en_short}} documentation](/docs/event-notifications?topic=event-notifications-en-destinations-webhook).
-

@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-12"
 
 keywords: instructlab, logging, logs routing
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 
@@ -58,5 +58,3 @@ message:"instructlab\:" AND initiator.name:"name@email.com"
 {: codeblock}
 
 For more information, see [About platform logs](/docs/logs-router?topic=logs-router-about-platform-logs).
-
-

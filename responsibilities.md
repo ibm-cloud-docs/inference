@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-05"
+lastupdated: "2026-05-12"
 
 keywords: responsibilities, rhel ai, instructlab
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 

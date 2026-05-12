@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-06"
+lastupdated: "2026-05-12"
 
 keywords: instructlab, ai, project
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 

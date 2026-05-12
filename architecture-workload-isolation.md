@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-12"
 
 keywords: instructlab, workload isolation, architecture, data, tenants
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 

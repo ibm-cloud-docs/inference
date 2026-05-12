@@ -63,6 +63,10 @@ toc:
             navtitle: Learning the architecture
           - topic: data-security.md
             navtitle: Securing your data
+      - topicgroup:
+          label: Observability
+          topics:
+          - topic: observability-at.md
   - navgroup:
       id: reference
       topics:

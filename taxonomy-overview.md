@@ -3,11 +3,11 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-05-05"
+lastupdated: "2026-05-12"
 
 keywords: instructlab, taxonomy, knowledge, skills, leaf node, branch, qna, files, documents
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 

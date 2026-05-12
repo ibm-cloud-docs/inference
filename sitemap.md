@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-11"
+lastupdated: "2026-05-12"
 
 
 keywords: instructlab, sitemap
-subcollection: instructlab
+subcollection: inference
 
 ---
 
@@ -14,8 +14,6 @@ subcollection: instructlab
 
 # Site map for {{site.data.keyword.short_name}}
 {: #sitemap}
-
-
 
 
 
@@ -339,6 +337,25 @@ subcollection: instructlab
     * [Restoring deleted data for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-restore)
 
 * [Removing access to {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-access-remove)
+
+
+## Observability
+{: #sitemap_observability}
+
+
+[Activity tracking events for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-at_events#at_events)
+
+* [Locations where activity tracking events are generated](/docs/inference?topic=inference-at_events#at-locations)
+
+* [Viewing activity tracking events for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-at_events#at-viewing)
+
+    * [Launching {{site.data.keyword.logs_full_notm}} from the Observability page](/docs/inference?topic=inference-at_events#log-launch-standalone)
+
+* [List of platform events](/docs/inference?topic=inference-at_events#at_actions_platform)
+
+* [Events for model alignment](/docs/inference?topic=inference-at_events#at_actions_model_alignment)
+
+* [Events for inferencing](/docs/inference?topic=inference-at_events#at_actions_inferencing)
 
 
 ## Your responsibilities

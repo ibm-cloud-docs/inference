@@ -2,11 +2,11 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-05-12"
 
 keywords: taxonomy, troubleshooting
 
-subcollection: instructlab
+subcollection: inference
 
 ---
 
@@ -31,5 +31,3 @@ The taxonomy `tar.gz` file could not be downloaded from {{site.data.keyword.cos_
 
 Verify that the taxonomy `tar.gz` exists in the specified {{site.data.keyword.cos_short}} bucket and that the {{site.data.keyword.cos_short}} authorization policy is still active.
 {: tsResolve}
-
-

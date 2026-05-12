@@ -2,11 +2,11 @@
 
 copyright: 
   years: 2024, 2026
-lastupdated: "2026-05-05"
+lastupdated: "2026-05-12"
 
 keywords: release notes
 
-subcollection: instructlab
+subcollection: inference
 
 content-type: release-note
 

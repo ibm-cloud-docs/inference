@@ -16,14 +16,14 @@ subcollection: inference
 # About {{site.data.keyword.instructlab_full_notm}}
 {: #about}
 
-{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat Enterprise Linux AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inferencing for interacting with foundation models and model alignment (InstructLab) for customizing models to your specific needs.
+{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. {{site.data.keyword.instructlab_short}} provides two core capabilities: inferencing for interacting with foundation models and model alignment for fine-tuning models to your specific needs.
 {: shortdesc}
 
 With inferencing, you can immediately start using foundation models through production-ready APIs to build AI-powered applications, test model behavior, and integrate conversational AI capabilities into your workflows. Whether you're prototyping a chatbot, building an AI assistant, or adding natural language understanding to your application, inferencing provides immediate access to foundation models without the complexity of model hosting.
 
 For deeper customization, model alignment through InstructLab allows you to enhance large language models with your organization's specific knowledge and skills. You provide a taxonomy —a directory of curated data containing the knowledge and skills that matter most to your business. This taxonomy is used to generate synthetic data, which trains the model through multiple phases of fine-tuning. This process aligns your LLM with your goals by providing not just general knowledge, but the specific skills and contexts that are most important for your unique business needs.
 
-[Learn more about InstructLab](https://www.redhat.com/en/topics/ai/what-is-instructlab#red-hat-enterprise-linux-ai){: external}.
+[Learn more about {{site.data.keyword.instructlab_short}}](https://www.redhat.com/en/topics/ai/what-is-instructlab#red-hat-enterprise-linux-ai){: external}.
 
 ## What are large language models?
 {: #llm}

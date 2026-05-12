@@ -326,7 +326,9 @@ subcollection: inference
 
 * [How your data is stored and encrypted in {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-storage)
 
-    * [Enabling Cloud {{site.data.keyword.cos_short}} for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#using-byok)
+    * [How model alignment data is stored and encrypted](/docs/inference?topic=inference-mng-data#data-ma)
+
+    * [How inferencing data is stored and encrypted](/docs/inference?topic=inference-mng-data#data-inferencing)
 
 * [Deleting your data in {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-delete)
 
@@ -394,8 +396,6 @@ subcollection: inference
 
 [Lifecycle policy](/docs/inference?topic=inference-lifecycle-policy#lifecycle-policy)
 
-* [Version numbering](/docs/inference?topic=inference-lifecycle-policy#version-numbering)
-
 * [{{site.data.keyword.instructlab_short}} recommended and supported versions](/docs/inference?topic=inference-lifecycle-policy#ilab-service-version)
 
 * [Customer communications for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-lifecycle-policy#customer-communications)
@@ -415,7 +415,7 @@ subcollection: inference
 
     * [Planning for DR](/docs/inference?topic=inference-ilab-ha-dr#features-for-disaster-recovery)
 
-* [Your responsibilities for HA and DR](/docs/inference?topic=inference-ilab-ha-dr#feature-responsibilities)
+* [Your responsibilities for HA and DR for model alignment](/docs/inference?topic=inference-ilab-ha-dr#feature-responsibilities)
 
 * [Recovery time objective (RTO) and recovery point objective (RPO)](/docs/inference?topic=inference-ilab-ha-dr#rto-rpo-features)
 
@@ -526,8 +526,8 @@ subcollection: inference
 [Getting help and support](/docs/inference?topic=inference-get-help#get-help)
 
 
-## Troubleshooting
-{: #sitemap_troubleshooting}
+## Troubleshooting model alignment
+{: #sitemap_troubleshooting_model_alignment}
 
 
 [Debugging](/docs/inference?topic=inference-ts-debug#ts-debug)

@@ -20,20 +20,6 @@ Review this page for general information about {{site.data.keyword.instructlab_s
 
 {{site.data.keyword.cloud_notm}} makes it easy for you to access and take advantage of the latest capabilities within our services across the platform. By doing this, we recognize that it might take time to migrate or upgrade workloads to the latest releases, so we provide lifecycle guidelines to help you. {{site.data.keyword.cloud_notm}} is committed to communicating the lifecycle and versioning guidelines for support throughout the life of the {{site.data.keyword.cloud_notm}} service, so you have plenty of time to plan for the future. For detailed information, review the [IBM changes to cloud services document](https://www.ibm.com/support/customer/csol/terms/?id=i126-6605&lc=en){: external}.
 
-## Version numbering
-{: #version-numbering}
-
-The following types of versioning apply to {{site.data.keyword.instructlab_short}}.
-
-Service version
-:   Each update is documented in a change log and follows the RHEL AI distribution version. It is named in the format of `x.y.z-patch`, where `x.y.z` is the RHEL AI version and the `patch` is the build patch version from IBM Cloud. For example, `1.4.1-1`.
-
-CLI version
-:   Each release uses semantic version where the version is named in the format of `x.y.z`, where `x` is the major version number, `y` is the minor version number, and `z` is the patch number. For example, `0.0.16`. If the major version number increments, it indicates that the new version contains significant changes comparing to the previous version. You can find the CLI version, by running the `ibmcloud ilab` command.
-
-API version
-:   Each release uses semantic version where the version is named in the format of `x.y.z`, where `x` is the major version number, `y` is the minor version number, and `z` is the patch number. For example, `1.0`. This version can be found in the [API document](https://us-east.instructlab.ibm.com/swagger-instructlab-api/swagger.yaml){: external}.
-
 ## {{site.data.keyword.instructlab_short}} recommended and supported versions
 {: #ilab-service-version}
 
@@ -43,7 +29,8 @@ Provide the recommended version, supported version, and version policy for your 
 
 | Service | Version | GA date | EOS procedure |
 |----|----|----|----|
-| {{site.data.keyword.instructlab_short}} | 1.4 | 10 March 2025 | Automatically upgraded in place to next Major version|
+| {{site.data.keyword.instructlab_short}} model alignment | 1.5 | 25 September  2025 | Automatically upgraded in place to next Major version|
+| {{site.data.keyword.instructlab_short}} inferencing | The operator version for model hosting is 3.3 | 22 May 2026 | Automatically upgraded in place to next Major version|
 {: caption="Recommended and supported version types for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 
 ## Customer communications for {{site.data.keyword.instructlab_short}}

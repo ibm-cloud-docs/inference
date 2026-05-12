@@ -13,7 +13,7 @@ subcollection: inference
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Default service settings for {{site.data.keyword.short_name}}
+# Default service settings for model alignment with {{site.data.keyword.short_name}}
 {: #service-settings}
 
 {{site.data.keyword.instructlab_full_notm}} includes predefined settings to optimize model training, data generation, and more. By configuring these settings, {{site.data.keyword.instructlab_full_notm}} allows you to focus on improving your model. Review the default settings for {{site.data.keyword.short_name}}. These settings can't be modified.

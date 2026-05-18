@@ -12,7 +12,7 @@ content-type: cli-docs
 
 {{site.data.keyword.attribute-definition-list}}
 
-# InstructLab CLI
+# {{site.data.keyword.instructlab_short}} CLI
 {: #ilab-cli}
 
 ## Globals
@@ -22,7 +22,7 @@ content-type: cli-docs
 {: #ilab-global-options}
 
 `--project-id` (string)
-:   The InstructLab project ID.
+:   The {{site.data.keyword.instructlab_short}} project ID.
 
 `--output` (string)
 :   Choose an output format - can be 'json', 'yaml', or 'table'. Defaults to 'table'.
@@ -163,7 +163,7 @@ ibmcloud ilab taxonomy add --name NAME [--taxonomy-path TAXONOMY-PATH] [--taxono
     Provide a JSON string option or specify a JSON file to read from by providing a filepath option that begins with a `@`, e.g. `--secrets-manager-config=@path/to/file.json`.
 
 `--cos-id` (string)
-:   Your Cloud Object Storage instance ID. This option is only required when you want InstructLab to automatically create a bucket in your Object Storage instance. This option provides a value for a sub-field of the JSON option 'cos-bucket-information'. It is mutually exclusive with that option.
+:   Your Cloud Object Storage instance ID. This option is only required when you want {{site.data.keyword.instructlab_short}} to automatically create a bucket in your Object Storage instance. This option provides a value for a sub-field of the JSON option 'cos-bucket-information'. It is mutually exclusive with that option.
 
     The maximum length is `100` characters. The minimum length is `20` characters. The value must match regular expression `/^[a-z0-9-]+$/`.
 

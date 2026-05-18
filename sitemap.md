@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-18"
 
 
 keywords: instructlab, sitemap
@@ -126,7 +126,7 @@ subcollection: inference
 {: #sitemap_preparing_your_account}
 
 
-[Creating an InstructLab project](/docs/inference?topic=inference-project#project)
+[Creating an Inference project](/docs/inference?topic=inference-project#project)
 
 * [Creating projects in the console for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-project&interface=ui#project-create-ui)
 

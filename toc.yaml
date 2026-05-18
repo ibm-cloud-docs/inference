@@ -27,7 +27,7 @@ toc:
           label: Preparing your account
           topics:
           - topic: project.md
-            navtitle: Creating an InstructLab project
+            navtitle: Creating an Inference project
           - topic: iam.md
             navtitle: Assigning access
           - topic: logging.md

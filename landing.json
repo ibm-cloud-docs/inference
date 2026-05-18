@@ -11,20 +11,12 @@
         "href": "/docs/inference?topic=inference-getting-started"
       },
       {
-        "title": "Installing the CLI",
-        "href": "/docs/inference?topic=inference-cli-install"
-      },
-      {
-        "title": "Generating data",
-        "href": "/docs/inference?topic=inference-data-generate"
+        "title": "Inferencing",
+        "href": "/docs/inference?topic=inference-inference"
       },
       {
         "title": "Training models",
         "href": "/docs/inference?topic=inference-model-train"
-      },
-      {
-        "title": "Service settings",
-        "href": "/docs/inference?topic=inference-service-settings"
       },
       {
         "title": "Lifecycle policy",
@@ -39,7 +31,7 @@
   "section_highlights": [
     {
       "title": "What is AI?",
-      "description": "If you're new to AI solutions, learn the basics concepts.",
+      "description": "If you're new to AI solutions, learn the basic concepts.",
       "href": "https://www.ibm.com/think/topics/artificial-intelligence",
       "type": "training"
     },
@@ -52,7 +44,7 @@
   ],
   "section_devtools": {
     "cli": "/docs/inference?topic=inference-ilab-cli",
-    "api": "/apidocs/instructlab"
+    "api": "/apidocs/inference"
   },
   "section_updates": {
     "view_more": "/docs/inference?topic=inference-release-notes"

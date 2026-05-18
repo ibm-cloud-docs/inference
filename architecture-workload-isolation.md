@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-18"
 
 keywords: instructlab, workload isolation, architecture, data, tenants
 
@@ -39,7 +39,7 @@ Review the following sample architecture for {{site.data.keyword.instructlab_ful
 
 Your {{site.data.keyword.instructlab_short}} artifacts, logs, and results of fine-tuning a model are stored in your own {{site.data.keyword.cos_short}} bucket. For information on {{site.data.keyword.cos_short}}, see [What is {{site.data.keyword.cos_short}}?](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage). 
 
-Inferencing uses Open AI compatible APIs to show data. Model responses are stored, accessible, and deletable with IAM controls against the project. 
+Inferencing uses OpenAI compatible APIs to show data. Model responses are stored, accessible, and deletable with IAM controls against the project. 
 
 
 ### Backend components

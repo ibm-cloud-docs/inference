@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-18"
 
 keywords: instructlab, ai, project
 
@@ -30,7 +30,7 @@ Complete the following steps to create an {{site.data.keyword.short_name}} proje
 1. In the **Configure resource** section, enter the following details.
 
     Service name
-    :   Give your InstructLab project a name.
+    :   Give your {{site.data.keyword.instructlab_short}} project a name.
 
     Select a resource group
     :   Select the resource group where you want to create your project.

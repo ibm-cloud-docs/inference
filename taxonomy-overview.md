@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-18"
 
 keywords: instructlab, taxonomy, knowledge, skills, leaf node, branch, qna, files, documents
 
@@ -17,7 +17,7 @@ subcollection: inference
 # How taxonomies are structured for {{site.data.keyword.short_name}}
 {: #taxonomy-overview}
 
-A taxonomy is a file directory that consists of the data you feed to the model. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [About the InstructLab Taxonomy](https://docs.instructlab.ai/taxonomy/){: external} in the InstructLab docs. You can also view the [InstructLab taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy/tree/main/knowledge){: external}.
+A taxonomy is a file directory that consists of the data you feed to the model. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [About the {{site.data.keyword.instructlab_short}} Taxonomy](https://docs.instructlab.ai/taxonomy/){: external} in the {{site.data.keyword.instructlab_short}} docs. You can also view the [{{site.data.keyword.instructlab_short}} taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy/tree/main/knowledge){: external}.
 
 For steps on creating or adding to a taxonomy, see [Preparing taxonomies](/docs/inference?topic=inference-taxonomy-prep).
 
@@ -35,7 +35,7 @@ Foundational skills
 Compositional skills
 :   Skills that combine knowledge and foundational skills to complete more complex tasks, such as stock market analysis.
 
-For more information on the categories, see [What is a "skill"?](https://docs.instructlab.ai/taxonomy/skills/){: external} and [What is "knowledge"?](https://docs.instructlab.ai/taxonomy/knowledge/){: external} in the InstructLab docs. 
+For more information on the categories, see [What is a "skill"?](https://docs.instructlab.ai/taxonomy/skills/){: external} and [What is "knowledge"?](https://docs.instructlab.ai/taxonomy/knowledge/){: external} in the {{site.data.keyword.instructlab_short}} docs. 
 
 <!--</qna:tax-ov>-->
 
@@ -48,7 +48,7 @@ There are two types of data files required for each "leaf node".
 :   Includes questions and answers relevant to the information found in the knowledge document. Questions and answers are organized as key/value pairs. 
 
 `attribution.txt`
-:   Includes sources for the information added to the `qna.yaml` file. This is optional, but is required for contributions to the open-source InstructLab taxonomy repository.
+:   Includes sources for the information added to the `qna.yaml` file. This is optional, but is required for contributions to the open-source {{site.data.keyword.instructlab_short}} taxonomy repository.
 
 <!--<qna:knowledge>-->
 
@@ -69,5 +69,5 @@ The skills `qna.yaml` contains questions and answers that teach a simple task. T
 
 The skills you add can be grounded, meaning they require additional inputs to add context, or ungrounded, meaning they do not require any additional context. For grounded skills, you add context in the `qna.yaml` file with the `context` field. When you add a grounded skill to a taxonomy, it must be on a branch that begins with the word `grounded`, such as `grounded/games/sudoku`.
 
-For the full `qna.yaml` requirements and examples of skills contributions, see [The skills files](https://docs.instructlab.ai/taxonomy/skills/file_structure/#the-skills-files){: external} in the InstructLab documentation. Note that you do not need to add a separate document when adding skills. 
+For the full `qna.yaml` requirements and examples of skills contributions, see [The skills files](https://docs.instructlab.ai/taxonomy/skills/file_structure/#the-skills-files){: external} in the {{site.data.keyword.instructlab_short}} documentation. Note that you do not need to add a separate document when adding skills. 
 <!--</qna:knowledge>-->

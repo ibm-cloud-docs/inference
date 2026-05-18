@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-18"
 
 keywords: instructlab, ai, about, how it works, billing
 
@@ -21,7 +21,7 @@ subcollection: inference
 
 With inferencing, you can immediately start using foundation models through production-ready APIs to build AI-powered applications, test model behavior, and integrate conversational AI capabilities into your workflows. Whether you're prototyping a chatbot, building an AI assistant, or adding natural language understanding to your application, inferencing provides immediate access to foundation models without the complexity of model hosting.
 
-For deeper customization, model alignment through InstructLab allows you to enhance large language models with your organization's specific knowledge and skills. You provide a taxonomy —a directory of curated data containing the knowledge and skills that matter most to your business. This taxonomy is used to generate synthetic data, which trains the model through multiple phases of fine-tuning. This process aligns your LLM with your goals by providing not just general knowledge, but the specific skills and contexts that are most important for your unique business needs.
+For deeper customization, model alignment through allows you to enhance large language models with your organization's specific knowledge and skills. You provide a taxonomy —a directory of curated data containing the knowledge and skills that matter most to your business. This taxonomy is used to generate synthetic data, which trains the model through multiple phases of fine-tuning. This process aligns your LLM with your goals by providing not just general knowledge, but the specific skills and contexts that are most important for your unique business needs.
 
 [Learn more about {{site.data.keyword.instructlab_short}}](https://www.redhat.com/en/topics/ai/what-is-instructlab#red-hat-enterprise-linux-ai){: external}.
 
@@ -79,7 +79,7 @@ You can test and refine your interactions in the console playground before integ
 ## What is model alignment?
 {: #model-alignment}
 
-Model alignment through InstructLab allows you to customize foundation models with your organization's specific knowledge and skills. Rather than using a general-purpose model, you can fine-tune models to understand your business context, terminology, and requirements.
+Model alignment through allows you to customize foundation models with your organization's specific knowledge and skills. Rather than using a general-purpose model, you can fine-tune models to understand your business context, terminology, and requirements.
 
 The model alignment process involves:
 
@@ -97,7 +97,7 @@ This approach minimizes the risk of catastrophic forgetting—where models lose 
 ### How model alignment works
 {: #how-model-alignment-works}
 
-Model alignment through InstructLab follows a structured process to customize foundation models:
+Model alignment follows a structured process to customize foundation models:
 
 Step 1. Provide a taxonomy
 :   A taxonomy is a directory of diverse, human-curated data that is used to train an LLM. The data contains examples of new knowledge and skills for the model to learn from. You can use and contribute to an existing taxonomy, or you can create your own. For more information, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-taxonomy-overview).
@@ -132,7 +132,7 @@ Industry-standard APIs
 ## Resources for learning more
 {: #resources}
 
-See what others have to say about InstructLab. 
+See what others have to say about model training with {{site.data.keyword.instructlab_short}}. 
 
 - [What is InstructLab?](https://www.redhat.com/en/topics/ai/what-is-instructlab){: external}
 - [InstructLab](https://www.ibm.com/think/topics/instructlab?mhsrc=ibmsearch_a&mhq=instructlab){: external}.

@@ -30,7 +30,7 @@
 
 | Actions and events | Description | Roles |
 | --- | --- | --- |
-| `instructlab.dashboard.view` | View InstructLab dashboards. | Operator, Administrator, Editor |
+| `instructlab.dashboard.view` | View {{site.data.keyword.instructlab_short}} dashboards. | Operator, Administrator, Editor |
 | `instructlab.taxonomy.read` | Read details of a taxonomy. | Reader, Writer, Manager |
 | `instructlab.taxonomy.create` | Create taxonomies | Writer, Manager |
 | `instructlab.taxonomy.list` | List taxonomies. | Reader, Writer, Manager |

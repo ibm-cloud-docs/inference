@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-18"
 
 keywords: iam, access, add users, instructlab
 
@@ -111,9 +111,9 @@ Give {{site.data.keyword.short_name}} the `Writer` access role for the {{site.da
 ## Assign user access to your resources
 {: #assign-access}
 
-You can control which users (or groups of users) in your account access your InstructLab resources. Follow these steps to assign access in the console.
+You can control which users (or groups of users) in your account access your {{site.data.keyword.instructlab_short}} resources. Follow these steps to assign access in the console.
 
-For more details on how you can assign access, such steps to use the CLI or different ways you can scope access to InstructLab or your {{site.data.keyword.cos_short}} bucket, see [Managing IAM access for Red Hat AI InstructLab on IBM Cloud](/docs/inference?topic=inference-iam&interface=ui#iam-include-access-resources-console){: external}.
+For more details on how you can assign access, such steps to use the CLI or different ways you can scope access to {{site.data.keyword.instructlab_short}} or your {{site.data.keyword.cos_short}} bucket, see [Managing IAM access for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-iam&interface=ui#iam-include-access-resources-console){: external}.
 {: note}
 
 There are two common ways to assign access:

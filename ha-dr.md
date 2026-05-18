@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-18"
 
 keywords: HA for {{site.data.keyword.short_name}}, DR for {{site.data.keyword.short_name}}, {{site.data.keyword.short_name}} recovery time objective, {{site.data.keyword.short_name}} recovery point objective
 
@@ -104,7 +104,7 @@ For more information about responsibility ownership between you and {{site.data.
 
 | Feature | RTO and RPO |
 | -------------- | -------------- |
-| Object storage replication with backup InstructLab instance | RTO = minutes, RPO = near 0 |
+| Object storage replication with backup instance | RTO = minutes, RPO = near 0 |
 {: caption="RTO/RPO features for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 
 ## Change management

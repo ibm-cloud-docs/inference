@@ -559,11 +559,23 @@ subcollection: inference
 
 [FAQ](/docs/inference?topic=inference-faq#faq)
 
-* [What is {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq#faq-ilab-1)
+* [What is {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq#faq-rhai-1)
 
-* [Why should I use {{site.data.keyword.short_name}} for my generative AI solution?](/docs/inference?topic=inference-faq#faq-ilab-2)
+* [Why should I use {{site.data.keyword.short_name}} for my generative AI solution?](/docs/inference?topic=inference-faq#faq-rhai-2)
 
 * [What are the benefits of {{site.data.keyword.short_name}} on IBM Cloud?](/docs/inference?topic=inference-faq#faq-benefits)
+
+* [What is inferencing?](/docs/inference?topic=inference-faq#inferencing-faq)
+
+* [How do I get started with inferencing?](/docs/inference?topic=inference-faq#inferencing-start-faq)
+
+* [What models are available for inferencing?](/docs/inference?topic=inference-faq#inferencing-models-faq)
+
+* [Can I customize model behavior during inferencing?](/docs/inference?topic=inference-faq#inferencing-customize-faq)
+
+* [What is model training?](/docs/inference?topic=inference-faq#faq-model-train)
+
+* [When should I use inferencing versus model alignment?](/docs/inference?topic=inference-faq#inferencing-vs-alignment-faq)
 
 * [What are Granite models?](/docs/inference?topic=inference-faq#granite)
 
@@ -581,11 +593,7 @@ subcollection: inference
 
 * [Are failed operations billed?](/docs/inference?topic=inference-faq#costs-operations)
 
-* [What is data generation?](/docs/inference?topic=inference-faq#faq-data-gen)
-
-* [What is model training?](/docs/inference?topic=inference-faq#faq-model-train)
-
-* [How long does it take to run?](/docs/inference?topic=inference-faq#faq-time)
+* [What is synthetic data generation?](/docs/inference?topic=inference-faq#faq-data-gen)
 
 * [How long does data generation take?](/docs/inference?topic=inference-faq#faq-time-data)
 

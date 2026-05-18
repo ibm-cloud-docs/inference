@@ -5,7 +5,7 @@ copyright:
 
 lastupdated: "2026-05-18"
 
-keywords: instructlab, rhel ai, faq
+keywords: red hat ai, inference, model alignment, faq
 
 subcollection: inference
 
@@ -27,24 +27,27 @@ Review the following FAQ for {{site.data.keyword.short_name}}. To find all FAQ f
 
 
 ## What is {{site.data.keyword.short_name}}?
-{: #faq-ilab-1}
+{: #faq-rhai-1}
 {: faq}
 
-{{site.data.keyword.short_name}} is a private, secure generative AI solution powered by Red Hat Enterprise Linux AI, available on IBM Cloud. It allows users to retain ownership of their data and models, leverage unique business data for innovation, and minimize the risk of catastrophic forgetting.
+{{site.data.keyword.short_name}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI, available on IBM Cloud. It provides two core capabilities: inferencing for interacting with foundation models and model alignment for fine-tuning models to your specific needs. Users retain ownership of their data and models, can leverage unique business data for innovation, and minimize the risk of catastrophic forgetting.
 
 
 
 ## Why should I use {{site.data.keyword.short_name}} for my generative AI solution?
-{: #faq-ilab-2}
+{: #faq-rhai-2}
 {: faq}
 
-{{site.data.keyword.short_name}} offers several benefits for your generative AI solution. First, it allows you to retain ownership of both the data and the model, giving you control over how your data is used and how your model performs. Second, it enables you to leverage unique business data to unlock efficiencies and drive innovation by creating AI-powered solutions. Third, it minimizes the risk of catastrophic forgetting by using built-in Granite models as a foundation for learning new skills and knowledge. Fourth, it is available as a service on IBM Cloud, allowing you to reduce unnecessary costs by paying just for what you need and optimize IT expenditures by delivering simpler, faster, and more economical models.
+{{site.data.keyword.short_name}} offers several benefits for your generative AI solution. First, it provides immediate AI integration through inferencing, allowing you to start building AI-powered features without managing infrastructure. Second, it allows you to retain ownership of both the data and the model, giving you control over how your data is used and how your model performs. Third, it enables you to leverage unique business data to unlock efficiencies and drive innovation by creating AI-powered solutions through model alignment. Fourth, it minimizes the risk of catastrophic forgetting by using built-in Granite models as a foundation for learning new skills and knowledge. Fifth, it is available as a service on IBM Cloud, allowing you to reduce unnecessary costs by paying just for what you need and optimize IT expenditures by delivering simpler, faster, and more economical AI solutions.
 
 ## What are the benefits of {{site.data.keyword.short_name}} on IBM Cloud?
 {: #faq-benefits}
 {: faq}
 
 {{site.data.keyword.short_name}} on IBM Cloud offers several benefits, including:
+
+Immediate AI integration with inferencing
+:   Start building AI-powered features immediately without managing infrastructure. Use production-ready APIs to integrate conversational AI, test model behavior, and scale your applications.
 
 Data ownership
 :   Users retain ownership of both the data and the model, allowing them to control their data and model.
@@ -68,7 +71,45 @@ Flexibility
 :   {{site.data.keyword.short_name}} offers access to a wide variety of hardware profiles, VMware compute accelerators, and the capability for new capacity expansion within the hour.
 
 Advanced Cloud Services
-:   IBM Cloud provides access to the latest GPUs and IBM watsonx services gen AI, inferencing, and machine learning to fast-track innovation into business processes.
+:   IBM Cloud provides access to the latest GPUs and IBM watsonx services for AI, inferencing, and machine learning to fast-track innovation into business processes.
+
+## What is inferencing?
+{: #inferencing-faq}
+{: faq}
+
+Inferencing is the process of using a trained AI model to generate responses, make predictions, or process inputs. With {{site.data.keyword.short_name}}, inferencing provides immediate access to foundation models through industry-standard OpenAI and OGX compatible APIs. This eliminates the complexity of deploying and scaling AI models, allowing you to focus on creating value for your users. You can use inferencing to build chatbots, add natural language understanding to applications, generate content, or integrate conversational AI capabilities into your workflows.
+
+## How do I get started with inferencing?
+{: #inferencing-start-faq}
+{: faq}
+
+Getting started with inferencing is straightforward. First, create a {{site.data.keyword.short_name}} project and obtain your project ID. Then, authenticate using either a bearer token or an IBM Cloud API key. Finally, use the OpenAI or OGX compatible APIs to send messages to foundation models and receive AI-generated responses. You can test and refine your interactions in the console playground before integrating them into production applications. For detailed instructions, see [Getting started with {{site.data.keyword.short_name}}](/docs/inference?topic=inference-getting-started).
+
+## What models are available for inferencing?
+{: #inferencing-models-faq}
+{: faq}
+
+{{site.data.keyword.short_name}} provides access to multiple foundation models, including Granite models. Different models have different strengths, capabilities, and performance characteristics. You can list all available models using the API and choose the one that best fits your use case based on factors like response quality, speed, and cost considerations. You can also experiment with different models in the console playground to find the right fit for your application.
+
+## Can I customize model behavior during inferencing?
+{: #inferencing-customize-faq}
+{: faq}
+
+Yes, you can customize model behavior during inferencing by using system prompts (developer messages) to instruct the model on how to behave, adjusting parameters like temperature to control randomness, setting maximum token limits for responses, and managing conversation history by including previous messages in your requests. This flexibility allows you to tailor the model's responses to your specific use case without needing to train a custom model.
+
+## What is model training?
+{: #faq-model-train}
+{: faq}
+
+
+
+Model training, also called model alignment, is the process of fine-tuning a foundation model with your specific knowledge and skills. The synthetic data generated from your taxonomy is used to train the model in two phases: knowledge tuning, which focuses on improving the model's foundational knowledge, and skills tuning, which trains the model on more specific capabilities required for its intended purpose.
+
+## When should I use inferencing versus model alignment?
+{: #inferencing-vs-alignment-faq}
+{: faq}
+
+Use inferencing when you need immediate access to AI capabilities and the general-purpose foundation models meet your needs. Inferencing is ideal for building chatbots, adding conversational AI to applications, testing model behavior, or integrating natural language processing without customization. Use model alignment when you need models that understand your specific business context, terminology, or requirements that go beyond what general-purpose models can provide. Model alignment is best for creating domain-specific AI solutions that require deep knowledge of your organization's unique data and processes.
 
 ## What are Granite models?
 {: #granite}
@@ -86,7 +127,7 @@ Fit for purpose and open source, these enterprise-ready, multimodal models deliv
 {: #taxonomy-faq}
 {: faq}
 
-A taxonomy is a file directory that consists of the data you feed to the model. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-taxonomy-overview&interface=ui){: external}. You can also view the [taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy){: external}.
+A taxonomy is a structured directory of human-curated data containing the knowledge and skills you want a model to learn. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. Taxonomies are used in the model alignment process to generate synthetic data for training. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-taxonomy-overview&interface=ui){: external}. You can also view the [taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy){: external}.
 
 
 ## How does taxonomy validation work?
@@ -127,7 +168,7 @@ Model alignment training
 {: #costs-tracking}
 {: faq}
 
-1. Before you begin running anything in {{site.data.keyword.instructlab_short}}, you can use the [cost estimator](https://cloud.ibm.com/estimator) to get an estimate of what the cost might be.
+1. Before you begin running anything in {{site.data.keyword.short_name}}, you can use the [cost estimator](https://cloud.ibm.com/estimator) to get an estimate of what the cost might be.
 
 1. [Upload your taxonomy](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui)
 
@@ -147,31 +188,15 @@ Model alignment training
 Failed operations are not billed. Successful operations and user canceled operations are billed, though user canceled operations are prorated based on the processing that completed.
 
 
-## What is data generation?
+## What is synthetic data generation?
 {: #faq-data-gen}
 {: faq}
 
-Data generation is the process of generating questions and answers based on the questions and answers that you included in the QNA files.
-
-
-## What is model training?
-{: #faq-model-train}
-{: faq}
-
-Training is the process of learning the questions and answers. The training begins with knowledge and foundational skills, then moves on to compositional skills.
+Synthetic data generation is the process of creating training data from your taxonomy. The information in the taxonomy is used to generate synthetic data that augments the human-provided knowledge and is used to fine-tune the model during the model alignment process. This synthetic data helps train the model more effectively while minimizing the risk of catastrophic forgetting.
 
 
 
 <!--<qna:time>-->
-## How long does it take to run?
-{: #faq-time}
-{: faq}
-
-Data generation and model training both take significant time to complete. You can find general estimates in the console when you start the processes.
-
-Factors that impact completion time:
-- The contents of the knowledge documents
-- The number of other jobs in the queue
 
 ## How long does data generation take?
 {: #faq-time-data}
@@ -184,6 +209,11 @@ Tokens / 5000 / 60 / 60 = Number of hours
 ```
 {: codeblock}
 
+You can find general estimates in the console when you start the processes.
+
+Factors that impact completion time:
+- The contents of the knowledge documents
+- The number of other jobs in the queue
 
 ## How long does model training take?
 {: #faq-model}
@@ -195,6 +225,12 @@ For model training, the general formula is to take the number of output tokens, 
 Tokens / 4000 / 60 / 60 = Number of hours
 ```
 {: codeblock}
+
+You can find general estimates in the console when you start the processes.
+
+Factors that impact completion time:
+- The contents of the knowledge documents
+- The number of other jobs in the queue
 
 <!--</qna:time>-->
 

@@ -86,19 +86,19 @@ Flexibility and advanced cloud services
 
 Inferencing is the process of using an LLM to generate responses, make predictions, or process inputs. With {{site.data.keyword.short_name}}, inferencing provides immediate access to foundation models through industry-standard OpenAI and OGX compatible APIs. This eliminates the complexity of deploying and scaling AI models, allowing you to focus on creating value for your users. You can use inferencing to build chatbots, add natural language understanding to applications, generate content, or integrate conversational AI capabilities into your workflows.
 
-## How do I get started with inferencing?
+### How do I get started with inferencing?
 {: #inferencing-start-faq}
 {: faq}
 
 Getting started with inferencing is straightforward. First, create a {{site.data.keyword.short_name}} project and obtain your project ID. Then, authenticate using either a bearer token or an IBM Cloud API key. Finally, use the OpenAI or OGX compatible APIs to send messages to foundation models and receive AI-generated responses. You can test and refine your interactions in the console playground before integrating them into production applications. For detailed instructions, see [Getting started with {{site.data.keyword.short_name}}](/docs/inference?topic=inference-getting-started).
 
-## What models are available for inferencing?
+### What models are available for inferencing?
 {: #inferencing-models-faq}
 {: faq}
 
 {{site.data.keyword.short_name}} provides access to multiple foundation models, including Granite models. Different models have different strengths, capabilities, and performance characteristics. You can list all available models using the API and choose the one that best fits your use case based on factors like response quality, speed, and cost considerations. You can also experiment with different models in the console playground to find the right fit for your application.
 
-## Can I customize model behavior during inferencing?
+### Can I customize model behavior during inferencing?
 {: #inferencing-customize-faq}
 {: faq}
 
@@ -112,26 +112,20 @@ Yes, you can customize model behavior during inferencing by using system prompts
 
 Model training, also called model alignment, is the process of fine-tuning a foundation model with your specific knowledge and skills. The synthetic data generated from your taxonomy is used to train the model in two phases: knowledge tuning, which focuses on improving the model's foundational knowledge, and skills tuning, which trains the model on more specific capabilities required for its intended purpose.
 
-## When should I use inferencing versus model alignment?
-{: #inferencing-vs-alignment-faq}
-{: faq}
-
-Use inferencing when you need immediate access to AI capabilities and the general-purpose foundation models meet your needs. Inferencing is ideal for building chatbots, adding conversational AI to applications, testing model behavior, or integrating natural language processing without customization. Use model alignment when you need models that understand your specific business context, terminology, or requirements that go beyond what general-purpose models can provide. Model alignment is best for creating domain-specific AI solutions that require deep knowledge of your organization's unique data and processes.
-
-## What are Granite models?
-{: #granite}
-{: faq}
-
-Fit for purpose and open source, these enterprise-ready, multimodal models deliver exceptional performance against safety benchmarks and across a wide range of enterprise tasks from cybersecurity to RAG.
-
-## What is a taxonomy?
+### What is a taxonomy?
 {: #taxonomy-faq}
 {: faq}
 
 A taxonomy is a structured directory of human-curated data containing the knowledge and skills you want a model to learn. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. Taxonomies are used in the model alignment process to generate synthetic data for training. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-taxonomy-overview&interface=ui){: external}. You can also view the [taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy){: external}.
 
+### What is synthetic data generation?
+{: #faq-data-gen}
+{: faq}
 
-## How does taxonomy validation work?
+Synthetic data generation is the process of creating training data from your taxonomy. The information in the taxonomy is used to generate synthetic data that augments the human-provided knowledge and is used to fine-tune the model during the model alignment process. This synthetic data helps train the model more effectively while minimizing the risk of catastrophic forgetting.
+
+
+### How does taxonomy validation work?
 {: #faq-tax-validation}
 {: faq}
 
@@ -140,69 +134,9 @@ When you upload a taxonomy to {{site.data.keyword.short_name}}, the checks are p
 - Attempting to clone the knowledge and skills documents that are referenced in your `qna.yaml` files.
 - Checking that you have the correct service authorizations in place, such as for {{site.data.keyword.cos_short}} and {{site.data.keyword.secrets-manager_short}}.
 
-
-## How does billing work?
-{: #costs-faq}
-{: faq}
-
-You incur costs for using {{site.data.keyword.product_name}}. If you use model alignment, you also incur costs for [{{site.data.keyword.cos_full}}](https://cloud.ibm.com/objectstorage/create#pricing){: external}, which is used as a storage location.
-
-If you deploy your model on another service, you incur additional charges from that service.
-
-
-## How is cost calculated in {{site.data.keyword.product_name}}?
-{: #costs-ilab}
-{: faq}
-
-The cost from {{site.data.keyword.product_name}} usage is based on metrics that are measured in tokens. Each token corresponds to a specific amount of computational power that is required for the processing tasks. The total number of tokens consumed directly influences the scale of data generation, model fine-tuning, or inferencing. This metric serves as a basis for our billing system, enabling users to monitor and control their costs according to the computational resources used.
-
-Synthetic data generation (SDG)
-:   Output tokens (`SYN-DATA-TOKEN`) are calculated by the volume of generated data produced by the service from the entire input taxonomy. The text is tokenized by using [Hugging Face's tokenizer library](https://huggingface.co/docs/transformers/en/main_classes/tokenizer){: external} with the tokenization information for the [Mistral teacher model](https://huggingface.co/docs/transformers/main/en/model_doc/mistral#mistral){: external}.
-
-Model alignment training
-:   Input tokens (`MODEL-TRAIN-TOKEN`) are calculated based on the amount of data fed that into the system for model alignment training, as well as the Granite base knowledge that is used to increase accuracy without knowledge loss. Because of the foundational knowledge that is used, there is a minimum cost.
-
-Model inferencing
-:   Inferencing costs are calculated separately for input and output tokens on a per-model basis. Input tokens represent your prompt or query sent to the model, while output tokens represent the model's generated response. Pricing varies by model. For example, the `GPT-OSS-120B` model charges $0.10 per 1 million input tokens and $0.50 per 1 million output tokens. Each model has its own pricing structure based on its size and computational requirements.
-
-
-
-
-## How do I find and track cost information as I train a model?
-{: #costs-tracking}
-{: faq}
-
-1. Before you begin running anything in {{site.data.keyword.short_name}}, you can use the [cost estimator](https://cloud.ibm.com/estimator) to get an estimate of what the cost might be.
-
-1. [Upload your taxonomy](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui)
-
-1. When you set the details for [data generation](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-data-generate), review the estimated cost before starting the job.
-
-1. After the data is generated, you can also view the estimated **Output tokens** in the details for that data generation. 
-
-1. When you set the details for the [training](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-model-train) job, review the estimated cost before starting the job.
-
-1. When the jobs are complete, you can review the actual costs in [Billing and usage](https://cloud.ibm.com/billing). You can view the costs for both {{site.data.keyword.product_name}} and the [{{site.data.keyword.cos_full}}](https://cloud.ibm.com/objectstorage/create#pricing) service, which is used as a storage location.
-
-
-## Are failed operations billed?
-{: #costs-operations}
-{: faq}
-
-Failed operations are not billed. Successful operations and user canceled operations are billed, though user canceled operations are prorated based on the processing that completed.
-
-
-## What is synthetic data generation?
-{: #faq-data-gen}
-{: faq}
-
-Synthetic data generation is the process of creating training data from your taxonomy. The information in the taxonomy is used to generate synthetic data that augments the human-provided knowledge and is used to fine-tune the model during the model alignment process. This synthetic data helps train the model more effectively while minimizing the risk of catastrophic forgetting.
-
-
-
 <!--<qna:time>-->
 
-## How long does data generation take?
+### How long does data generation take?
 {: #faq-time-data}
 {: faq}
 
@@ -219,7 +153,7 @@ Factors that impact completion time:
 - The contents of the knowledge documents
 - The number of other jobs in the queue
 
-## How long does model training take?
+### How long does model training take?
 {: #faq-model}
 {: faq}
 
@@ -238,7 +172,7 @@ Factors that impact completion time:
 
 <!--</qna:time>-->
 
-## Can I import my own training data?
+### Can I import my own training data?
 {: #faq-byo-sdg}
 
 Yes, you can import your own training data. Importing your own training data is beneficial for a variety of use cases and can help you optimize performance and efficiency across hybrid environments.
@@ -250,3 +184,65 @@ Yes, you can import your own training data. Importing your own training data is 
 Other use cases:
 
 {{_include-segments/byo-sdg-use-cases.md}}
+
+## When should I use inferencing versus model alignment?
+{: #inferencing-vs-alignment-faq}
+{: faq}
+
+Use inferencing when you need immediate access to AI capabilities and the general-purpose foundation models meet your needs. Inferencing is ideal for building chatbots, adding conversational AI to applications, testing model behavior, or integrating natural language processing without customization. Use model alignment when you need models that understand your specific business context, terminology, or requirements that go beyond what general-purpose models can provide. Model alignment is best for creating domain-specific AI solutions that require deep knowledge of your organization's unique data and processes.
+
+## What are Granite models?
+{: #granite}
+{: faq}
+
+Fit for purpose and open source, these enterprise-ready, multimodal models deliver exceptional performance against safety benchmarks and across a wide range of enterprise tasks from cybersecurity to RAG.
+
+## How does billing work?
+{: #costs-faq}
+{: faq}
+
+You incur costs for using {{site.data.keyword.product_name}}. If you use model alignment, you also incur costs for [{{site.data.keyword.cos_full}}](https://cloud.ibm.com/objectstorage/create#pricing){: external}, which is used as a storage location.
+
+If you deploy your model on another service, you incur additional charges from that service.
+
+
+### How is cost calculated in {{site.data.keyword.product_name}}?
+{: #costs-ilab}
+{: faq}
+
+The cost from {{site.data.keyword.product_name}} usage is based on metrics that are measured in tokens. Each token corresponds to a specific amount of computational power that is required for the processing tasks. The total number of tokens consumed directly influences the scale of data generation, model fine-tuning, or inferencing. This metric serves as a basis for our billing system, enabling users to monitor and control their costs according to the computational resources used.
+
+Synthetic data generation (SDG)
+:   Output tokens (`SYN-DATA-TOKEN`) are calculated by the volume of generated data produced by the service from the entire input taxonomy. The text is tokenized by using [Hugging Face's tokenizer library](https://huggingface.co/docs/transformers/en/main_classes/tokenizer){: external} with the tokenization information for the [Mistral teacher model](https://huggingface.co/docs/transformers/main/en/model_doc/mistral#mistral){: external}.
+
+Model alignment training
+:   Input tokens (`MODEL-TRAIN-TOKEN`) are calculated based on the amount of data fed that into the system for model alignment training, as well as the Granite base knowledge that is used to increase accuracy without knowledge loss. Because of the foundational knowledge that is used, there is a minimum cost.
+
+Model inferencing
+:   Inferencing costs are calculated separately for input and output tokens on a per-model basis. Input tokens represent your prompt or query sent to the model, while output tokens represent the model's generated response. Each model has its own pricing structure based on its size and computational requirements.
+
+
+
+
+### How do I find and track cost information as I train a model?
+{: #costs-tracking}
+{: faq}
+
+1. Before you begin running anything in {{site.data.keyword.short_name}}, you can use the [cost estimator](https://cloud.ibm.com/estimator) to get an estimate of what the cost might be.
+
+1. [Upload your taxonomy](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui)
+
+1. When you set the details for [data generation](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-data-generate), review the estimated cost before starting the job.
+
+1. After the data is generated, you can also view the estimated **Output tokens** in the details for that data generation. 
+
+1. When you set the details for the [training](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-model-train) job, review the estimated cost before starting the job.
+
+1. When the jobs are complete, you can review the actual costs in [Billing and usage](https://cloud.ibm.com/billing). You can view the costs for both {{site.data.keyword.product_name}} and the [{{site.data.keyword.cos_full}}](https://cloud.ibm.com/objectstorage/create#pricing) service, which is used as a storage location.
+
+
+### Are failed operations billed?
+{: #costs-operations}
+{: faq}
+
+Failed operations are not billed. Successful operations and user canceled operations are billed, though user canceled operations are prorated based on the processing that completed.

@@ -1,8 +1,8 @@
 ---
 
-copyright: 
+copyright:
   years: 2024, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-20"
 
 keywords: release notes
 
@@ -25,6 +25,8 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, sec
 {: tip}
 
 
+
+
 ## April 2026
 {: #apr26}
 
@@ -33,7 +35,7 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, sec
 {: release-note}
 
 Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
-:   You can now use inferencing to interact with foundation models and evaluate AI-powered responses for your applications. The inferencing feature provides industry-standard OpenAI and Llama Stack compatible APIs for chat completions and model management. This beta feature is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`. For more information, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
+:   You can now use inferencing to interact with foundation models and evaluate AI-powered responses for your applications. The inferencing feature provides industry-standard OpenAI and OGX compatible APIs for chat completions and model management. This beta feature is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`. For more information, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
 
 ## October 2025
 {: #oct25}

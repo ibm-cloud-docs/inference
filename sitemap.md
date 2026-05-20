@@ -571,34 +571,34 @@ subcollection: inference
 
 * [What is inferencing?](/docs/inference?topic=inference-faq#inferencing-faq)
 
-* [How do I get started with inferencing?](/docs/inference?topic=inference-faq#inferencing-start-faq)
+    * [How do I get started with inferencing?](/docs/inference?topic=inference-faq#inferencing-start-faq)
 
-* [What models are available for inferencing?](/docs/inference?topic=inference-faq#inferencing-models-faq)
+    * [What models are available for inferencing?](/docs/inference?topic=inference-faq#inferencing-models-faq)
 
-* [Can I customize model behavior during inferencing?](/docs/inference?topic=inference-faq#inferencing-customize-faq)
+    * [Can I customize model behavior during inferencing?](/docs/inference?topic=inference-faq#inferencing-customize-faq)
 
 * [What is model training?](/docs/inference?topic=inference-faq#faq-model-train)
+
+    * [What is a taxonomy?](/docs/inference?topic=inference-faq#taxonomy-faq)
+
+    * [What is synthetic data generation?](/docs/inference?topic=inference-faq#faq-data-gen)
+
+    * [How does taxonomy validation work?](/docs/inference?topic=inference-faq#faq-tax-validation)
+
+    * [How long does data generation take?](/docs/inference?topic=inference-faq#faq-time-data)
+
+    * [How long does model training take?](/docs/inference?topic=inference-faq#faq-model)
+
+    * [Can I import my own training data?](/docs/inference?topic=inference-faq#faq-byo-sdg)
 
 * [When should I use inferencing versus model alignment?](/docs/inference?topic=inference-faq#inferencing-vs-alignment-faq)
 
 * [What are Granite models?](/docs/inference?topic=inference-faq#granite)
 
-* [What is a taxonomy?](/docs/inference?topic=inference-faq#taxonomy-faq)
-
-* [How does taxonomy validation work?](/docs/inference?topic=inference-faq#faq-tax-validation)
-
 * [How does billing work?](/docs/inference?topic=inference-faq#costs-faq)
 
-* [How is cost calculated in {{site.data.keyword.product_name}}?](/docs/inference?topic=inference-faq#costs-ilab)
+    * [How is cost calculated in {{site.data.keyword.product_name}}?](/docs/inference?topic=inference-faq#costs-ilab)
 
-* [How do I find and track cost information as I train a model?](/docs/inference?topic=inference-faq#costs-tracking)
+    * [How do I find and track cost information as I train a model?](/docs/inference?topic=inference-faq#costs-tracking)
 
-* [Are failed operations billed?](/docs/inference?topic=inference-faq#costs-operations)
-
-* [What is synthetic data generation?](/docs/inference?topic=inference-faq#faq-data-gen)
-
-* [How long does data generation take?](/docs/inference?topic=inference-faq#faq-time-data)
-
-* [How long does model training take?](/docs/inference?topic=inference-faq#faq-model)
-
-* [Can I import my own training data?](/docs/inference?topic=inference-faq#faq-byo-sdg)
+    * [Are failed operations billed?](/docs/inference?topic=inference-faq#costs-operations)

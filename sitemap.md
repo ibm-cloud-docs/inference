@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-18"
+lastupdated: "2026-05-20"
 
 
 keywords: instructlab, sitemap
@@ -563,7 +563,11 @@ subcollection: inference
 
 * [Why should I use {{site.data.keyword.short_name}} for my generative AI solution?](/docs/inference?topic=inference-faq#faq-rhai-2)
 
-* [What are the benefits of {{site.data.keyword.short_name}} on IBM Cloud?](/docs/inference?topic=inference-faq#faq-benefits)
+    * [Why should I use {{site.data.keyword.short_name}} for inferencing?](/docs/inference?topic=inference-faq#faq-inferencing-benefits)
+
+    * [Why should I use {{site.data.keyword.short_name}} for model alignment?](/docs/inference?topic=inference-faq#faq-alignment-benefits)
+
+* [What are the benefits of {{site.data.keyword.short_name}} on {{site.data.keyword.cloud_notm}}?](/docs/inference?topic=inference-faq#faq-benefits)
 
 * [What is inferencing?](/docs/inference?topic=inference-faq#inferencing-faq)
 
@@ -579,8 +583,6 @@ subcollection: inference
 
 * [What are Granite models?](/docs/inference?topic=inference-faq#granite)
 
-* [Which Granite model does {{site.data.keyword.short_name}} use?](/docs/inference?topic=inference-faq#granite-model)
-
 * [What is a taxonomy?](/docs/inference?topic=inference-faq#taxonomy-faq)
 
 * [How does taxonomy validation work?](/docs/inference?topic=inference-faq#faq-tax-validation)
@@ -589,7 +591,7 @@ subcollection: inference
 
 * [How is cost calculated in {{site.data.keyword.product_name}}?](/docs/inference?topic=inference-faq#costs-ilab)
 
-* [How do I find and track cost information as I go?](/docs/inference?topic=inference-faq#costs-tracking)
+* [How do I find and track cost information as I train a model?](/docs/inference?topic=inference-faq#costs-tracking)
 
 * [Are failed operations billed?](/docs/inference?topic=inference-faq#costs-operations)
 

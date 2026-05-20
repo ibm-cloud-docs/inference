@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-05-18"
+lastupdated: "2026-05-20"
 
 keywords: red hat ai, inference, model alignment, faq
 
@@ -30,7 +30,7 @@ Review the following FAQ for {{site.data.keyword.short_name}}. To find all FAQ f
 {: #faq-rhai-1}
 {: faq}
 
-{{site.data.keyword.short_name}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI, available on IBM Cloud. It provides two core capabilities: inferencing for interacting with foundation models and model alignment for fine-tuning models to your specific needs. Users retain ownership of their data and models, can leverage unique business data for innovation, and minimize the risk of catastrophic forgetting.
+{{site.data.keyword.short_name}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI, available on {{site.data.keyword.cloud_notm}}. It provides two core capabilities: inferencing for interacting with foundation models and model alignment for fine-tuning models to your specific needs.
 
 
 
@@ -38,19 +38,29 @@ Review the following FAQ for {{site.data.keyword.short_name}}. To find all FAQ f
 {: #faq-rhai-2}
 {: faq}
 
-{{site.data.keyword.short_name}} offers several benefits for your generative AI solution. First, it provides immediate AI integration through inferencing, allowing you to start building AI-powered features without managing infrastructure. Second, it allows you to retain ownership of both the data and the model, giving you control over how your data is used and how your model performs. Third, it enables you to leverage unique business data to unlock efficiencies and drive innovation by creating AI-powered solutions through model alignment. Fourth, it minimizes the risk of catastrophic forgetting by using built-in Granite models as a foundation for learning new skills and knowledge. Fifth, it is available as a service on IBM Cloud, allowing you to reduce unnecessary costs by paying just for what you need and optimize IT expenditures by delivering simpler, faster, and more economical AI solutions.
+{{site.data.keyword.short_name}} offers several benefits for your generative AI solution. It allows you to retain ownership of your data, giving you control over how your data is used. It is available as a service on {{site.data.keyword.cloud_notm}}, allowing you to reduce unnecessary costs by paying just for what you need and optimize IT expenditures by delivering simpler, faster, and more economical AI solutions.
 
-## What are the benefits of {{site.data.keyword.short_name}} on IBM Cloud?
+### Why should I use {{site.data.keyword.short_name}} for inferencing?
+{: #faq-inferencing-benefits}
+
+{{site.data.keyword.short_name}} provides immediate AI integration through inferencing, allowing you to start building AI-powered features without managing infrastructure. You can quickly deploy and interact with foundation models in a secure, enterprise-grade environment.
+
+### Why should I use {{site.data.keyword.short_name}} for model alignment?
+{: #faq-alignment-benefits}
+
+With {{site.data.keyword.short_name}}, you retain ownership of your models, giving you control over how your model performs. You can leverage unique business data to unlock efficiencies and drive innovation by creating AI-powered solutions through model alignment. Additionally, it minimizes the risk of catastrophic forgetting by using built-in Granite models as a foundation for learning new skills and knowledge.
+
+## What are the benefits of {{site.data.keyword.short_name}} on {{site.data.keyword.cloud_notm}}?
 {: #faq-benefits}
 {: faq}
 
-{{site.data.keyword.short_name}} on IBM Cloud offers several benefits, including:
+{{site.data.keyword.short_name}} on {{site.data.keyword.cloud_notm}} offers several benefits, including:
 
 Immediate AI integration with inferencing
 :   Start building AI-powered features immediately without managing infrastructure. Use production-ready APIs to integrate conversational AI, test model behavior, and scale your applications.
 
 Data ownership
-:   Users retain ownership of both the data and the model, allowing them to control their data and model.
+:   Users fine-tuning a model retain ownership of both the data and the model, allowing them to control both. Inferencing users retain ownership of their data, as well, but not the model. 
 
 Leveraging unique business data
 :   Users can unlock efficiencies and drive innovation by creating AI-powered solutions using their unique business data.
@@ -67,17 +77,14 @@ Data portability
 Enterprise-grade cloud infrastructure
 :   {{site.data.keyword.short_name}} uses IBM Cloud's robust and secure infrastructure, designed to meet the stringent requirements of business critical workloads.
 
-Flexibility
-:   {{site.data.keyword.short_name}} offers access to a wide variety of hardware profiles, VMware compute accelerators, and the capability for new capacity expansion within the hour.
-
-Advanced Cloud Services
-:   IBM Cloud provides access to the latest GPUs and IBM watsonx services for AI, inferencing, and machine learning to fast-track innovation into business processes.
+Flexibility and advanced cloud services 
+:   Inferencing leverages Red Hat OpenShift AI capabilities, which include llm-d components for efficient scheduling and routing. The service also runs on IBM Cloud, which provides on-demand access to compute hardware needed to run and scale the models.
 
 ## What is inferencing?
 {: #inferencing-faq}
 {: faq}
 
-Inferencing is the process of using a trained AI model to generate responses, make predictions, or process inputs. With {{site.data.keyword.short_name}}, inferencing provides immediate access to foundation models through industry-standard OpenAI and OGX compatible APIs. This eliminates the complexity of deploying and scaling AI models, allowing you to focus on creating value for your users. You can use inferencing to build chatbots, add natural language understanding to applications, generate content, or integrate conversational AI capabilities into your workflows.
+Inferencing is the process of using an LLM to generate responses, make predictions, or process inputs. With {{site.data.keyword.short_name}}, inferencing provides immediate access to foundation models through industry-standard OpenAI and OGX compatible APIs. This eliminates the complexity of deploying and scaling AI models, allowing you to focus on creating value for your users. You can use inferencing to build chatbots, add natural language understanding to applications, generate content, or integrate conversational AI capabilities into your workflows.
 
 ## How do I get started with inferencing?
 {: #inferencing-start-faq}
@@ -117,12 +124,6 @@ Use inferencing when you need immediate access to AI capabilities and the genera
 
 Fit for purpose and open source, these enterprise-ready, multimodal models deliver exceptional performance against safety benchmarks and across a wide range of enterprise tasks from cybersecurity to RAG.
 
-## Which Granite model does {{site.data.keyword.short_name}} use?
-{: #granite-model}
-{: faq}
-
-{{site.data.keyword.short_name}} uses the `granite-3.1-8b-starter-v2.1` model.
-
 ## What is a taxonomy?
 {: #taxonomy-faq}
 {: faq}
@@ -144,27 +145,30 @@ When you upload a taxonomy to {{site.data.keyword.short_name}}, the checks are p
 {: #costs-faq}
 {: faq}
 
-Costs are incurred by the usage of both {{site.data.keyword.product_name}} and the [{{site.data.keyword.cos_full}}](https://cloud.ibm.com/objectstorage/create#pricing) service, which is used as a storage location.
+You incur costs for using {{site.data.keyword.product_name}}. If you use model alignment, you also incur costs for [{{site.data.keyword.cos_full}}](https://cloud.ibm.com/objectstorage/create#pricing){: external}, which is used as a storage location.
 
-If you choose to deploy the model on another service, additional charges can come from that service as well.
+If you deploy your model on another service, you incur additional charges from that service.
 
 
 ## How is cost calculated in {{site.data.keyword.product_name}}?
 {: #costs-ilab}
 {: faq}
 
-The cost from {{site.data.keyword.product_name}} usage is based on two metrics that are measured in tokens. Each token corresponds to a specific amount of computational power that is required for the processing tasks. The total number of tokens consumed directly influences the scale of data generation or model fine-tuning. This metric serves as a basis for our billing system, enabling users to monitor and control their costs according to the computational resources used. The tokens that are processed for Synthetic Data Generation (SDG) and Model Alignment are billed separately.
+The cost from {{site.data.keyword.product_name}} usage is based on metrics that are measured in tokens. Each token corresponds to a specific amount of computational power that is required for the processing tasks. The total number of tokens consumed directly influences the scale of data generation, model fine-tuning, or inferencing. This metric serves as a basis for our billing system, enabling users to monitor and control their costs according to the computational resources used.
 
-Synthetic Data Generation (SDG)
-:   Output tokens (`SYN-DATA-TOKEN`) are calculated by the volume of generated data produced by the service from the entire input taxonomy. The text is tokenized by using [Hugging Face's tokenizer library](https://huggingface.co/docs/transformers/en/main_classes/tokenizer) with the tokenization information for the [Mistral teacher model](https://huggingface.co/docs/transformers/main/en/model_doc/mistral#mistral). 
+Synthetic data generation (SDG)
+:   Output tokens (`SYN-DATA-TOKEN`) are calculated by the volume of generated data produced by the service from the entire input taxonomy. The text is tokenized by using [Hugging Face's tokenizer library](https://huggingface.co/docs/transformers/en/main_classes/tokenizer){: external} with the tokenization information for the [Mistral teacher model](https://huggingface.co/docs/transformers/main/en/model_doc/mistral#mistral){: external}.
 
 Model alignment training
 :   Input tokens (`MODEL-TRAIN-TOKEN`) are calculated based on the amount of data fed that into the system for model alignment training, as well as the Granite base knowledge that is used to increase accuracy without knowledge loss. Because of the foundational knowledge that is used, there is a minimum cost.
 
+Model inferencing
+:   Inferencing costs are calculated separately for input and output tokens on a per-model basis. Input tokens represent your prompt or query sent to the model, while output tokens represent the model's generated response. Pricing varies by model. For example, the `GPT-OSS-120B` model charges $0.10 per 1 million input tokens and $0.50 per 1 million output tokens. Each model has its own pricing structure based on its size and computational requirements.
 
 
 
-## How do I find and track cost information as I go?
+
+## How do I find and track cost information as I train a model?
 {: #costs-tracking}
 {: faq}
 

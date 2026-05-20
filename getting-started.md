@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-20"
 
 keywords: instructlab, ai, inferencing, chat completions
 
@@ -28,17 +28,17 @@ completion-time: 15m
 Ready to start using AI in your applications? In this tutorial, you'll learn how to use inferencing to interact with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
 {: shortdesc}
 
-{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inferencing for interacting with foundation models and model alignment (InstructLab) for customizing models to your specific needs. This tutorial focuses on getting you started with inferencing, the fastest way to start using AI.
+{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inferencing for interacting with foundation models and model alignment for customizing models to your specific needs. This tutorial focuses on getting you started with inferencing, the fastest way to start using AI.
 
 ## What you'll accomplish
 {: #objectives}
 
 In this tutorial, you'll do the following tasks:
 
-* Set up your {{site.data.keyword.cloud_notm}} account and project
-* Authenticate to the inferencing API
-* Generate your first chat completion with a foundation model
-* Learn about next steps for customizing models with your own data
+* Set up your {{site.data.keyword.cloud_notm}} account and project.
+* Authenticate to the inferencing API.
+* Generate your first chat completion with a foundation model.
+* Learn about next steps for customizing models with your own data.
 
 ## Before you begin
 {: #prereqs}
@@ -49,7 +49,7 @@ Make sure you have the following:
 
 * [A {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 
-* The Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/inference?topic=inference-iam&interface=ui).
+* The Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui).
 
 ## Get your project ID and API endpoint
 {: #get-project-id}

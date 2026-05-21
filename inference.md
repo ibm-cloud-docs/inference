@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-21"
 
 keywords: instructlab, ai, inferencing, chatting
 
@@ -28,7 +28,7 @@ Inferencing solves the challenge of deploying and scaling AI models by providing
 
 * Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 
-* Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access for InstructLab](/docs/inference?topic=inference-iam&interface=ui). 
+* Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui). 
 
 
 ## Inferencing by using the console

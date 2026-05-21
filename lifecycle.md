@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-05-21"
 
 keywords: instructlab
 
@@ -27,10 +27,10 @@ Provide the recommended version, supported version, and version policy for your 
 
 {{site.data.keyword.instructlab_short}} offers the following versions that can be ordered today or are coming soon if their General Availability (GA) date is in the future. We include an End of Support (EOS) date too, where this is known. To help you plan for the future, we aim to provide up to 12 month's notice of a version going to End of Support (EOS), though the actual time between notification and our EOS date will depend on EOS notice provided by third party vendors or open source communities. {{site.data.keyword.cloud_notm}} will not provide third party software or services that are not supported by the third party.
 
-| Service | Version | GA date | EOS procedure |
+| Feature | Version | GA date | EOS procedure |
 |----|----|----|----|
-| {{site.data.keyword.instructlab_short}} model alignment | 1.5 | 25 September  2025 | Automatically upgraded in place to next Major version|
-| {{site.data.keyword.instructlab_short}} inferencing | The operator version for model hosting is 3.3 | 22 May 2026 | Automatically upgraded in place to next Major version|
+| Model alignment | 1.5 | 25 September  2025 | Automatically upgraded in place to next Major version|
+| Inferencing | The operator version for model hosting is 3.3 /n The vLLM version is 0.13 | 22 May 2026 | Automatically upgraded in place to next Major version|
 {: caption="Recommended and supported version types for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 
 ## Customer communications for {{site.data.keyword.instructlab_short}}

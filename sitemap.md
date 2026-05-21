@@ -449,7 +449,7 @@ subcollection: inference
 
 [IBM Cloud API docs](https://{DomainName}/apidocs/inference){: external}
 
-[Swagger](https://us-east.instructlab.ibm.com/swagger-instructlab-api/#/){: external}
+[Swagger](https://us-east.rhai.ibm.com/swagger-instructlab-api/#/){: external}
 
 
 ## CLI reference

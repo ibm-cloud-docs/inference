@@ -91,7 +91,7 @@ toc:
               href: https://{DomainName}/apidocs/inference
           - link:
               label: Swagger
-              href: https://us-east.instructlab.ibm.com/swagger-instructlab-api/#/
+              href: https://us-east.rhai.ibm.com/swagger-instructlab-api/#/
       - topic: ilab-cli.md
         navtitle: CLI reference
   - navgroup:
@@ -118,7 +118,13 @@ toc:
             navtitle: "Failed to clone knowledge document repository error"
           - topic: ts-knowledge-find.md
             navtitle: "Failed to find knowledge documents error"
-      - topic: faq.md
-        navtitle: FAQ
+      - topicgroup:
+          label: FAQs
+          topics:
+          - topic: faq.md
+          - topic: faq-inference.md
+          - topic: faq-model-alignment.md
+          - topic: faq-billing.md
+            navtitle: FAQ about billing
       - topic: sitemap.md
         navtitle: Site map

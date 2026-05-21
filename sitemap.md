@@ -449,7 +449,7 @@ subcollection: inference
 
 [IBM Cloud API docs](https://{DomainName}/apidocs/inference){: external}
 
-[Swagger](https://us-east.instructlab.ibm.com/swagger-instructlab-api/#/){: external}
+[Swagger](https://us-east.rhai.ibm.com/swagger-instructlab-api/#/){: external}
 
 
 ## CLI reference
@@ -553,52 +553,52 @@ subcollection: inference
 [Failed to find knowledge documents error](/docs/inference?topic=inference-ts-knowledge-find#ts-knowledge-find)
 
 
-## FAQ
-{: #sitemap_faq}
+## FAQs
+{: #sitemap_faqs}
 
 
-[FAQ](/docs/inference?topic=inference-faq#faq)
+[FAQ about {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-faq#faq)
 
 * [What is {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq#faq-rhai-1)
 
-* [Why should I use {{site.data.keyword.short_name}} for my generative AI solution?](/docs/inference?topic=inference-faq#faq-rhai-2)
+* [What are the benefits of {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq#faq-benefits)
 
-    * [Why should I use {{site.data.keyword.short_name}} for inferencing?](/docs/inference?topic=inference-faq#faq-inferencing-benefits)
+* [When should I use {{site.data.keyword.instructlab_short}} for model alignment versus inferencing?](/docs/inference?topic=inference-faq#inferencing-vs-alignment-faq)
 
-    * [Why should I use {{site.data.keyword.short_name}} for model alignment?](/docs/inference?topic=inference-faq#faq-alignment-benefits)
-
-* [What are the benefits of {{site.data.keyword.short_name}} on {{site.data.keyword.cloud_notm}}?](/docs/inference?topic=inference-faq#faq-benefits)
+[FAQ about inferencing](/docs/inference?topic=inference-faq#faq)
 
 * [What is inferencing?](/docs/inference?topic=inference-faq#inferencing-faq)
 
-    * [How do I get started with inferencing?](/docs/inference?topic=inference-faq#inferencing-start-faq)
+* [How do I get started with inferencing?](/docs/inference?topic=inference-faq#inferencing-start-faq)
 
-    * [What models are available for inferencing?](/docs/inference?topic=inference-faq#inferencing-models-faq)
+* [What models are available for inferencing?](/docs/inference?topic=inference-faq#inferencing-models-faq)
 
-    * [Can I customize model behavior during inferencing?](/docs/inference?topic=inference-faq#inferencing-customize-faq)
+* [Can I customize model behavior during inferencing?](/docs/inference?topic=inference-faq#inferencing-customize-faq)
 
-* [What is model training?](/docs/inference?topic=inference-faq#faq-model-train)
+[FAQ about model alignment](/docs/inference?topic=inference-faq#faq)
 
-    * [What are Granite models?](/docs/inference?topic=inference-faq#granite)
+* [What is model alignment?](/docs/inference?topic=inference-faq#faq-model-train)
 
-    * [What is a taxonomy?](/docs/inference?topic=inference-faq#taxonomy-faq)
+* [What are Granite models?](/docs/inference?topic=inference-faq#granite)
 
-    * [What is synthetic data generation?](/docs/inference?topic=inference-faq#faq-data-gen)
+* [What is a taxonomy?](/docs/inference?topic=inference-faq#taxonomy-faq)
 
-    * [How does taxonomy validation work?](/docs/inference?topic=inference-faq#faq-tax-validation)
+* [What is synthetic data generation?](/docs/inference?topic=inference-faq#faq-data-gen)
 
-    * [How long does data generation take?](/docs/inference?topic=inference-faq#faq-time-data)
+* [How does taxonomy validation work?](/docs/inference?topic=inference-faq#faq-tax-validation)
 
-    * [How long does model training take?](/docs/inference?topic=inference-faq#faq-model)
+* [How long does data generation take?](/docs/inference?topic=inference-faq#faq-time-data)
 
-    * [Can I import my own training data?](/docs/inference?topic=inference-faq#faq-byo-sdg)
+* [How long does model training take?](/docs/inference?topic=inference-faq#faq-model)
 
-* [When should I use inferencing versus model alignment?](/docs/inference?topic=inference-faq#inferencing-vs-alignment-faq)
+* [Can I import my own training data?](/docs/inference?topic=inference-faq#faq-byo-sdg)
+
+[FAQ about billing](/docs/inference?topic=inference-faq#faq)
 
 * [How does billing work?](/docs/inference?topic=inference-faq#costs-faq)
 
-    * [How is cost calculated in {{site.data.keyword.product_name}}?](/docs/inference?topic=inference-faq#costs-ilab)
+* [How is cost calculated in {{site.data.keyword.product_name}}?](/docs/inference?topic=inference-faq#costs-ilab)
 
-    * [How do I find and track cost information as I train a model?](/docs/inference?topic=inference-faq#costs-tracking)
+* [How do I find and track cost information as I train a model?](/docs/inference?topic=inference-faq#costs-tracking)
 
-    * [Are failed operations billed?](/docs/inference?topic=inference-faq#costs-operations)
+* [Are failed operations billed?](/docs/inference?topic=inference-faq#costs-operations)

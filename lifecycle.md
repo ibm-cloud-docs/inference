@@ -30,7 +30,7 @@ Provide the recommended version, supported version, and version policy for your 
 | Feature | Version | GA date | EOS procedure |
 |----|----|----|----|
 | Model alignment | 1.5 | 25 September  2025 | Automatically upgraded in place to next Major version|
-| Inferencing | The operator version for model hosting is 3.3 /n The vLLM version is 0.13 | 22 May 2026 | Automatically upgraded in place to next Major version|
+| Inferencing | The operator version for model hosting is 3.3 \n The vLLM version is 0.13 | 22 May 2026 | Automatically upgraded in place to next Major version|
 {: caption="Recommended and supported version types for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 
 ## Customer communications for {{site.data.keyword.instructlab_short}}

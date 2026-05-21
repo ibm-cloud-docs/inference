@@ -16,7 +16,7 @@ content-type: faq
 
 
 # FAQ about billing for {{site.data.keyword.instructlab_short}}
-{: #faq}
+{: #faq-b}
 
 
 Frequently asked questions about billing for {{site.data.keyword.instructlab_short}} might include questions about costs or storage pricing. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).

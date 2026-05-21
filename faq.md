@@ -17,7 +17,7 @@ content-type: faq
 
 
 # FAQ about {{site.data.keyword.instructlab_short}}
-{: #faq}
+{: #faq-rhaii}
 
 
 Frequently asked questions for {{site.data.keyword.instructlab_short}} might include questions about benefits and when to use inferencing versus model alignment. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).

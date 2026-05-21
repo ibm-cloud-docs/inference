@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-05-20"
+lastupdated: "2026-05-21"
 
 keywords: red hat ai, inference, model alignment, faq
 
@@ -112,6 +112,12 @@ Yes, you can customize model behavior during inferencing by using system prompts
 
 Model training, also called model alignment, is the process of fine-tuning a foundation model with your specific knowledge and skills. The synthetic data generated from your taxonomy is used to train the model in two phases: knowledge tuning, which focuses on improving the model's foundational knowledge, and skills tuning, which trains the model on more specific capabilities required for its intended purpose.
 
+### What are Granite models?
+{: #granite}
+{: faq}
+
+Fit for purpose and open source, these enterprise-ready, multimodal models deliver exceptional performance against safety benchmarks and across a wide range of enterprise tasks from cybersecurity to RAG.
+
 ### What is a taxonomy?
 {: #taxonomy-faq}
 {: faq}
@@ -190,12 +196,6 @@ Other use cases:
 {: faq}
 
 Use inferencing when you need immediate access to AI capabilities and the general-purpose foundation models meet your needs. Inferencing is ideal for building chatbots, adding conversational AI to applications, testing model behavior, or integrating natural language processing without customization. Use model alignment when you need models that understand your specific business context, terminology, or requirements that go beyond what general-purpose models can provide. Model alignment is best for creating domain-specific AI solutions that require deep knowledge of your organization's unique data and processes.
-
-## What are Granite models?
-{: #granite}
-{: faq}
-
-Fit for purpose and open source, these enterprise-ready, multimodal models deliver exceptional performance against safety benchmarks and across a wide range of enterprise tasks from cybersecurity to RAG.
 
 ## How does billing work?
 {: #costs-faq}

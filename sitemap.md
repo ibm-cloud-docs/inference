@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-20"
+lastupdated: "2026-05-21"
 
 
 keywords: instructlab, sitemap
@@ -579,6 +579,8 @@ subcollection: inference
 
 * [What is model training?](/docs/inference?topic=inference-faq#faq-model-train)
 
+    * [What are Granite models?](/docs/inference?topic=inference-faq#granite)
+
     * [What is a taxonomy?](/docs/inference?topic=inference-faq#taxonomy-faq)
 
     * [What is synthetic data generation?](/docs/inference?topic=inference-faq#faq-data-gen)
@@ -592,8 +594,6 @@ subcollection: inference
     * [Can I import my own training data?](/docs/inference?topic=inference-faq#faq-byo-sdg)
 
 * [When should I use inferencing versus model alignment?](/docs/inference?topic=inference-faq#inferencing-vs-alignment-faq)
-
-* [What are Granite models?](/docs/inference?topic=inference-faq#granite)
 
 * [How does billing work?](/docs/inference?topic=inference-faq#costs-faq)
 

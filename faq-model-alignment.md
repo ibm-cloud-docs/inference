@@ -16,7 +16,7 @@ content-type: faq
 {{site.data.keyword.attribute-definition-list}}
 
 # FAQ about model alignment 
-{: #faq}
+{: #faq-ma}
 
 Frequently asked questions about model alignment might include questions about the training process or how to fine-tune foundation models. To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}

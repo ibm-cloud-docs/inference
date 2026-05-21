@@ -17,7 +17,7 @@ content-type: faq
 
 
 # FAQ about inferencing
-{: #faq}
+{: #faq-i}
 
 
 Frequently asked questions about inferencing might include questions about what inferencing is or how to get started. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs). To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).

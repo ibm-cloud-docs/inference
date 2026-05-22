@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-05-20"
+lastupdated: "2026-05-22"
 
 keywords: release notes
 
@@ -24,7 +24,15 @@ Use the release notes to learn about the latest changes to the documentation tha
 Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status).
 {: tip}
 
+## May 2026
+{: #may26}
 
+### 22 May 2026
+{: #22may26}
+{: release-note}
+
+Inferencing is now generally available
+:   You can now use {{site.data.keyword.instructlab_short}} to run inferencing workloads in production. Use industry-standard OpenAI and OGX compatible APIs for chat completions to integrate inferencing capabilities into your applications. A playground is now available in the console where you can test different inferencing settings and configurations before moving to production. For more information, see [Getting started](/docs/inference?topic=inference-getting-started).
 
 
 ## April 2026

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-21"
+lastupdated: "2026-05-22"
 
 
 keywords: instructlab, sitemap
@@ -78,6 +78,12 @@ subcollection: inference
 
 
 [Release notes](/docs/inference?topic=inference-release-notes#release-notes)
+
+* [May 2026](/docs/inference?topic=inference-release-notes#may26)
+
+    * [22 May 2026](/docs/inference?topic=inference-release-notes#22may26)
+
+        * Inferencing is now generally available
 
 * [April 2026](/docs/inference?topic=inference-release-notes#apr26)
 

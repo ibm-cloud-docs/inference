@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-05-18"
+lastupdated: "2026-06-03"
 
 keywords: instructlab, ai, about, how it works, billing
 
@@ -16,10 +16,10 @@ subcollection: inference
 # About {{site.data.keyword.instructlab_full_notm}}
 {: #about}
 
-{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. {{site.data.keyword.instructlab_short}} provides two core capabilities: inferencing for interacting with foundation models and model alignment for fine-tuning models to your specific needs.
+{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. {{site.data.keyword.instructlab_short}} provides two core capabilities: inference for interacting with foundation models and model alignment for fine-tuning models to your specific needs.
 {: shortdesc}
 
-With inferencing, you can immediately start using foundation models through production-ready APIs to build AI-powered applications, test model behavior, and integrate conversational AI capabilities into your workflows. Whether you're prototyping a chatbot, building an AI assistant, or adding natural language understanding to your application, inferencing provides immediate access to foundation models without the complexity of model hosting.
+With inference, you can immediately start using foundation models through production-ready APIs to build AI-powered applications, test model behavior, and integrate conversational AI capabilities into your workflows. Whether you're prototyping a chatbot, building an AI assistant, or adding natural language understanding to your application, inference provides immediate access to foundation models without the complexity of model hosting.
 
 For deeper customization, model alignment through allows you to enhance large language models with your organization's specific knowledge and skills. You provide a taxonomy —a directory of curated data containing the knowledge and skills that matter most to your business. This taxonomy is used to generate synthetic data, which trains the model through multiple phases of fine-tuning. This process aligns your LLM with your goals by providing not just general knowledge, but the specific skills and contexts that are most important for your unique business needs.
 
@@ -34,12 +34,12 @@ While LLMs can streamline processes in various ways, keep in mind there are some
 
 For a more detailed explanation of LLMs and how they work, see [What are LLMs?](https://www.ibm.com/think/topics/large-language-models){: external}
 
-## What is inferencing?
-{: #inferencing}
+## What is inference?
+{: #inference}
 
-Inferencing is the process of using a trained AI model to generate responses, make predictions, or process inputs. With Red Hat AI on {{site.data.keyword.cloud_notm}}, inferencing provides immediate access to foundation models through industry-standard OpenAI and OGX compatible APIs. This eliminates the complexity of deploying and scaling AI models, allowing you to focus on creating value for your users.
+Inference is the process of using a trained AI model to generate responses, make predictions, or process inputs. {{site.data.keyword.instructlab_short}} provides immediate access to foundation models through industry-standard OpenAI-compatible APIs. This eliminates the complexity of deploying and scaling AI models, allowing you to focus on creating value for your users.
 
-Inferencing solves the challenge of integrating AI capabilities into your applications by providing:
+Inference solves the challenge of integrating AI capabilities into your applications by providing:
 
 Production-ready APIs
 :   Use familiar, industry-standard endpoints to interact with foundation models without managing infrastructure.
@@ -53,27 +53,29 @@ Flexible integration
 Interactive testing
 :   Experiment with different models and prompts in the console playground before integrating them into your applications.
 
-For more information about using inferencing, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
+For more information about inference, see [AI inference, simplified and explained](https://www.ibm.com/think/topics/ai-inference){: external}. 
+
+For more information about how to inference, see [Inference with models](/docs/inference?topic=inference-inference).
 
 
-### How inferencing works
-{: #how-inferencing-works}
+### How inference works
+{: #how-inference-works}
 
-Inferencing provides immediate access to foundation models through a simple workflow:
+Inference provides immediate access to foundation models through a simple workflow:
 
 Step 1. Authenticate
-:   After you [create a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project), use a bearer token or an {{site.data.keyword.cloud_notm}} API key to securely access your project's inferencing capabilities.
+:   After you [create a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project), use a bearer token or an {{site.data.keyword.cloud_notm}} API key to securely access your project's inference capabilities.
 
 Step 2. Select a model
 :   Choose from available foundation models based on your use case requirements, such as response quality, speed, or cost considerations.
 
 Step 3. Send requests
-:   Use industry-standard OpenAI or OGX compatible APIs to send messages to the model and receive AI-generated responses. You can customize model behavior with system prompts and adjust parameters like randomness and response limits.
+:   Use industry-standard OpenAI-compatible APIs to send messages to the model and receive AI-generated responses. You can customize model behavior with system prompts and adjust parameters like randomness and response limits.
 
 Step 4. Integrate responses
 :   Incorporate the model's responses into your application workflows, whether for conversational interfaces, content generation, or natural language processing tasks.
 
-You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
+You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Inference with models](/docs/inference?topic=inference-inference).
 
 
 ## What is model alignment?
@@ -113,7 +115,7 @@ Step 3. Train the model
 
 Red Hat AI on {{site.data.keyword.cloud_notm}} provides comprehensive AI capabilities that address both immediate integration needs and long-term customization requirements.
 
-Immediate AI integration with inferencing
+Immediate AI integration with inference
 :   Start building AI-powered features immediately without managing infrastructure. Use production-ready APIs to integrate conversational AI, test model behavior, and scale your applications alongside your business needs.
 
 Flexible deployment options
@@ -126,7 +128,7 @@ Cost-effective and scalable
 :   Because Red Hat AI on {{site.data.keyword.cloud_notm}} is available as a service, you can reduce unnecessary costs by paying just for what you need. Optimize IT expenditures by delivering simpler, faster, and more economical AI solutions.
 
 Industry-standard APIs
-:   Use familiar OpenAI and OGX compatible endpoints to integrate AI capabilities into your existing workflows and applications without learning proprietary interfaces.
+:   Use familiar OpenAI-compatible endpoints to integrate AI capabilities into your existing workflows and applications without learning proprietary interfaces.
 
 
 ## Resources for learning more

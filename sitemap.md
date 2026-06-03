@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-22"
+lastupdated: "2026-06-03"
 
 
 keywords: instructlab, sitemap
@@ -45,7 +45,7 @@ subcollection: inference
 
 * [Next steps](/docs/inference?topic=inference-getting-started#next-steps)
 
-    * [Continue with inferencing](/docs/inference?topic=inference-getting-started#continue-inferencing)
+    * [Continue with inference](/docs/inference?topic=inference-getting-started#continue-inference)
 
     * [Customize models with your data](/docs/inference?topic=inference-getting-started#customize-models)
 
@@ -58,9 +58,9 @@ subcollection: inference
 
 * [What are large language models?](/docs/inference?topic=inference-about#llm)
 
-* [What is inferencing?](/docs/inference?topic=inference-about#inferencing)
+* [What is inference?](/docs/inference?topic=inference-about#inference)
 
-    * [How inferencing works](/docs/inference?topic=inference-about#how-inferencing-works)
+    * [How inference works](/docs/inference?topic=inference-about#how-inference-works)
 
 * [What is model alignment?](/docs/inference?topic=inference-about#model-alignment)
 
@@ -83,13 +83,13 @@ subcollection: inference
 
     * [22 May 2026](/docs/inference?topic=inference-release-notes#22may26)
 
-        * Inferencing is now generally available
+        * Inference is now generally available
 
 * [April 2026](/docs/inference?topic=inference-release-notes#apr26)
 
     * [23 April 2026](/docs/inference?topic=inference-release-notes#23apr26)
 
-        * Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
+        * Inference with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
 
 * [October 2025](/docs/inference?topic=inference-release-notes#oct25)
 
@@ -187,9 +187,9 @@ subcollection: inference
 
 * [Before you begin](/docs/inference?topic=inference-inference#inf-prereqs)
 
-* [Inferencing by using the console](/docs/inference?topic=inference-inference&interface=ui#inf-chat-ui)
+* [Inference a model by using the console](/docs/inference?topic=inference-inference&interface=ui#inf-chat-ui)
 
-* [Inferencing by using the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-api)
+* [Inference a model by using the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-api)
 
     * [API endpoint](/docs/inference?topic=inference-inference&interface=api#inf-api-endpoint)
 
@@ -334,7 +334,7 @@ subcollection: inference
 
     * [How model alignment data is stored and encrypted](/docs/inference?topic=inference-mng-data#data-ma)
 
-    * [How inferencing data is stored and encrypted](/docs/inference?topic=inference-mng-data#data-inferencing)
+    * [How inference data is stored and encrypted](/docs/inference?topic=inference-mng-data#data-inference)
 
 * [Deleting your data in {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-delete)
 
@@ -363,7 +363,7 @@ subcollection: inference
 
 * [Events for model alignment](/docs/inference?topic=inference-at_events#at_actions_model_alignment)
 
-* [Events for inferencing](/docs/inference?topic=inference-at_events#at_actions_inferencing)
+* [Events for inference](/docs/inference?topic=inference-at_events#at_actions_inference)
 
 
 ## Your responsibilities
@@ -569,17 +569,17 @@ subcollection: inference
 
 * [What are the benefits of {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq-rhaii#faq-benefits)
 
-* [When should I use {{site.data.keyword.instructlab_short}} for model alignment versus inferencing?](/docs/inference?topic=inference-faq-rhaii#inferencing-vs-alignment-faq)
+* [When should I use {{site.data.keyword.instructlab_short}} for model alignment versus inference?](/docs/inference?topic=inference-faq-rhaii#inference-vs-alignment-faq)
 
-[FAQ about inferencing](/docs/inference?topic=inference-faq-i#faq-i)
+[FAQ about inference](/docs/inference?topic=inference-faq-i#faq-i)
 
-* [What is inferencing?](/docs/inference?topic=inference-faq-i#inferencing-faq)
+* [What is inference?](/docs/inference?topic=inference-faq-i#inference-faq)
 
-* [How do I get started with inferencing?](/docs/inference?topic=inference-faq-i#inferencing-start-faq)
+* [How do I get started with inference?](/docs/inference?topic=inference-faq-i#inference-start-faq)
 
-* [What models are available for inferencing?](/docs/inference?topic=inference-faq-i#inferencing-models-faq)
+* [What models are available for inference?](/docs/inference?topic=inference-faq-i#inference-models-faq)
 
-* [Can I customize model behavior during inferencing?](/docs/inference?topic=inference-faq-i#inferencing-customize-faq)
+* [Can I customize model behavior during inference?](/docs/inference?topic=inference-faq-i#inference-customize-faq)
 
 [FAQ about model alignment](/docs/inference?topic=inference-faq-ma#faq-ma)
 

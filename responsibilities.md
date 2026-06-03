@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-06-03"
 
 keywords: responsibilities, rhel ai, instructlab
 
@@ -44,7 +44,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 |----------|-----------------------|--------|
 | Version updates | Provide version updates and patches.  | Start or restart jobs on new versions as they are available. |
 | Model deployment for fine-tuning or model alignment | N/A | Deploy the model and update deployments with new versions as needed. |
-| Inference models | Host models for inferencing. | Edit system prompts and inference settings to achieve the best possible output for your business objectives. |
+| Inference models | Host models for inference. | Edit system prompts and inference settings to achieve the best possible output for your business objectives. |
 {: row-headers}
 {: caption="Responsibilities for change management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
@@ -90,7 +90,7 @@ For more information, see [High availability and disaster recovery](/docs/infere
 |----------|-----------------------|--------|
 | Data generation and model alignment | Ensure data generation and model alignment jobs resume after an incident. | Verify job completion after an incident. Sometimes, restarting a job after an incident might be required. |
 | {{site.data.keyword.cos_short}} back up for model alignment| N/A | Ensure data in your {{site.data.keyword.cos_short}} bucket is replicated and backed up. |
-| Inferencing requests | N/A | Ensure inferencing requests are backed up if needed. |
+| Inference requests | N/A | Ensure inference requests are backed up if needed. |
 | {{site.data.keyword.instructlab_short}} project backup | N/A | Create a back up project. |
 {: row-headers}
 {: caption="Responsibilities for disaster recovery" caption-side="bottom"}

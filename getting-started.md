@@ -2,9 +2,9 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-05-20"
+lastupdated: "2026-06-03"
 
-keywords: instructlab, ai, inferencing, chat completions
+keywords: instructlab, ai, inference, chat completions
 
 subcollection: inference
 
@@ -25,10 +25,10 @@ completion-time: 15m
 {: toc-services="{{site.data.keyword.subcollection}}"}
 {: toc-completion-time="15m"}
 
-Ready to start using AI in your applications? In this tutorial, you'll learn how to use inferencing to interact with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
+Ready to start using AI in your applications? In this tutorial, you'll learn how to inference with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
 {: shortdesc}
 
-{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inferencing for interacting with foundation models and model alignment for customizing models to your specific needs. This tutorial focuses on getting you started with inferencing, the fastest way to start using AI.
+{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inference for interacting with foundation models and model alignment for customizing models to your specific needs. This tutorial focuses on getting you started with inference, the fastest way to start using AI.
 
 ## What you'll accomplish
 {: #objectives}
@@ -36,7 +36,7 @@ Ready to start using AI in your applications? In this tutorial, you'll learn how
 In this tutorial, you'll do the following tasks:
 
 * Set up your {{site.data.keyword.cloud_notm}} account and project.
-* Authenticate to the inferencing API.
+* Authenticate to the inference API.
 * Generate your first chat completion with a foundation model.
 * Learn about next steps for customizing models with your own data.
 
@@ -169,7 +169,7 @@ The response shows you all the models you can use, along with information about 
 {: #generate-completion}
 {: step}
 
-Now, send a message to the model and receive an AI-generated response.
+Now, send a message to the model and receive an AI-generated response. 
 
 Make the following API call, replacing `{project_id}` with your project ID and `{api_key}` with your service ID API key:
 
@@ -233,7 +233,7 @@ messages
 :   You provided two messages. One was a developer message that set the system prompt and instructed the model on how to behave. The user message included your actual question for the model to answer. 
 
 API endpoint
-:   The request went to your project's inferencing endpoint, which handles routing to the appropriate model.
+:   The request went to your project's inference endpoint, which handles routing to the appropriate model.
 
 You can customize the model's behavior by adjusting the system prompt, adding more messages, or using different models for different use cases.
 {: tip}
@@ -241,16 +241,16 @@ You can customize the model's behavior by adjusting the system prompt, adding mo
 ## Next steps
 {: #next-steps}
 
-You've successfully started using inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}. Here's what you can do next:
+Now that you've successfully started using inference, here's what you can do next: 
 
-### Continue with inferencing
-{: #continue-inferencing}
+### Continue with inference
+{: #continue-inference}
 
-* [Learn more about inferencing](/docs/inference?topic=inference-inference) to discover advanced features like streaming responses, adjusting model parameters, and managing conversation history.
+* [Learn more about inference](/docs/inference?topic=inference-inference) to discover advanced features like streaming responses, adjusting model parameters, and managing conversation history.
 
 * Explore the [OpenAI Chat Completion API](https://platform.openai.com/docs/api-reference/chat){: external} and [OGX API](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external} documentation for complete API reference.
 
-* Integrate inferencing into your applications using the Python SDK or other programming languages.
+* Integrate inference into your applications using the Python SDK or other programming languages.
 
 ### Customize models with your data
 {: #customize-models}

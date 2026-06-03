@@ -2,9 +2,9 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-21"
+lastupdated: "2026-06-03"
 
-keywords: instructlab, ai, inferencing, chatting
+keywords: instructlab, ai, inference, chatting
 
 subcollection: inference
 
@@ -13,13 +13,13 @@ subcollection: inference
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Inferencing with Red Hat AI on {{site.data.keyword.cloud_notm}}
+# Inference a model
 {: #inference}
 
-Use inferencing to interact with foundation models and evaluate AI-powered responses for your applications. The inferencing feature provides a production-ready API that enables you to integrate conversational AI capabilities into your workflows, test model behavior, and build intelligent applications.
+With inference, you can interact with foundation models and evaluate AI-powered responses for your applications. The inference feature provides a production-ready API that enables you to integrate conversational AI capabilities into your workflows, test model behavior, and build intelligent applications.
 {: shortdesc}
 
-Inferencing solves the challenge of deploying and scaling AI models by providing immediate access to foundation models through familiar, industry-standard APIs. Whether you're prototyping a chatbot, building an AI assistant, or integrating natural language understanding into your application, inferencing eliminates the complexity of model hosting and lets you focus on creating value for your users.
+Inference solves the challenge of deploying and scaling AI models by providing immediate access to foundation models through familiar, industry-standard APIs. Whether you're prototyping a chatbot, building an AI assistant, or integrating natural language understanding into your application, inference eliminates the complexity of model hosting and lets you focus on creating value for your users.
 
 ## Before you begin
 {: #inf-prereqs}
@@ -31,15 +31,15 @@ Inferencing solves the challenge of deploying and scaling AI models by providing
 * Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui). 
 
 
-## Inferencing by using the console
+## Inference a model by using the console
 {: #inf-chat-ui}
 {: ui}
 
-The console provides an interactive playground where you can experiment with different models, test prompts, and refine your AI interactions before integrating them into your applications. 
+The console provides an interactive playground where you can experiment with different models, test prompts, and refine your AI interactions before integrating them into your applications.
 
 1. In the console, open the [{{site.data.keyword.instructlab_short}} service](/instructlab/overview){: external} and click the name of your project to open it.
 
-1. From the project page, click **Playground** to open the inferencing playground.
+1. From the project page, click **Playground** to open the inference playground.
 
 1. Begin your chat session. You can customize your chat session with the following options:
 
@@ -49,18 +49,18 @@ Model selection
 System prompt
 :   The system prompt instructs the model on how to conduct the dialog.
 
-Inferencing settings
+Inference settings
 :   Adjust the **Randomness**, **Repetition**, and **Response limits**.
 
 Chat history
 :   You can filter the chat history by **Model** or **Date range**.
 
 
-## Inferencing by using the API
+## Inference a model by using the API
 {: #inf-chat-api}
 {: api}
 
-With the API, you can programmatically integrate AI capabilities into your applications by using industry-standard OpenAI and OGX compatible endpoints. This approach is essential for production deployments where you need to automate AI interactions, handle high volumes of requests, or embed conversational AI into existing systems. The API provides the flexibility to customize model behavior, manage conversation history, and scale your AI-powered features alongside your application.
+With the API, you can programmatically integrate AI capabilities into your applications by using industry-standard OpenAI-compatible endpoints. This approach is essential for production deployments where you need to automate AI interactions, handle high volumes of requests, or embed conversational AI into existing systems. The API provides the flexibility to customize model behavior, manage conversation history, and scale your AI-powered features alongside your application.
 
 Currently, the following APIs are supported:
 
@@ -74,7 +74,7 @@ Models `/v1/models`
 :   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-model-v-1-models-model-id-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/models/retrieve){: external}
 :   List - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-list-models-v-1-models-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/models/list){: external}
 
-Review the following sections for examples of how to complete common inferencing tasks by using the API.
+Review the following sections for examples of how to complete common inference tasks by using the API.
 
 ### API endpoint
 {: #inf-api-endpoint}
@@ -102,7 +102,7 @@ Before you can make API calls, you need to authenticate your requests. You can a
 {: #inf-chat-token}
 {: api}
 
-Bearer tokens ensure secure access to your project's inferencing capabilities and are generated from your {{site.data.keyword.cloud_notm}} API key. Bearer tokens expire after a set period, so they must be refreshed periodically.
+Bearer tokens ensure secure access to your project's inference capabilities and are generated from your {{site.data.keyword.cloud_notm}} API key. Bearer tokens expire after a set period, so they must be refreshed periodically.
 
 The following example shows how to retrieve a bearer token.
 
@@ -129,7 +129,7 @@ You can also authenticate by using a user API key, as opposed to a service ID AP
 {: #inf-chat-generate}
 {: api}
 
-Chat completions are the core of inferencing. They allow you to send messages to a foundation model and receive AI-generated responses. This is how you build conversational experiences, get answers to questions, generate content, or process natural language inputs. You can control the conversation flow by providing system prompts that define the model's behavior and maintain message history for context-aware interactions.
+Chat completions are the core of inference. They allow you to send messages to a foundation model and receive AI-generated responses. This is how you build conversational experiences, get answers to questions, generate content, or process natural language inputs. You can control the conversation flow by providing system prompts that define the model's behavior and maintain message history for context-aware interactions.
 
 The following example shows how to generate a chat completion. For a complete list of the available parameters, see [OpenAI Chat Completion](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}.
 
@@ -212,7 +212,7 @@ print(completion)
 {: #inf-chat-list}
 {: api}
 
-Listing chat completions provides an overview of all your inferencing activity, so you can monitor usage patterns, track costs, and analyze how your application is interacting with foundation models. This is particularly valuable for understanding user behavior, identifying popular use cases, and optimizing your AI integration strategy.
+Listing chat completions provides an overview of all your inference activity, so you can monitor usage patterns, track costs, and analyze how your application is interacting with foundation models. This is particularly valuable for understanding user behavior, identifying popular use cases, and optimizing your AI integration strategy.
 
 The following example shows how to list chat completions. For a complete list of the available parameters, see [List Chat Completions](https://ogx-ai.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}.
 

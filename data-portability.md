@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-06-03"
 
 keywords: data portability, compliance, dora
 
@@ -44,7 +44,7 @@ You can export data from {{site.data.keyword.cos_short}} in the following ways.
 - Access the objects in your bucket by using the [COS CLI](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli).
 - Access the objects in your bucket by using the `rclone` [CLI tool](/docs/cloud-object-storage?topic=cloud-object-storage-rclone).
 
-For inferencing, chat completions remain stored in {{site.data.keyword.instructlab_short}} and are not stored in {{site.data.keyword.cos_short}}. You can delete chat completion data at any time. 
+For inference, chat completions remain stored in {{site.data.keyword.instructlab_short}} and are not stored in {{site.data.keyword.cos_short}}. You can delete chat completion data at any time.
 
 
 

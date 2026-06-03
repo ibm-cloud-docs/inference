@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-18"
+lastupdated: "2026-06-03"
 
 keywords: HA for {{site.data.keyword.short_name}}, DR for {{site.data.keyword.short_name}}, {{site.data.keyword.short_name}} recovery time objective, {{site.data.keyword.short_name}} recovery point objective
 
@@ -37,7 +37,7 @@ For more information about the available region and data center locations, see [
 | --- | --- | --- |
 | Global load balancing | When a node or availability zone fails, the service continues to run with API requests being routed through a global load balancer to the surviving HA instance nodes. | There may be a short period of time (seconds) between the outage and the global load balancer recognizing the failure, during which time, requests may be sent to the failed instance. |
 | Active model alignment requests | When a node or availability zone fails, the service continues to run with API requests being routed through a global load balancer to the surviving HA instance nodes. Active synthetic data generation jobs and active model alignment jobs executing on nodes within the zone are retried on nodes in a different zone on failure automatically. In certain regions due to capacity constraints, model alignment nodes are deployed within one zone. When the zone is restored active model alignment jobs are automatically retried. | There may be a short period of time (seconds) between the outage and the global load balancer recognizing the failure, during which time, requests may be sent to the failed instance. |
-| Active inferencing requests | Active requests are queued within {{site.data.keyword.instructlab_short}}, so even if the model is not available, the request is still processed. If requests are cancelled on the client side, they continue to be processed on the backend and can be retrieved later.| N/A |
+| Active inference requests | Active requests are queued within {{site.data.keyword.instructlab_short}}, so even if the model is not available, the request is still processed. If requests are canceled on the client side, they continue to be processed on the backend and can be retrieved later.| N/A |
 {: caption="HA features for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 
 ## Disaster recovery features

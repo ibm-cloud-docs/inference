@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-06-03"
 
 keywords:
 
@@ -83,10 +83,10 @@ The following table lists the activity tracking events that are generated when y
 | `instructlab.sdgdata.stop`      | An event is generated when you stop a data generation run. |
 {: caption="List of model alignment events" caption-side="bottom"}
 
-## Events for inferencing
-{: #at_actions_inferencing}
+## Events for inference
+{: #at_actions_inference}
 
-The following table lists the activity tracking events that are generated when you perform inferencing operations in {{site.data.keyword.instructlab_short}}. These events track actions related to managing inference models and creating, reading, and deleting inference requests. Use these events to monitor how your aligned models are being deployed and used for inference workloads.
+The following table lists the activity tracking events that are generated when you perform inference operations in {{site.data.keyword.instructlab_short}}. These events track actions related to managing inference models and creating, reading, and deleting inference requests. Use these events to monitor how your aligned models are being deployed and used for inference workloads.
 
 | Action                           | Description                        |
 |----------------------------------|------------------------------------|
@@ -100,4 +100,4 @@ The following table lists the activity tracking events that are generated when y
 | `instructlab.inference-session.list` | An event is generated when internal APIs are used for storing session list state for the UI. |
 | `instructlab.inference-session.delete` | An event is generated when internal APIs are used for storing session delete state in the UI. |
 | `instructlab.inference-session.update` | An event is generated when internal APIs are used for storing session update state in the UI. |
-{: caption="Lists of inferencing events" caption-side="bottom"}
+{: caption="Lists of inference events" caption-side="bottom"}

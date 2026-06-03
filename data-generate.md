@@ -354,7 +354,7 @@ ibmcloud ilab data generate \
     ```sh
     curl -X 'GET' \
     'https://us-east.instructlab.ibm.com/v1/taxonomies' \
-    -H 'accept: application/json
+    -H 'accept: application/json'
     ```
     {: pre}
 

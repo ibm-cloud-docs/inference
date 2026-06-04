@@ -35,7 +35,6 @@ toc:
           - topic: event-notifications.md
             navtitle: Enabling notifications
       - topic: inference.md
-        navtitle: Inferencing
       - topicgroup:
           label: Model alignment
           topics:

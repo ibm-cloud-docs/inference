@@ -34,7 +34,11 @@ toc:
             navtitle: Setting up logging
           - topic: event-notifications.md
             navtitle: Enabling notifications
-      - topic: inference.md
+      - topicgroup:
+          label: Running inference
+          topics:
+          - inference.md
+          - topic: inference-non-openai.md
       - topicgroup:
           label: Model alignment
           topics:

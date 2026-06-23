@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-04"
+lastupdated: "2026-06-23"
 
 
 keywords: instructlab, sitemap
@@ -179,8 +179,8 @@ subcollection: inference
     * [Webhooks](/docs/inference?topic=inference-event-notifications-events#event-notifications-webhook)
 
 
-## Inference a model
-{: #sitemap_inference_a_model}
+## Running inference
+{: #sitemap_running_inference}
 
 
 [Inference a model](/docs/inference?topic=inference-inference#inference)
@@ -206,6 +206,16 @@ subcollection: inference
     * [Listing models](/docs/inference?topic=inference-inference&interface=api#inf-chat-list-models)
 
     * [Getting a model by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-model)
+
+[Setting up a model gateway with LiteLLM proxy](/docs/inference?topic=inference-model-gateway#model-gateway)
+
+* [Before you begin](/docs/inference?topic=inference-model-gateway#inference-non-openai-prereqs)
+
+* [Installing and configuring LiteLLM proxy](/docs/inference?topic=inference-model-gateway#inference-non-openai-litellm)
+
+* [Starting LiteLLM proxy](/docs/inference?topic=inference-model-gateway#inference-non-openai-start)
+
+* [Connecting your client to LiteLLM proxy](/docs/inference?topic=inference-model-gateway#inference-non-openai-connect)
 
 
 ## Model alignment

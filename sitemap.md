@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-04"
+lastupdated: "2026-06-23"
 
 
 keywords: instructlab, sitemap
@@ -179,8 +179,8 @@ subcollection: inference
     * [Webhooks](/docs/inference?topic=inference-event-notifications-events#event-notifications-webhook)
 
 
-## Inference a model
-{: #sitemap_inference_a_model}
+## Running inference
+{: #sitemap_running_inference}
 
 
 [Inference a model](/docs/inference?topic=inference-inference#inference)

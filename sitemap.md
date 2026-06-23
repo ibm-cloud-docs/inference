@@ -207,6 +207,16 @@ subcollection: inference
 
     * [Getting a model by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-model)
 
+[Setting up a model gateway with LiteLLM proxy](/docs/inference?topic=inference-model-gateway#model-gateway)
+
+* [Before you begin](/docs/inference?topic=inference-model-gateway#inference-non-openai-prereqs)
+
+* [Installing and configuring LiteLLM proxy](/docs/inference?topic=inference-model-gateway#inference-non-openai-litellm)
+
+* [Starting LiteLLM proxy](/docs/inference?topic=inference-model-gateway#inference-non-openai-start)
+
+* [Connecting your client to LiteLLM proxy](/docs/inference?topic=inference-model-gateway#inference-non-openai-connect)
+
 
 ## Model alignment
 {: #sitemap_model_alignment}

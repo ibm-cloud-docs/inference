@@ -38,6 +38,7 @@ toc:
           label: Running inference
           topics:
           - inference.md
+          - topic: inference-non-openai.md
       - topicgroup:
           label: Model alignment
           topics:

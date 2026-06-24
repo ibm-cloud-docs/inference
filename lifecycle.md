@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-18"
+lastupdated: "2026-06-24"
 
 keywords: instructlab
 
@@ -22,8 +22,6 @@ Review this page for general information about {{site.data.keyword.instructlab_s
 
 ## {{site.data.keyword.instructlab_short}} recommended and supported versions
 {: #ilab-service-version}
-
-Provide the recommended version, supported version, and version policy for your service if applicable. See the following example:
 
 {{site.data.keyword.instructlab_short}} offers the following versions that can be ordered today or are coming soon if their General Availability (GA) date is in the future. We include an End of Support (EOS) date too, where this is known. To help you plan for the future, we aim to provide up to 12 month's notice of a version going to End of Support (EOS), though the actual time between notification and our EOS date will depend on EOS notice provided by third party vendors or open source communities. {{site.data.keyword.cloud_notm}} will not provide third party software or services that are not supported by the third party.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-23"
+lastupdated: "2026-06-24"
 
 keywords: litellm, openai, api translation, proxy
 
@@ -30,7 +30,9 @@ LiteLLM proxy is an open source LLM gateway that is widely used in enterprise en
 
 * Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui).
 
-* Obtain your project ID and an API key. To find your project ID, go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects), open your project, and click **Details**.
+* Find your project ID. Go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects) and open the project.
+
+* Create a [service ID API key](/docs/inference?topic=inference-getting-started&interface=api#create-service-id) to authenticate your requests. For other authentication options, see [authenticating to the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-auth).
 
 * Install `uv`, a Python package manager. For example, on macOS you can install it with Homebrew:
 

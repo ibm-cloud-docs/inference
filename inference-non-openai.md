@@ -19,7 +19,7 @@ subcollection: inference
 You can use [LiteLLM proxy](https://docs.litellm.ai/docs/simple_proxy){: external} to set up a model gateway in front of {{site.data.keyword.instructlab_short}}. A model gateway gives you a single entry point for managing API requests to your models, so you can route traffic to the model that best fits your needs, fall back to another model if one is unavailable, or connect tools that don't natively support the OpenAI-compatible API.
 {: shortdesc}
 
-LiteLLM proxy is an open source LLM gateway that is widely used in enterprise environments. It runs as a local proxy server that sits between your clients and {{site.data.keyword.instructlab_short}}, and supports load balancing, model fallback, and API format translation. When you configure LiteLLM proxy, all requests are forwarded to {{site.data.keyword.instructlab_short}} by using the OpenAI-compatible format that the service expects.
+LiteLLM proxy is an open source LLM gateway. It runs as a local proxy server that sits between your clients and {{site.data.keyword.instructlab_short}}, and supports load balancing, model fallback, and API format translation. When you configure LiteLLM proxy, all requests are forwarded to {{site.data.keyword.instructlab_short}} by using the OpenAI-compatible format that the service expects.
 
 ## Before you begin
 {: #inference-non-openai-prereqs}

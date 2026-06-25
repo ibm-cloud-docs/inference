@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-24"
+lastupdated: "2026-06-25"
 
 keywords: litellm, openai, api translation, proxy
 
@@ -16,10 +16,10 @@ subcollection: inference
 # Setting up a model gateway with LiteLLM proxy
 {: #model-gateway}
 
-You can use [LiteLLM proxy](https://docs.litellm.ai/docs/simple_proxy){: external} to set up a model gateway in front of {{site.data.keyword.instructlab_short}}. A model gateway gives you a single entry point for managing API requests to your models, so you can route traffic to the model that best fits your needs, fall back to another model if one is unavailable, or connect tools that don't natively support the OpenAI-compatible API.
+You can use LiteLLM proxy to set up a model gateway in front of {{site.data.keyword.instructlab_short}}. A model gateway gives you a single entry point for managing API requests to your models, so you can route traffic to the model that best fits your needs, fall back to another model if one is unavailable, or connect tools that don't natively support the OpenAI-compatible API.
 {: shortdesc}
 
-LiteLLM proxy is an open source LLM gateway. It runs as a local proxy server that sits between your clients and {{site.data.keyword.instructlab_short}}, and supports load balancing, model fallback, and API format translation. When you configure LiteLLM proxy, all requests are forwarded to {{site.data.keyword.instructlab_short}} by using the OpenAI-compatible format that the service expects.
+[LiteLLM proxy](https://docs.litellm.ai/docs/simple_proxy){: external} is an open source LLM gateway. It runs as a local proxy server that sits between your clients and {{site.data.keyword.instructlab_short}}, and supports load balancing, model fallback, and API format translation. When you configure LiteLLM proxy, all requests are forwarded to {{site.data.keyword.instructlab_short}} by using the OpenAI-compatible format that the service expects.
 
 ## Before you begin
 {: #inference-non-openai-prereqs}
@@ -60,21 +60,21 @@ LiteLLM proxy is an open source LLM gateway. It runs as a local proxy server tha
 
 1. In that directory, create a file named `config.yaml`. In the file, list each {{site.data.keyword.instructlab_short}} model that you want to make available through the proxy. Use the `custom_openai/` prefix in the `model` field and set `drop_params: true` so that unsupported parameters do not cause errors. 
 
-    Replace `{project_id}` and `{api_key}` with your project ID and API key.
+    Replace `<project_id>` and `<api_key>` with your project ID and API key.
 
     ```yaml
     model_list:
       - model_name: granite-4-0-h-small
         litellm_params:
           model: custom_openai/granite-4-0-h-small
-          api_base: https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference
-          api_key: {api_key}
+          api_base: https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference
+          api_key: <api_key>
           drop_params: true
 
       - model_name: llama-3-3-70b-instruct
         litellm_params:
           model: custom_openai/llama-3-3-70b-instruct
-          api_base: https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference
+          api_base: https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference
           api_key: {api_key}
           drop_params: true
     ```

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-06-25"
 
 keywords: instructlab, ai, inference, chat completions
 
@@ -55,13 +55,11 @@ Make sure you have the following:
 {: #get-project-id}
 {: step}
 
-Your project ID is required for all API requests. 
+Your project ID is required for all API requests.
 
 1. Go to [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/instructlab/projects){: external}.
 
 1. Open your project.
-
-1. Click **Details**.
 
 1. Copy your project ID and save it for the next steps.
 
@@ -72,24 +70,24 @@ All API requests use the following base URL format:
 
 
 ```text
-https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference
+https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference
 ```
 {: codeblock}
 
 
 
-Replace `{project_id}` with your project ID. 
+Replace `<project_id>` with your project ID.
 
 ## Authenticate to the API
 {: #authenticate}
 {: step}
 
-Before you can interact with foundation models, you need to authenticate your API requests. You can use either a bearer token or an {{site.data.keyword.cloud_notm}} API key. This tutorial shows how to use a service ID with an API key for programmatic access. For more information on using a bearer token, see [Authenticating by using a bearer token](/docs/inference?topic=inference-inference&interface=api#inf-chat-token). 
+Before you can interact with foundation models, you need to authenticate your API requests. You can use either a bearer token or an {{site.data.keyword.cloud_notm}} API key. This tutorial shows how to use a service ID with an API key for programmatic access. For more information on using a bearer token, see [Authenticating by using a bearer token](/docs/inference?topic=inference-inference&interface=api#inf-chat-token).
 
 ### Create a service ID and assign access
 {: #create-service-id}
 
-A service ID is a useful way to control and distribute access to {{site.data.keyword.instructlab_short}} projects. Create the service ID, then assign it access to your project. 
+A service ID is a useful way to control and distribute access to {{site.data.keyword.instructlab_short}} projects. Create the service ID, then assign it access to your project.
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **[Service IDs](/iam/serviceids){: external}** and click **Create**.
 
@@ -99,7 +97,7 @@ A service ID is a useful way to control and distribute access to {{site.data.key
 
 4. Select **{{site.data.keyword.instructlab_short}}** as the service.
 
-5. Within **Resources**, select **Specific resources** and choose your project. By doing so, you limit access to a specific project. 
+5. Within **Resources**, select **Specific resources** and choose your project. By doing so, you limit access to a specific project.
 
 6. Within **Roles and actions**, select the appropriate service access role:
    - Select **Writer** if you need to create chat completions.
@@ -114,11 +112,11 @@ A service ID is a useful way to control and distribute access to {{site.data.key
 ### Create an API key
 {: #create-api-key}
 
-Now that your service ID has access to your {{site.data.keyword.instructlab_short}} project, create a service ID API key to use in your API calls. 
+Now that your service ID has access to your {{site.data.keyword.instructlab_short}} project, create a service ID API key to use in your API calls.
 
 1. From the service ID page, click **API keys**.
 
-2. Click **Create** and enter a name for your API key. 
+2. Click **Create** and enter a name for your API key.
 
 3. For leaked key handling, select **Disable the leaked key** to automatically disable the key if it's detected as leaked.
 
@@ -136,14 +134,14 @@ You can now use that API key to authenticate your requests. In the next step, yo
 
 Different foundation models have different strengths, so it's important to review the models that are available in your project.
 
-Make the following API call to list all the available models. Replace `{project_id}` with your project ID and `{api_key}` with your service ID API key:
+Make the following API call to list all the available models. Replace `<project_id>` with your project ID and `<api_key>` with your service ID API key:
 
 
 
 ```bash
-curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models' \
+curl -L 'https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/models' \
   -H 'Accept: application/json' \
-  -H "Authorization: Bearer {api_key}"
+  -H "Authorization: Bearer <api_key>"
 ```
 {: codeblock}
 {: curl}
@@ -151,8 +149,8 @@ curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models'
 ```python
 from openai import OpenAI
 client = OpenAI(
-  api_key="{api_key}",
-  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+  api_key="<api_key>",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference",
 )
 
 models = client.models.list()
@@ -169,16 +167,16 @@ The response shows you all the models you can use, along with information about 
 {: #generate-completion}
 {: step}
 
-Now, send a message to the model and receive an AI-generated response. 
+Now, send a message to the model and receive an AI-generated response.
 
-Make the following API call, replacing `{project_id}` with your project ID and `{api_key}` with your service ID API key:
+Make the following API call, replacing `<project_id>` with your project ID and `<api_key>` with your service ID API key:
 
 
 
 ```bash
-curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions \
+curl https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer {api_key}" \
+  -H "Authorization: Bearer <api_key>" \
   -d '{
     "model": "granite-4-0-h-small",
     "messages": [
@@ -199,8 +197,8 @@ curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/comple
 ```python
 from openai import OpenAI
 client = OpenAI(
-  api_key="{api_key}",
-  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+  api_key="<api_key>",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference",
 )
 
 completion = client.chat.completions.create(
@@ -219,7 +217,7 @@ print(completion.choices[0].message)
 
 
 
-You should receive a response from the model introducing itself. 
+You should receive a response from the model introducing itself.
 
 ### Understanding the request
 {: #understand-request}
@@ -230,7 +228,7 @@ model
 :   You specified `granite-4-0-h-small`, one of the available foundation models. Different models have different capabilities and performance characteristics.
 
 messages
-:   You provided two messages. One was a developer message that set the system prompt and instructed the model on how to behave. The user message included your actual question for the model to answer. 
+:   You provided two messages. One was a developer message that set the system prompt and instructed the model on how to behave. The user message included your actual question for the model to answer.
 
 API endpoint
 :   The request went to your project's inference endpoint, which handles routing to the appropriate model.
@@ -241,7 +239,7 @@ You can customize the model's behavior by adjusting the system prompt, adding mo
 ## Next steps
 {: #next-steps}
 
-Now that you've successfully started using inference, here's what you can do next: 
+Now that you've successfully started using inference, here's what you can do next:
 
 ### Continue with inference
 {: #continue-inference}
@@ -264,4 +262,4 @@ Ready to go beyond general-purpose models? You can customize foundation models w
 1. [Train a custom model](/docs/inference?topic=inference-model-train) aligned with your specific needs.
 
 
-By doing so, you can fine-tune models so they understand your business context, terminology, and requirements, which goes beyond what the general-purpose models can provide. 
+By doing so, you can fine-tune models so they understand your business context, terminology, and requirements, which goes beyond what the general-purpose models can provide.

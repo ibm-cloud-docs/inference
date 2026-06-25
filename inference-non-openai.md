@@ -24,13 +24,15 @@ You can use LiteLLM proxy to set up a model gateway in front of {{site.data.keyw
 ## Before you begin
 {: #inference-non-openai-prereqs}
 
+Before you can set up a model gateway with LiteLLM proxy, make sure that you complete the following steps:
+
 * Create a Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
 
-* Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
+* Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project){: external}.
+
+* Find your project ID. Go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects){: external} and open the project.
 
 * Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui).
-
-* Find your project ID. Go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects) and open the project.
 
 * Create a [service ID API key](/docs/inference?topic=inference-getting-started&interface=api#create-service-id) to authenticate your requests. For other authentication options, see [authenticating to the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-auth).
 
@@ -43,6 +45,8 @@ You can use LiteLLM proxy to set up a model gateway in front of {{site.data.keyw
 
 ## Installing and configuring LiteLLM proxy
 {: #inference-non-openai-litellm}
+
+Install LiteLLM proxy, create a directory to store your configuration file, and create the configuration file to list the models you want to use. Complete the following steps:
 
 1. Install LiteLLM proxy.
 

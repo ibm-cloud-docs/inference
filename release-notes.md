@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-06-25"
 
 keywords: release notes
 
@@ -23,6 +23,8 @@ Use the release notes to learn about the latest changes to the documentation tha
 
 Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status).
 {: tip}
+
+
 
 ## May 2026
 {: #may26}
@@ -53,7 +55,7 @@ Inference with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
 {: #10oct25}
 {: release-note}
 
-{{site.data.keyword.short_name}} CLI plug-in version 0.0.26 
+{{site.data.keyword.short_name}} CLI plug-in version 0.0.26
 :   Version 0.0.26 of the plug-in adds file size limits. Each of the skills and knowledge documents must be less than 100 GB in size. The cumulative size of all the skills and knowledge JSON files must be less than 400 GB.
 
 ## September 2025

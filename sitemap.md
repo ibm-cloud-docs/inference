@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-23"
+lastupdated: "2026-06-25"
 
 
 keywords: instructlab, sitemap
@@ -95,7 +95,7 @@ subcollection: inference
 
     * [10 October 2025](/docs/inference?topic=inference-release-notes#10oct25)
 
-        * {{site.data.keyword.short_name}} CLI plug-in version 0.0.26 
+        * {{site.data.keyword.short_name}} CLI plug-in version 0.0.26
 
 * [September 2025](/docs/inference?topic=inference-release-notes#sept25)
 

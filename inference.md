@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-06-25"
 
 keywords: instructlab, ai, inference, chatting
 
@@ -28,7 +28,7 @@ Inference solves the challenge of deploying and scaling AI models by providing i
 
 * Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 
-* Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui). 
+* Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui).
 
 
 ## Inference a model by using the console
@@ -84,13 +84,13 @@ All API requests use the following base URL format:
 
 
 ```text
-https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference
+https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference
 ```
 {: codeblock}
 
 
 
-Replace `{project_id}` with your project ID. To find it, go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects), open your project, and click **Details**.
+Replace `<project_id>` with your project ID. To find it, go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects) and open your project.
 
 ### Authenticating to the API
 {: #inf-chat-auth}
@@ -107,7 +107,7 @@ Bearer tokens ensure secure access to your project's inference capabilities and 
 The following example shows how to retrieve a bearer token.
 
 ```bash
-curl -X POST "https://iam.cloud.ibm.com/identity/token" --header "Content-Type: application/x-www-form-urlencoded" --header "Accept: application/json" --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" --data-urlencode "apikey=${IBM_CLOUD_API_KEY}"
+curl -X POST "https://iam.cloud.ibm.com/identity/token" --header "Content-Type: application/x-www-form-urlencoded" --header "Accept: application/json" --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" --data-urlencode "apikey=$<IBM_CLOUD_API_KEY>"
 ```
 {: pre}
 
@@ -121,7 +121,7 @@ The bearer token is the `access_token` in the response. These tokens have an exp
 {: #inf-chat-apikey}
 {: api}
 
-There are two ways to authenticate with an API key: You can [create a service ID](/docs/iam?topic=iam-serviceids&interface=ui), which is the recommended way to distribute access and controls. If you create a service ID, you need to [create a service ID API key](/docs/iam?topic=iam-serviceidapikeys&interface=ui) as well, which you use to authenticate. [Getting started with {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-getting-started#authenticate) explains how to create a service ID and an API key to authenticate programmatically. 
+There are two ways to authenticate with an API key: You can [create a service ID](/docs/iam?topic=iam-serviceids&interface=ui), which is the recommended way to distribute access and controls. If you create a service ID, you need to [create a service ID API key](/docs/iam?topic=iam-serviceidapikeys&interface=ui) as well, which you use to authenticate. [Getting started with {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-getting-started#authenticate) explains how to create a service ID and an API key to authenticate programmatically.
 
 You can also authenticate by using a user API key, as opposed to a service ID API key. For more information, see [Managing user API keys](/docs/iam?topic=iam-userapikey&interface=ui).
 
@@ -136,7 +136,7 @@ The following example shows how to generate a chat completion. For a complete li
 
 
 ```bash
-curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer {bearer_token}" -d '{
+curl https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer <bearer_token>" -d '{
  "model": "granite-4-0-h-small",
  "messages": [
    {
@@ -148,7 +148,7 @@ curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/comple
      "content": "Hello! Tell me about yourself"
    }
  ]
-}' 
+}'
 ```
 {: codeblock}
 {: curl}
@@ -156,8 +156,8 @@ curl https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/comple
 ```python
 from openai import OpenAI
 client = OpenAI(
-  api_key="{bearer_token}",
-  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+  api_key="<bearer_token>",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference",
 )
 
 completion = client.chat.completions.create(
@@ -180,15 +180,15 @@ print(completion.choices[0].message)
 {: #inf-chat-get-completion}
 {: api}
 
-Retrieving a specific chat completion by ID is useful for auditing, debugging, or analyzing past interactions. 
+Retrieving a specific chat completion by ID is useful for auditing, debugging, or analyzing past interactions.
 
 The following example shows how to get a chat completion by its ID. For a complete list of the available parameters, see [Get Chat Completion](https://ogx-ai.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}.
 
 
 
 ```bash
-curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions/{completion_id}' \
--H 'Accept: application/json' -H "Authorization: Bearer {bearer_token}"
+curl -L 'https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/chat/completions/<completion_id>' \
+-H 'Accept: application/json' -H "Authorization: Bearer <bearer_token>"
 ```
 {: codeblock}
 {: curl}
@@ -196,11 +196,11 @@ curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/co
 ```python
 from openai import OpenAI
 client = OpenAI(
-  api_key="{bearer_token}",
-  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+  api_key="<bearer_token>",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference",
 )
 
-completion = client.chat.completions.retrieve(completion_id="{completion_id}")
+completion = client.chat.completions.retrieve(completion_id="<completion_id>")
 print(completion)
 ```
 {: codeblock}
@@ -219,8 +219,8 @@ The following example shows how to list chat completions. For a complete list of
 
 
 ```sh
-curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions' \
--H 'Accept: application/json' -H "Authorization: Bearer {bearer_token}"
+curl -L 'https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/chat/completions' \
+-H 'Accept: application/json' -H "Authorization: Bearer <bearer_token>"
 ```
 {: codeblock}
 {: curl}
@@ -228,8 +228,8 @@ curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/co
 ```python
 from openai import OpenAI
 client = OpenAI(
-  api_key="{bearer_token}",
-  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+  api_key="<bearer_token>",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference",
 )
 
 completions = client.chat.completions.list()
@@ -244,15 +244,15 @@ print(completions)
 {: #inf-chat-delete}
 {: api}
 
-Deleting chat completions helps you clean up test data and comply with privacy requirements. 
+Deleting chat completions helps you clean up test data and comply with privacy requirements.
 
 The following example shows how to delete a chat completion. For a complete list of the available parameters, see [Delete chat completion](https://platform.openai.com/docs/api-reference/chat/delete){: external}.
 
 
 
 ```bash
-curl -X DELETE https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/chat/completions/{completion_id} \
--H "Content-Type: application/json" -H "Authorization: Bearer {bearer_token}"
+curl -X DELETE https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/chat/completions/<completion_id> \
+-H "Content-Type: application/json" -H "Authorization: Bearer <bearer_token>"
 ```
 {: codeblock}
 {: curl}
@@ -270,8 +270,8 @@ The following example shows how to list models. For a complete list of the avail
 
 
 ```bash
-curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models' \
--H 'Accept: application/json' -H "Authorization: Bearer {bearer_token}"
+curl -L 'https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/models' \
+-H 'Accept: application/json' -H "Authorization: Bearer <bearer_token>"
 ```
 {: codeblock}
 {: curl}
@@ -279,8 +279,8 @@ curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models'
 ```python
 from openai import OpenAI
 client = OpenAI(
-  api_key="{bearer_token}",
-  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+  api_key="<bearer_token>",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference",
 )
 
 models = client.models.list()
@@ -302,8 +302,8 @@ The following example shows how to get a model by ID. For a complete list of the
 
 
 ```bash
-curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models/{model}' \
--H 'Accept: application/json' -H "Authorization: Bearer {bearer_token}"
+curl -L 'https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/models/<model>' \
+-H 'Accept: application/json' -H "Authorization: Bearer <bearer_token>"
 ```
 {: codeblock}
 {: curl}
@@ -311,11 +311,11 @@ curl -L 'https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference/models/
 ```python
 from openai import OpenAI
 client = OpenAI(
-  api_key="{bearer_token}",
-  base_url="https://us-east.rhai.ibm.com/v1/projects/{project_id}/inference",
+  api_key="<bearer_token>",
+  base_url="https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference",
 )
 
-model = client.models.retrieve("{model}")  # for example, "granite-4-0-h-small"
+model = client.models.retrieve("<model>")  # for example, "granite-4-0-h-small"
 print(model)
 ```
 {: codeblock}

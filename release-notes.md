@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-06-26"
 
 keywords: release notes
 
@@ -24,7 +24,15 @@ Use the release notes to learn about the latest changes to the documentation tha
 Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status).
 {: tip}
 
+## June 2026
+{: #june26}
 
+### 25 June 2026
+{: #25june26}
+{: release-note}
+
+New models available
+:   Two new models are now available for inference: `gemma-4-31b-it` and `granite-4-1-30b`. To view all available models, open your project in [{{site.data.keyword.instructlab_short}}](/instructlab/projects){: external} and click **Model catalog**.
 
 ## May 2026
 {: #may26}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-07-01"
 
 keywords: litellm, openai, api translation, proxy
 
@@ -79,7 +79,7 @@ Install LiteLLM proxy, create a directory to store your configuration file, and 
         litellm_params:
           model: custom_openai/llama-3-3-70b-instruct
           api_base: https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference
-          api_key: {api_key}
+          api_key: <api_key>
           drop_params: true
     ```
     {: codeblock}

@@ -17,6 +17,8 @@ subcollection: inference
 # How taxonomies are structured for {{site.data.keyword.short_name}}
 {: #taxonomy-overview}
 
+The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.{: deprecated}
+
 A taxonomy is a file directory that consists of the data you feed to the model. It is organized in a cascading structure where each sub-directory, or "branch", of the taxonomy "tree" ends with a "leaf node", which is a set of files that contain the relevant data. You can contribute to a taxonomy by adding an entirely new "branch", or by adding new data to an existing `qna.yaml` file. For more information on the taxonomy structure, see [About the {{site.data.keyword.instructlab_short}} Taxonomy](https://docs.instructlab.ai/taxonomy/){: external} in the {{site.data.keyword.instructlab_short}} docs. You can also view the [{{site.data.keyword.instructlab_short}} taxonomy on GitHub](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy/tree/main/knowledge){: external}.
 
 For steps on creating or adding to a taxonomy, see [Preparing taxonomies](/docs/inference?topic=inference-taxonomy-prep).

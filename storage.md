@@ -16,6 +16,8 @@ subcollection: inference
 # Creating storage locations for {{site.data.keyword.short_name}}
 {: #storage}
 
+The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.{: deprecated}
+
 Complete the following steps to create one or more {{site.data.keyword.cos_short}} buckets to store {{site.data.keyword.short_name}} resources in. 
 {: shortdesc}
 

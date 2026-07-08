@@ -253,6 +253,8 @@ Now that you've successfully started using inference, here's what you can do nex
 ### Customize models with your data
 {: #customize-models}
 
+[Deprecated]{: tag-deprecated}
+
 Ready to go beyond general-purpose models? You can customize foundation models with your organization's specific knowledge and skills through model alignment:
 
 1. [Prepare a taxonomy](/docs/inference?topic=inference-taxonomy-prep) containing your business knowledge and skills.

@@ -15,6 +15,7 @@ subcollection: inference
 # Installing the {{site.data.keyword.product_name}} CLI
 {: #cli-install}
 
+The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.{: deprecated}
 
 You can use the `ilab` CLI plug-in to manage your {{site.data.keyword.short_name}} resources.
 {: shortdesc}

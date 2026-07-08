@@ -15,6 +15,8 @@ content-type: cli-docs
 # {{site.data.keyword.instructlab_short}} CLI
 {: #ilab-cli}
 
+The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.{: deprecated}
+
 ## Globals
 {: #ilab-globals}
 

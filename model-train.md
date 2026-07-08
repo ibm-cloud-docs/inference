@@ -16,6 +16,7 @@ subcollection: inference
 # Training models for {{site.data.keyword.short_name}}
 {: #model-train}
 
+The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.{: deprecated}
 
 Train your model on generated data, then test the model to verify the results. [Learn more about what training is](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-faq#faq-model-train).
 

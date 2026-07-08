@@ -15,6 +15,8 @@ subcollection: inference
 # Preparing taxonomies for {{site.data.keyword.short_name}}
 {: #taxonomy-prep}
 
+The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.{: deprecated}
+
 Follow these steps to create your own taxonomy. For more information on taxonomies and the data they include, see [How taxonomies are structured](/docs/inference?topic=inference-taxonomy-overview).
 {: shortdesc}
 

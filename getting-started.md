@@ -28,7 +28,7 @@ completion-time: 15m
 Ready to start using AI in your applications? In this tutorial, you'll learn how to inference with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
 {: shortdesc}
 
-{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inference for interacting with foundation models and model alignment for customizing models to your specific needs. This tutorial focuses on getting you started with inference, the fastest way to start using AI.
+{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inference for interacting with foundation models and model alignment (deprecated) for customizing models to your specific needs. This tutorial focuses on getting you started with inference, the fastest way to start using AI.
 
 ## What you'll accomplish
 {: #objectives}

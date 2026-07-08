@@ -24,6 +24,16 @@ Use the release notes to learn about the latest changes to the documentation tha
 Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, security bulletins, or maintenance notifications? See [{{site.data.keyword.cloud_notm}} status](https://cloud.ibm.com/status?selected=status).
 {: tip}
 
+## July 2026
+{: #july26}
+
+## 8 July 2026
+{: #8july26}
+{: release-note}
+
+Model alignment is deprecated
+:  The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.
+
 ## June 2026
 {: #june26}
 

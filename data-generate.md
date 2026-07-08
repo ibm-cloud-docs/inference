@@ -16,6 +16,7 @@ subcollection: inference
 # Generating data from a taxonomy for {{site.data.keyword.short_name}}
 {: #data-generate}
 
+The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.{: deprecated}
 
 Data generation is the process of automatically generating synthetic questions and answers based on the questions and answers that you included in the QNA files. The process {{site.data.keyword.instructlab_short}} uses to generate data focuses on content quality and relevance. 
 

@@ -81,6 +81,8 @@ You can test and refine your interactions in the console playground before integ
 ## What is model alignment?
 {: #model-alignment}
 
+[Deprecated]{: tag-deprecated}
+
 Model alignment through allows you to customize foundation models with your organization's specific knowledge and skills. Rather than using a general-purpose model, you can fine-tune models to understand your business context, terminology, and requirements.
 
 The model alignment process involves:

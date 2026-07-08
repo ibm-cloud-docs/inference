@@ -27,7 +27,7 @@ Review this page for general information about {{site.data.keyword.instructlab_s
 
 | Feature | Version | GA date | EOS procedure |
 |----|----|----|----|
-| Model alignment | 1.5 | 25 September  2025 | Automatically upgraded in place to next Major version|
+| Model alignment [Deprecated]{: tag-deprecated} | 1.5 | 25 September  2025 | Deprecated and will be removed on September 25, 2026 |
 | Inferencing | The operator version for model hosting is 3.4 \n The vLLM version is 0.18 | 22 May 2026 | Automatically upgraded in place to next Major version|
 {: caption="Recommended and supported version types for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 

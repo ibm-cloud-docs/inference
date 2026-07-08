@@ -18,6 +18,8 @@ content-type: faq
 # FAQ about model alignment 
 {: #faq-ma}
 
+The Red Hat AI Inference model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on September 25, 2026. To continue model customization and alignment workflows, migrate to Red Hat OpenShift AI On OpenShift. [Learn more about Red Hat OpenShift AI](https://cloud.ibm.com/docs/openshift?topic=openshift-ai-addon-about){: external}.{: deprecated}
+
 Frequently asked questions about model alignment might include questions about the training process or how to fine-tune foundation models. To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 

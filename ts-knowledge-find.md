@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-07-09"
 
 keywords: knowledge documents, patterns, troubleshooting
 
@@ -15,6 +15,9 @@ subcollection: inference
 # `Failed to find knowledge documents` error during data generation in {{site.data.keyword.short_name}}
 {: #ts-knowledge-find}
 
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
+
 When you try to generate data, you get the following error.
 {: tsSymptoms}
 
@@ -23,7 +26,7 @@ Failed to find knowledge documents. See detailed logs in COS.
 ```
 {: screen}
 
-Given the information in the QNA files, no knowledge documents existed that matched the value in the `patterns` field. 
+Given the information in the QNA files, no knowledge documents existed that matched the value in the `patterns` field.
 {: tsCauses}
 
 When a taxonomy is uploaded, the file structure is validated. During data generation, additional validation is done to verify the content of the taxonomy.

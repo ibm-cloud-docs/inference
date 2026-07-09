@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-07-09"
 
 keywords: instructlab, ai, inference, chat completions
 
@@ -29,6 +29,10 @@ Ready to start using AI in your applications? In this tutorial, you'll learn how
 {: shortdesc}
 
 {{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. Red Hat AI on {{site.data.keyword.cloud_notm}} provides two core capabilities: inference for interacting with foundation models and model alignment for customizing models to your specific needs. This tutorial focuses on getting you started with inference, the fastest way to start using AI.
+
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
+
 
 ## What you'll accomplish
 {: #objectives}
@@ -252,6 +256,8 @@ Now that you've successfully started using inference, here's what you can do nex
 
 ### Customize models with your data
 {: #customize-models}
+
+[Deprecated]{: tag-deprecated}
 
 Ready to go beyond general-purpose models? You can customize foundation models with your organization's specific knowledge and skills through model alignment:
 

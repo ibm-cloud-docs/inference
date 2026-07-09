@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2025-10-09"
+  years: 2025, 2026
+lastupdated: "2026-07-09"
 
 keywords: instructlab, cli, plugin
 
@@ -14,6 +14,9 @@ content-type: cli-docs
 
 # {{site.data.keyword.instructlab_short}} CLI
 {: #ilab-cli}
+
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
 
 ## Globals
 {: #ilab-globals}

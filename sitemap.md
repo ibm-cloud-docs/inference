@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-26"
+lastupdated: "2026-07-09"
 
 
 keywords: instructlab, sitemap
@@ -78,6 +78,12 @@ subcollection: inference
 
 
 [Release notes](/docs/inference?topic=inference-release-notes#release-notes)
+
+* [July 2026](/docs/inference?topic=inference-release-notes#july26)
+
+    * [8 July 2026](/docs/inference?topic=inference-release-notes#8july26)
+
+        * Model alignment is deprecated
 
 * [June 2026](/docs/inference?topic=inference-release-notes#june26)
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-07-09"
+lastupdated: "2026-07-10"
 
 keywords: release notes
 
@@ -27,7 +27,7 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, sec
 ## July 2026
 {: #july26}
 
-### 8 July 2026
+### 14 July 2026
 {: #8july26}
 {: release-note}
 

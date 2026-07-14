@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-07-09"
 
 keywords: instructlab, ai, about, how it works, billing
 
@@ -53,7 +53,7 @@ Flexible integration
 Interactive testing
 :   Experiment with different models and prompts in the console playground before integrating them into your applications.
 
-For more information about inference, see [AI inference, simplified and explained](https://www.ibm.com/think/topics/ai-inference){: external}. 
+For more information about inference, see [AI inference, simplified and explained](https://www.ibm.com/think/topics/ai-inference){: external}.
 
 For more information about how to inference, see [Inference with models](/docs/inference?topic=inference-inference).
 
@@ -80,6 +80,8 @@ You can test and refine your interactions in the console playground before integ
 
 ## What is model alignment?
 {: #model-alignment}
+
+[Deprecated]{: tag-deprecated}
 
 Model alignment through allows you to customize foundation models with your organization's specific knowledge and skills. Rather than using a general-purpose model, you can fine-tune models to understand your business context, terminology, and requirements.
 
@@ -134,7 +136,7 @@ Industry-standard APIs
 ## Resources for learning more
 {: #resources}
 
-See what others have to say about model training with {{site.data.keyword.instructlab_short}}. 
+See what others have to say about model training with {{site.data.keyword.instructlab_short}}.
 
 - [What is InstructLab?](https://www.redhat.com/en/topics/ai/what-is-instructlab){: external}
 - [InstructLab](https://www.ibm.com/think/topics/instructlab?mhsrc=ibmsearch_a&mhq=instructlab){: external}.

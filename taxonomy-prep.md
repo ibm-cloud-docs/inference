@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-18"
+lastupdated: "2026-07-09"
 
 keywords: instructlab, taxonomy, prepare, create taxonomy, qna, knowledge document, documents
 
@@ -18,17 +18,20 @@ subcollection: inference
 Follow these steps to create your own taxonomy. For more information on taxonomies and the data they include, see [How taxonomies are structured](/docs/inference?topic=inference-taxonomy-overview).
 {: shortdesc}
 
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
+
 ## Create or clone your taxonomy
 {: #taxonomy-create}
 {: step}
 
-You can [fork and clone the {{site.data.keyword.instructlab_short}} taxonomy](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy){: external}, or you can create a new taxonomy from scratch in your own GitHub repo. For examples and diagrams showing how you can structure your own taxonomy, see [Upstream taxonomy tree layout](https://docs.instructlab.ai/taxonomy/#upstream-taxonomy-tree-layout){: external} in the {{site.data.keyword.instructlab_short}} docs. 
+You can [fork and clone the {{site.data.keyword.instructlab_short}} taxonomy](https://github.com/IBM-Cloud/redhat-ai-instructlab-taxonomy){: external}, or you can create a new taxonomy from scratch in your own GitHub repo. For examples and diagrams showing how you can structure your own taxonomy, see [Upstream taxonomy tree layout](https://docs.instructlab.ai/taxonomy/#upstream-taxonomy-tree-layout){: external} in the {{site.data.keyword.instructlab_short}} docs.
 
 ## Gather your knowledge documents
 {: #taxonomy-gather}
 {: step}
 
-Format your knowledge documents as a Markdown `.md` file and store them in a directory that is separate from the taxonomy. For an example of a knowledge document, see the [documentation](https://docs.instructlab.ai/taxonomy/knowledge/file_structure/#example-of-a-knowledge-document-file){: external}. 
+Format your knowledge documents as a Markdown `.md` file and store them in a directory that is separate from the taxonomy. For an example of a knowledge document, see the [documentation](https://docs.instructlab.ai/taxonomy/knowledge/file_structure/#example-of-a-knowledge-document-file){: external}.
 
 Knowledge documents are only required when adding knowledge to your taxonomy, not skills. For more information on the difference between knowledge and skills see [Taxonomy data](/docs/inference?topic=inference-taxonomy-overview#taxonomy-data).
 
@@ -38,9 +41,9 @@ The total size of your knowledge documents should not exceed 10MB cumulative.
 ## Create `qna.yaml` files for knowledge and skills
 {: #taxonomy-qna}
 
-1. Create a `qna.yaml` file that includes questions and answers related to the knowledge or skill you want to add. The file must follow standard YAML formatting. The file must also have at least 5 `seed_examples` sections and, within each of those, exactly 3 question and answer pairs. For a complete list of fields required for the `qna.yaml` file, see the docs for adding [knowledge](https://docs.instructlab.ai/taxonomy/knowledge/file_structure/#the-knowledge-files){: external} or [skills](https://docs.instructlab.ai/taxonomy/skills/file_structure/#the-structure-of-the-qnayaml-file){: external}. 
+1. Create a `qna.yaml` file that includes questions and answers related to the knowledge or skill you want to add. The file must follow standard YAML formatting. The file must also have at least 5 `seed_examples` sections and, within each of those, exactly 3 question and answer pairs. For a complete list of fields required for the `qna.yaml` file, see the docs for adding [knowledge](https://docs.instructlab.ai/taxonomy/knowledge/file_structure/#the-knowledge-files){: external} or [skills](https://docs.instructlab.ai/taxonomy/skills/file_structure/#the-structure-of-the-qnayaml-file){: external}.
 
-2. If you are creating a `qna.yaml` file for a knowledge addition, you must reference the relevant knowledge document, the commit hash for the document, and the directory where it is stored in the `document` section of the file. 
+2. If you are creating a `qna.yaml` file for a knowledge addition, you must reference the relevant knowledge document, the commit hash for the document, and the directory where it is stored in the `document` section of the file.
 
     Example knowledge document and directory reference.
 
@@ -53,18 +56,18 @@ The total size of your knowledge documents should not exceed 10MB cumulative.
     ```
     {: screen}
 
-3. Add the file to the correct node in your taxonomy. 
+3. Add the file to the correct node in your taxonomy.
 
-In addition to creating a new `qna.yaml` file, you can also add question and answer pairs to existing files. 
+In addition to creating a new `qna.yaml` file, you can also add question and answer pairs to existing files.
 {: tip}
 
 ## Upload your taxonomy to your {{site.data.keyword.cos_short}} bucket
 {: #taxonomy-upload}
 {: step}
 
-Use the [UI](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui) or the [CLI](/docs/inference?topic=inference-getting-started&interface=cli#taxonomy-add-ui) to upload and store your taxonomy to your {{site.data.keyword.cos_short}} bucket. 
+Use the [UI](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui) or the [CLI](/docs/inference?topic=inference-getting-started&interface=cli#taxonomy-add-ui) to upload and store your taxonomy to your {{site.data.keyword.cos_short}} bucket.
 
 ## What's next?
 {: #taxonomy-next}
 
-Learn how to [generate data from your taxonomy](/docs/inference?topic=inference-data-generate&interface=ui). 
+Learn how to [generate data from your taxonomy](/docs/inference?topic=inference-data-generate&interface=ui).

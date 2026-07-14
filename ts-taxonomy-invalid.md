@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-07-09"
 
 keywords: taxonomy, troubleshooting
 
@@ -15,6 +15,8 @@ subcollection: inference
 # `Failed to process invalid taxonomy files` error during data generation in {{site.data.keyword.short_name}}
 {: #ts-taxonomy-invalid}
 
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
 
 When you try to generate data, you get the following error.
 {: tsSymptoms}
@@ -55,6 +57,3 @@ Fix issues with the taxonomy.
 1. [Upload the taxonomy updates](/docs/inference?topic=inference-getting-started&interface=ui#taxonomy-add-ui) to {{site.data.keyword.cos_short}}.
 
 1. Run the [data generation](/docs/inference?topic=inference-data-generate) again.
-
-
- 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-06-23"
+lastupdated: "2026-07-09"
 
 keywords: instructlab, ai, data, generate
 
@@ -17,9 +17,13 @@ subcollection: inference
 {: #data-generate}
 
 
-Data generation is the process of automatically generating synthetic questions and answers based on the questions and answers that you included in the QNA files. The process {{site.data.keyword.instructlab_short}} uses to generate data focuses on content quality and relevance. 
+Data generation is the process of automatically generating synthetic questions and answers based on the questions and answers that you included in the QNA files. The process {{site.data.keyword.instructlab_short}} uses to generate data focuses on content quality and relevance.
+{: shortdesc}
 
 [Learn more about the data generation process from Red Hat](https://www.redhat.com/en/blog/how-instructlabs-synthetic-data-generation-enhances-llms){: external}.
+
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
 
 
 ## Prerequisites
@@ -73,7 +77,7 @@ Complete the following steps to import your own training data.
         1. Select the files that you want to import.
 
     - **Upload Files**:  Select files from your local machine. Note that there is a 40 Mb limit for uploading files.
-        
+
         1. Select an {{site.data.keyword.cos_short}} instance and bucket or create a new instance and bucket to store your data.
         1. Grant {{site.data.keyword.short_name}} Writer permissions for the bucket.
         1. **Optional**: Storage settings. Specify the following additional details for how to store your data.
@@ -182,10 +186,10 @@ Complete the following steps to merge data in the console.
     Example JSON output
     ```json
     {
-      "created_at": "2026-06-23T15:40:29.000Z",
+      "created_at": "2026-07-09T15:40:29.000Z",
       "data_metrics": {
         "samples": {
-          "knowledge": 30, 
+          "knowledge": 30,
           "skills": 70,
           "total": 100
         },
@@ -203,7 +207,7 @@ Complete the following steps to merge data in the console.
         }
       },
       "id": "66a268c170dcb21150050e8e",
-      "last_signal_at": "2026-06-23T17:20:32.000Z",
+      "last_signal_at": "2026-07-09T17:20:32.000Z",
       "name": "test-data",
       "state": "completed",
       "status": "completed",
@@ -254,7 +258,7 @@ Complete the following steps to import your data.
 
     Example command to include multiple internal IDs (data sources) for data generation.
     ```sh
-    ibmcloud ilab data generate --name testdata --taxonomy-id 65005b67-7de4-4216-b23c-ed4342f99c88 --internal-ids 8c6b9224-a4f1-4649-907c-0f11d14cfc59,299ee20c-0b04-4d8e-ad12-a3d98feece40 
+    ibmcloud ilab data generate --name testdata --taxonomy-id 65005b67-7de4-4216-b23c-ed4342f99c88 --internal-ids 8c6b9224-a4f1-4649-907c-0f11d14cfc59,299ee20c-0b04-4d8e-ad12-a3d98feece40
     ```
     {: pre}
 
@@ -295,11 +299,11 @@ ibmcloud ilab data generate \
   --internal-ids 8c6b9224-a4f1-4649-907c-0f11d14cfc59 \
   --knowledge-paths PATH \
   --skills-paths PATH \
-  --skills-knowledge-cos-bucket STRING \ 
+  --skills-knowledge-cos-bucket STRING \
   --skills-knowledge-cos-bucket-endpoint ENDPOINT
   --output-cos-bucket-string STRING \
   --output-cos-bucket-endpoint ENDPOINT
-  
+
 ```
 {: pre}
 
@@ -322,7 +326,7 @@ ibmcloud ilab data generate \
   --internal-ids 8c6b9224-a4f1-4649-907c-0f11d14cfc59 \
   --knowledge-paths PATH \
   --skills-paths PATH \
-  --skills-knowledge-cos-bucket STRING \ 
+  --skills-knowledge-cos-bucket STRING \
   --skills-knowledge-cos-bucket-endpoint ENDPOINT
   --output-cos-bucket-string STRING \
   --output-cos-bucket-endpoint ENDPOINT
@@ -336,7 +340,7 @@ ibmcloud ilab data generate \
   --name testdata \
   --knowledge-paths PATH \
   --skills-paths PATH \
-  --skills-knowledge-cos-bucket STRING \ 
+  --skills-knowledge-cos-bucket STRING \
   --skills-knowledge-cos-bucket-endpoint ENDPOINT
   --output-cos-bucket-string STRING \
   --output-cos-bucket-endpoint ENDPOINT
@@ -354,7 +358,7 @@ ibmcloud ilab data generate \
     ```sh
     curl -X 'GET' \
     'https://us-east.instructlab.ibm.com/v1/taxonomies' \
-    -H 'accept: application/json
+    -H 'accept: application/json`
     ```
     {: pre}
 
@@ -396,7 +400,7 @@ ibmcloud ilab data generate \
       "state": "",
       "status": "queued",
       "created_at": "2024-10-23T02:58:50.000Z",
-      "last_signal_at": "2026-06-23T17:20:32.000Z",
+      "last_signal_at": "2026-07-09T17:20:32.000Z",
       "taxonomy_id": "202a03c4-dcf1-432a-82b7-abecb2e019f7",
       "data_metrics": {
         "samples": {
@@ -427,7 +431,7 @@ ibmcloud ilab data generate \
       "state": "",
       "status": "queued",
       "created_at": "2024-10-23T02:58:50.000Z",
-      "last_signal_at": "2026-06-23T17:20:32.000Z",
+      "last_signal_at": "2026-07-09T17:20:32.000Z",
       "taxonomy_id": "202a03c4-dcf1-432a-82b7-abecb2e019f7",
       "data_metrics": {
         "samples": {
@@ -441,21 +445,21 @@ ibmcloud ilab data generate \
     {: screen}
 
 When the state is `completed`, in the {{site.data.keyword.cos_short}} bucket, a [`synthetic_data` directory](#data-bucket) is created with logs for troubleshooting.
-   
+
 
 ## What's in my {{site.data.keyword.cos_short}} bucket after generating data?
 {: #data-bucket}
 
-After you generate data, your {{site.data.keyword.cos_short}} bucket contains a `synthetic_data` directory with the following files. 
+After you generate data, your {{site.data.keyword.cos_short}} bucket contains a `synthetic_data` directory with the following files.
 
 `Artifacts`
-:   These files contain the samples on each leaf node. These are not used for training the model, but are provided for readability and can be used to see if a QNA is generating the expected number of samples. 
+:   These files contain the samples on each leaf node. These are not used for training the model, but are provided for readability and can be used to see if a QNA is generating the expected number of samples.
 
 `Logs`
-:   These files contain the {{site.data.keyword.instructlab_short}} execution logs and system details. 
+:   These files contain the {{site.data.keyword.instructlab_short}} execution logs and system details.
 
 `knowledge_train_msgs.jsonl` and `skills_train_msgs.jsonl`
-:   These are the Phase 1 and Phase 2 training files and contain samples used for training the model. 
+:   These are the Phase 1 and Phase 2 training files and contain samples used for training the model.
 
 To understand why and how your data gets generated, see the [SDG FAQs](https://github.com/instructlab/sdg/blob/main/docs/FAQ.md){: external} community doc.
 
@@ -463,7 +467,7 @@ To understand why and how your data gets generated, see the [SDG FAQs](https://g
 ## Example `.jsonl` format
 {: #example-jsonl}
 
-Review the following example `.jsonl` structure for skills and knowledge. 
+Review the following example `.jsonl` structure for skills and knowledge.
 
 ```json
 {

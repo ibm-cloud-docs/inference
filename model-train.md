@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-06-23"
+lastupdated: "2026-07-09"
 
 keywords: instructlab, ai
 
@@ -18,11 +18,13 @@ subcollection: inference
 
 
 Train your model on generated data, then test the model to verify the results. [Learn more about what training is](/docs/{{site.data.keyword.subcollection}}?topic={{site.data.keyword.subcollection}}-faq#faq-model-train).
+{: shortdesc}
 
 Configuration information or files cannot be passed to the model for fine tuning.
 {: note}
 
-
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
 
 ## Prerequisites
 {: #model-train-pre}
@@ -76,7 +78,7 @@ Configuration information or files cannot be passed to the model for fine tuning
 
     Example `model get` command with the `--output json` option.
     ```sh
-    ibmcloud ilab model get --id daef9836-631f-4686-ad18-e0e6a0910f5d --output json 
+    ibmcloud ilab model get --id daef9836-631f-4686-ad18-e0e6a0910f5d --output json
     ```
     {: pre}
 
@@ -84,10 +86,10 @@ Configuration information or files cannot be passed to the model for fine tuning
     ```json
     {
       "base_model": "granite-3.1-8b-starter-v2.1",
-      "created_at": "2026-06-23T16:06:05.000Z",
+      "created_at": "2026-07-09T16:06:05.000Z",
       "data_id": "8b1433c0-e375-4b00-b36d-2ad00697014e",
       "id": "daef9836-631f-4686-ad18-e0e6a0910f5d",
-      "last_signal_at": "2026-06-23T17:20:32.000Z",
+      "last_signal_at": "2026-07-09T17:20:32.000Z",
       "model_metrics": {
         "mmlu": {
           "overall_average": 0.51,
@@ -158,12 +160,12 @@ Configuration information or files cannot be passed to the model for fine tuning
           "status": "queued",
           "created_at": "2024-10-23T02:58:50.000Z",
           "taxonomy_id": "202a03c4-dcf1-432a-82b7-abecb2e019f7",
-          "last_signal_at": "2026-06-23T17:20:32.000Z"
+          "last_signal_at": "2026-07-09T17:20:32.000Z"
         }
       ]
     }
     ```
-    {: screen}   
+    {: screen}
 
 1. Run the command to start training the model with the generated data. Note the ID.
 
@@ -188,7 +190,7 @@ Configuration information or files cannot be passed to the model for fine tuning
       "state": "",
       "status": "queued",
       "created_at": "2024-10-23T02:58:50.000Z",
-      "last_signal_at": "2026-06-23T17:20:32.000Z",
+      "last_signal_at": "2026-07-09T17:20:32.000Z",
       "data_id": "add785e6-a8c3-4f5f-ab89-c506a3f115da",
       "base_model": "granite-7b",
       "taxonomy_id": "202a03c4-dcf1-432a-82b7-abecb2e019f7",
@@ -249,7 +251,7 @@ Configuration information or files cannot be passed to the model for fine tuning
       }
     }
     ```
-    {: screen}   
+    {: screen}
 
 1. Check the details of your data generation. Include the ID for the model. The state is `queued`, then `running`. Wait for the state to be `completed`. This process could take minutes or hours.
 
@@ -269,7 +271,7 @@ Configuration information or files cannot be passed to the model for fine tuning
       "state": "",
       "status": "queued",
       "created_at": "2024-10-23T02:58:50.000Z",
-      "last_signal_at": "2026-06-23T17:20:32.000Z",
+      "last_signal_at": "2026-07-09T17:20:32.000Z",
       "data_id": "add785e6-a8c3-4f5f-ab89-c506a3f115da",
       "base_model": "granite-7b",
       "taxonomy_id": "202a03c4-dcf1-432a-82b7-abecb2e019f7",
@@ -338,10 +340,10 @@ When the state is `completed`, in the {{site.data.keyword.cos_short}} bucket, a 
 ## What's in my {{site.data.keyword.cos_short}} bucket after training?
 {: #model-bucket}
 
-After training the model, your {{site.data.keyword.cos_short}} bucket contains a `trained models` directory with the following files. 
+After training the model, your {{site.data.keyword.cos_short}} bucket contains a `trained models` directory with the following files.
 
 `Artifacts`
-:   These files contain the Phase 1 and Phase 2 checkpoint data and the model for each epoch. 
+:   These files contain the Phase 1 and Phase 2 checkpoint data and the model for each epoch.
 
 `Eval`
 :   These files contain the evaluation metrics for the `mmlu`, `mmlu_branch`, `mt_bench` and `mt_bench_branch` benchmarks.
@@ -350,7 +352,7 @@ After training the model, your {{site.data.keyword.cos_short}} bucket contains a
 :   These files contain the {{site.data.keyword.instructlab_short}} execution logs and system details.
 
 `Model`
-:   These files contain the final outputted model in `safetensors` format. The contents of this directory are used by the model. 
+:   These files contain the final outputted model in `safetensors` format. The contents of this directory are used by the model.
 
 
 

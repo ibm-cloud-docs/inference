@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-07-09"
 
 keywords: secrets, authorization, troubleshooting
 
@@ -15,6 +15,8 @@ subcollection: inference
 # `Failed to read secret data from secrets manager` error when adding taxonomies in {{site.data.keyword.short_name}}
 {: #ts-taxonomy-secret-auth}
 
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
 
 When you try to add a taxonomy and include the {{site.data.keyword.secrets-manager_short}} authorization information, you get the following error.
 {: tsSymptoms}

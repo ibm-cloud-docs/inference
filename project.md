@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-10"
+lastupdated: "2026-07-09"
 
 keywords: instructlab, ai, project
 
@@ -62,10 +62,8 @@ ibmcloud resource service-instance-create <project_name> instructlab instructlab
 ## What's next?
 {: #whats-next-projects}
 
-After creating your project, you can run inference with models or proceed with model alignment. Either way, you can [assign users in your account access to your project](/docs/inference?topic=inference-project) so they can collaborate on the project as well. 
+After creating your project, you can run inference with models or proceed with model alignment. Either way, you can [assign users in your account access to your project](/docs/inference?topic=inference-project) so they can collaborate on the project as well.
 
-For more information about running inference, see [inference a model](/docs/inference?topic=inference-inference). 
+For more information about running inference, see [inference a model](/docs/inference?topic=inference-inference).
 
-If you're interested in model alignment, make sure to [create an {{site.data.keyword.cos_short}} instance](/docs/inference?topic=inference-storage&interface=ui). Then, you can [learn how taxonomies are structured](/docs/inference?topic=inference-taxonomy-overview), and, when you're ready, you can [prepare your taxonomy and upload it to {{site.data.keyword.cos_short}}](/docs/inference?topic=inference-taxonomy-prep).
-
- 
+[Deprecated]{: tag-deprecated} If you're interested in model alignment, make sure to [create an {{site.data.keyword.cos_short}} instance](/docs/inference?topic=inference-storage&interface=ui). Then, you can [learn how taxonomies are structured](/docs/inference?topic=inference-taxonomy-overview), and, when you're ready, you can [prepare your taxonomy and upload it to {{site.data.keyword.cos_short}}](/docs/inference?topic=inference-taxonomy-prep).

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-07-09"
 
 keywords: instructlab, ai
 
@@ -17,6 +17,10 @@ subcollection: inference
 {: #deploy}
 
 Choose how to deploy your model.
+{: shortdesc}
+
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
 
 ## Deploying the model to RHEL-AI on {{site.data.keyword.cloud_notm}}
 {: #deploy-rhel-ai}
@@ -56,14 +60,14 @@ Choose how to deploy your model.
     done </tmp/keysonnewline.txt
     ```
     {: pre}
-    
+
 1. Then use the `ilab` commands to serve and chat.
 
     ```sh
     ilab model serve --model-path $MODEL_DIR -- --tensor-parallel-size 1 --host 0.0.0.0 --port 8080
     ```
     {: pre}
-   
+
     ```sh
     ilab model chat --endpoint-url http://localhost:8080/v1 -m $MODEL_DIR
     ```
@@ -91,13 +95,13 @@ Choose how to deploy your model.
 {: #deploy-rhoai}
 
 
-1. If you have not already, [install the Red Hat OpenShift AI add-on](/docs/openshift?topic=openshift-ai-addon-install&interface=ui) on your cluster. It may take up to 15 minutes for the add-on to install. 
+1. If you have not already, [install the Red Hat OpenShift AI add-on](/docs/openshift?topic=openshift-ai-addon-install&interface=ui) on your cluster. It may take up to 15 minutes for the add-on to install.
 1. After the add-on is installed, [navigate to the OpenShift AI dashboard](/docs/openshift?topic=openshift-ai-addon-install&interface=ui#ai-dashboard).
 1. Click **Data Science Projects**, then click **Create a Project**.
 1. Follow the prompts to give your project a name and description, then click **Create**.
 1. Find the **Serve models** section and choose the **Single-model serving platform** option.
 1. Click **Deploy model**.
-1. Fill out the required configuration properties. To specify the model you trained with {{site.data.keyword.short_name}}, find the **Source model location** section and choose the **S3 compatible object storage -v1** connection type. 
-1. Under **Connection details**, specify the access key, secret key, endpoint, and bucket name for the COS bucket that your trained model data is stored in. Specify a path to your model or the folder containing your model within your bucket. 
-1. When the remaining configuration properties are filled out, click **Deploy**. 
-1. To verify and view the health of the model deployment, click **Model** > **Model deployment** and select the Data Science Project that you created the model in. 
+1. Fill out the required configuration properties. To specify the model you trained with {{site.data.keyword.short_name}}, find the **Source model location** section and choose the **S3 compatible object storage -v1** connection type.
+1. Under **Connection details**, specify the access key, secret key, endpoint, and bucket name for the COS bucket that your trained model data is stored in. Specify a path to your model or the folder containing your model within your bucket.
+1. When the remaining configuration properties are filled out, click **Deploy**.
+1. To verify and view the health of the model deployment, click **Model** > **Model deployment** and select the Data Science Project that you created the model in.

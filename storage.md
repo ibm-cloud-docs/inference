@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-07-09"
 
 keywords: instructlab, ai, project
 
@@ -16,8 +16,11 @@ subcollection: inference
 # Creating storage locations for {{site.data.keyword.short_name}}
 {: #storage}
 
-Complete the following steps to create one or more {{site.data.keyword.cos_short}} buckets to store {{site.data.keyword.short_name}} resources in. 
+Complete the following steps to create one or more {{site.data.keyword.cos_short}} buckets to store {{site.data.keyword.short_name}} resources in.
 {: shortdesc}
+
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
 
 {{site.data.keyword.cos_short}} buckets are only required if you want to fine-tune or align models with your own data. If you use the inference feature with pre-trained models, you do not need to create a bucket.
 {: important}

@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-05-21"
+lastupdated: "2026-07-09"
 
 keywords: red hat ai, inference, model alignment, faq
 
@@ -15,12 +15,14 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ about model alignment 
+# FAQ about model alignment
 {: #faq-ma}
 
 Frequently asked questions about model alignment might include questions about the training process or how to fine-tune foundation models. To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
+{{site.data.keyword.instructlab_short}} model alignment, synthetic data generation, and taxonomy management features are deprecated and will be removed on 25 September 2026. To continue model customization and alignment workflows, migrate to {{site.data.keyword.redhat_openshift_full}} AI On OpenShift. [Learn more about {{site.data.keyword.redhat_openshift_full}} AI](/docs/openshift?topic=openshift-ai-addon-about){: external}.
+{: deprecated}
 
 ## What is model alignment?
 {: #faq-model-train}
@@ -53,7 +55,7 @@ Synthetic data generation is the process of creating training data from your tax
 {: #faq-tax-validation}
 {: faq}
 
-When you upload a taxonomy to {{site.data.keyword.short_name}}, the checks are performed: 
+When you upload a taxonomy to {{site.data.keyword.short_name}}, the checks are performed:
 - Validating the formatting and syntax of your `qna.yaml` files by using the `ilab diff` command.
 - Attempting to clone the knowledge and skills documents that are referenced in your `qna.yaml` files.
 - Checking that you have the correct service authorizations in place, such as for {{site.data.keyword.cos_short}} and {{site.data.keyword.secrets-manager_short}}.

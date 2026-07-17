@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-05-18"
+lastupdated: "2026-07-17"
 
 keywords: iam, access, add users, instructlab
 
@@ -32,7 +32,7 @@ IAM access policies enable access at different levels. Some options include the 
 - Giving Viewer access to the {{site.data.keyword.short_name}} project(s) within a resource group and the account level.
 - Giving creation access to create {{site.data.keyword.short_name}} project(s) within a resource group and the account level.
 
-If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/account?topic=account-custom-roles&interface=ui#custom-access-roles) and pick the actions to include.
+If a specific role and its actions don't fit the use case that you're looking to address, you can [create a custom role](/docs/iam?topic=iam-custom-roles&interface=ui#custom-access-roles) and pick the actions to include.
 {: tip}
 
 Review the following tables that outline what types of tasks each role allows for when you're working with the {{site.data.keyword.instructlab_short}} service. Platform management roles enable users to perform tasks on service resources at the platform level, for example, assign user access to the service, create or delete projects, and bind projects to applications. Service access roles enable users access to {{site.data.keyword.instructlab_short}} and the ability to call the {{site.data.keyword.instructlab_short}}'s API.
@@ -119,10 +119,10 @@ For more details on how you can assign access, such steps to use the CLI or diff
 There are two common ways to assign access:
 
 Access policies per user.
-:   You can manage access policies per user from the **Manage** > **Access (IAM)** > **Users** page in the console. For information about the steps to assign IAM access, see [Managing access to resources in the console](/docs/account?topic=account-assign-access-resources&interface=ui#access-resources-console).
+:   You can manage access policies per user from the **Manage** > **Access (IAM)** > **Users** page in the console. For information about the steps to assign IAM access, see [Managing access to resources in the console](/docs/iam?topic=iam-assign-access-resources&interface=ui#access-resources-console).
 
 Access groups.
-:   Access groups are used to streamline access management by assigning access to a group once, then you can add or remove users as needed from the group to control their access. You manage access groups and their access from the **Manage** > **Access (IAM)** > **Access groups** page in the console. For more information, see [Assigning access to a group in the console](/docs/account?topic=account-groups&interface=ui#access_ag).
+:   Access groups are used to streamline access management by assigning access to a group once, then you can add or remove users as needed from the group to control their access. You manage access groups and their access from the **Manage** > **Access (IAM)** > **Access groups** page in the console. For more information, see [Assigning access to a group in the console](/docs/iam?topic=iam-groups&interface=ui#access_ag).
 
 {{../iam/iam-mng-access.md#access-resources-console}}
 
@@ -135,7 +135,7 @@ Access groups.
 {: #assign-access-cli}
 {: cli}
 
-For step-by-step instructions for assigning, removing, and reviewing access, see [Assigning access to resources by using the CLI](/docs/account?topic=account-assign-access-resources&interface=cli#access-resources-cli). The following example shows a command for assigning the `Writer` role for `instructlab`:
+For step-by-step instructions for assigning, removing, and reviewing access, see [Assigning access to resources by using the CLI](/docs/iam?topic=iam-assign-access-resources&interface=ui#access-resources-cli). The following example shows a command for assigning the `Writer` role for `instructlab`:
 
 Use `instructlab` for the service name. To find the role IDs, run the `ibmcloud iam roles` command. Also, use quotations around role names that are more than one word. For example `"Service Configuration Reader"`.
 {: tip}
@@ -193,7 +193,7 @@ ibmcloud iam service-policy-create test --roles Administrator --resource-group-n
 {: #assign-access-api}
 {: api}
 
-For step-by-step instructions for assigning, removing, and reviewing access, see [Assigning access to resources by using the API](/docs/account?topic=account-assign-access-resources&interface=api) or the [Create a policy API docs](/apidocs/iam-policy-management#create-policy). Role cloud resource names (CRN) in the following table are used to assign access with the API.
+For step-by-step instructions for assigning, removing, and reviewing access, see [Assigning access to resources by using the API](/docs/iam?topic=iam-assign-access-resources&interface=api) or the [Create a policy API docs](/apidocs/iam-policy-management#create-policy). Role cloud resource names (CRN) in the following table are used to assign access with the API.
 
 Use `instructlab` for the service name, and refer to the Role CRN values table to ensure that you're using the correct value for the role. Review the following list of role CRNs.
 {: tip}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-07-17"
 
 keywords: HA for {{site.data.keyword.short_name}}, DR for {{site.data.keyword.short_name}}, {{site.data.keyword.short_name}} recovery time objective, {{site.data.keyword.short_name}} recovery point objective
 
@@ -132,7 +132,4 @@ If {{site.data.keyword.IBM_notm}} can’t restore the service instance, you must
 - Complex changes are enabled and disabled with feature flags to control exposure.
 - Changes that impact customer workloads are detailed in {{site.data.keyword.cloud_notm}} notifications.
 
-For more information about planned maintenance, announcements, and release notes that impact this service, see the following links.
-
-- [{{site.data.keyword.short_name}} release notes](/docs/inference?topic=inference-release-notes).
-- [Monitoring notifications and status](/docs/account?topic=account-viewing-cloud-status).
+For more information about planned maintenance, announcements, and release notes that impact this service, see the [{{site.data.keyword.short_name}} release notes](/docs/inference?topic=inference-release-notes).

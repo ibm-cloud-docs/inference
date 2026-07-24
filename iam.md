@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-17"
+lastupdated: "2026-07-24"
 
 keywords: iam, access, add users, instructlab
 
@@ -56,7 +56,7 @@ Give {{site.data.keyword.short_name}} the `Writer` access role for the {{site.da
 
     If you already have {{site.data.keyword.cos_short}} resources to use, you can scope the authorization to only those resources.
     ```sh
-    ibmcloud iam authorization-policy-create Writer --source-service-name instructlab --target-service-name cloud-object-storage --target-service-instance-id <cloud-object-storage-instance-id> --target-resource <cloud-object-storage-bucket> --target-resource-type bucket
+    ibmcloud iam authorization-policy-create Writer --source-service-name instructlab --target-service-name cloud-object-storage --target-service-instance-id CLOUD-OBJECT-STORAGE-INSTANCE-ID --target-resource CLOUD-OBJECT-STORAGE-BUCKET --target-resource-type bucket
     ```
     {: pre}
 

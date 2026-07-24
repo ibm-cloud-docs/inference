@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-07-24"
 
 
 keywords: instructlab, sitemap
@@ -485,6 +485,8 @@ subcollection: inference
 
 
 [CLI reference](/docs/inference?topic=inference-ilab-cli#ilab-cli)
+
+* [Before you begin](/docs/inference?topic=inference-ilab-cli#ilab-cli-prereqs)
 
 * [Globals](/docs/inference?topic=inference-ilab-cli#ilab-globals)
 

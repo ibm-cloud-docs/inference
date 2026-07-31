@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-09"
+lastupdated: "2026-07-24"
 
 keywords: instructlab, ai, project
 
@@ -55,7 +55,7 @@ To create {{site.data.keyword.cos_short}} resources:
 
 1. [Create a new bucket](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli#create-a-new-bucket) and make a note of the bucket name for later.
     ```sh
-    ibmcloud cos bucket-create --bucket <bucket-name> [--class <class-name>] [--ibm-service-instance-id <instance-id>] [--region REGION] [--output FORMAT]
+    ibmcloud cos bucket-create --bucket BUCKET-NAME [--class CLASS-NAME] [--ibm-service-instance-id INSTANCE-ID] [--region REGION] [--output FORMAT]
     ```
     {: pre}
 

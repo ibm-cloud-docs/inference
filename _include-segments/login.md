@@ -7,7 +7,7 @@
 
 1. If you plan to allow {{site.data.keyword.short_name}} to create {{site.data.keyword.cos_full}} Instance resources for you, target a resource group.
     ```sh
-    ibmcloud target -g <resource_group>
+    ibmcloud target -g RESOURCE_GROUP
     ```
     {: pre}
 

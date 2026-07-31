@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-07-17"
 
 keywords: data, secure, encrypt, cos, bucket, storage
 
@@ -15,20 +15,20 @@ subcollection: inference
 # Securing your data in {{site.data.keyword.short_name}}
 {: #mng-data}
 
-To ensure that you can securely manage your data when you use {{site.data.keyword.instructlab_short}}, it is important to know exactly what data is stored and encrypted and how you can delete any stored data. 
+To ensure that you can securely manage your data when you use {{site.data.keyword.instructlab_short}}, it is important to know exactly what data is stored and encrypted and how you can delete any stored data.
 {: shortdesc}
 
 ## How your data is stored and encrypted in {{site.data.keyword.instructlab_short}}
 {: #data-storage}
 
-Your data is stored differently depending on how you use {{site.data.keyword.instructlab_short}}. 
+Your data is stored differently depending on how you use {{site.data.keyword.instructlab_short}}.
 
-### How model alignment data is stored and encrypted 
+### How model alignment data is stored and encrypted
 {: #data-ma}
 
-{{site.data.keyword.instructlab_short}} uses an {{site.data.keyword.cos_full}} instance to store your taxonomy and training data. All objects that are stored in {{site.data.keyword.cos_short}} are encrypted by default. For added security, you can use {{site.data.keyword.keymanagementserviceshort}} or {{site.data.keyword.hscrypto}} to encrypt the data in your {{site.data.keyword.cos_short}} bucket as well. For more information, see [Encrypting your data](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) in the {{site.data.keyword.cos_short}} documentation. 
+{{site.data.keyword.instructlab_short}} uses an {{site.data.keyword.cos_full}} instance to store your taxonomy and training data. All objects that are stored in {{site.data.keyword.cos_short}} are encrypted by default. For added security, you can use {{site.data.keyword.keymanagementserviceshort}} or {{site.data.keyword.hscrypto}} to encrypt the data in your {{site.data.keyword.cos_short}} bucket as well. For more information, see [Encrypting your data](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) in the {{site.data.keyword.cos_short}} documentation.
 
-The knowledge documents that you reference in your `qna.yaml` files are not stored by {{site.data.keyword.instructlab_short}}. 
+The knowledge documents that you reference in your `qna.yaml` files are not stored by {{site.data.keyword.instructlab_short}}.
 
 #### Enabling Cloud {{site.data.keyword.cos_short}} for {{site.data.keyword.instructlab_short}}
 {: #using-byok}
@@ -50,7 +50,7 @@ For inference, you can delete individual chat completions. If you delete a {{sit
 ## Deleting or canceling jobs in {{site.data.keyword.instructlab_short}}
 {: #data-jobs}
 
-Once a job is completed, the generated data related to model alignment is uploaded to your {{site.data.keyword.cos_short}} bucket. Deleting a job does not delete the data in the bucket. If you cancel a job before it is completed, any data that was generated before the cancellation is uploaded to your bucket. Canceling a job does not delete the data in the bucket. 
+Once a job is completed, the generated data related to model alignment is uploaded to your {{site.data.keyword.cos_short}} bucket. Deleting a job does not delete the data in the bucket. If you cancel a job before it is completed, any data that was generated before the cancellation is uploaded to your bucket. Canceling a job does not delete the data in the bucket.
 
 For information on the data uploaded to your {{site.data.keyword.cos_short}} bucket, see [What's in my {{site.data.keyword.cos_short}} bucket after data generation?](/docs/inference?topic=inference-data-generate&interface=ui#data-bucket).
 
@@ -62,9 +62,9 @@ If you delete your {{site.data.keyword.instructlab_short}} instance, relevant da
 ### Restoring deleted data for {{site.data.keyword.instructlab_short}}
 {: #data-restore}
 
-Data that is deleted from your {{site.data.keyword.cos_short}} bucket cannot be recovered. 
+Data that is deleted from your {{site.data.keyword.cos_short}} bucket cannot be recovered.
 
 ## Removing access to {{site.data.keyword.instructlab_short}}
 {: #data-access-remove}
 
-Access to {{site.data.keyword.instructlab_short}} service instances for users in your account is controlled by {{site.data.keyword.iamlong}} (IAM). Every user that accesses the {{site.data.keyword.instructlab_short}} service in your account must be assigned an access policy with an IAM role, which determines what actions a user can perform within the context of the service or specific instance that you select. To remove a user's access policy, see [Removing access by using the CLI](/docs/account?topic=account-assign-access-resources&interface=cli#removing-access-cli) or [Removing access in the console](/docs/account?topic=account-assign-access-resources&interface=ui#removing-access-console).
+Access to {{site.data.keyword.instructlab_short}} service instances for users in your account is controlled by {{site.data.keyword.iamlong}} (IAM). Every user that accesses the {{site.data.keyword.instructlab_short}} service in your account must be assigned an access policy with an IAM role, which determines what actions a user can perform within the context of the service or specific instance that you select. To remove a user's access policy, see [Removing access by using the CLI](/docs/iam?topic=iam-assign-access-resources&interface=cli#removing-access-cli) or [Removing access in the console](/docs/iam?topic=iam-assign-access-resources&interface=ui#removing-access-console).

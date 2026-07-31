@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-07-31"
 
 keywords: release notes
 
@@ -85,7 +85,7 @@ Inference with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
 
 Version 1.5 of {{site.data.keyword.product_name}} is available
 :   For the best results, run training on newly generated synthetic data with version 1.5. Review the updated [service settings](/docs/inference?topic=inference-service-settings) in 1.5.
-:   For more information, see the [release notes](https://issues.redhat.com/browse/RHAIRFE-645){: external}, the [RHEL AI documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.5/html/release_notes/rhelai_release_notes#rhelai_release_notes){: external} and the [known issues](https://issues.redhat.com/browse/RHELAI-3604){: external}
+:   For more information, see the [release notes](https://redhat.atlassian.net/browse/RHELAI-4993){: external}, the [RHEL AI documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.5/html/release_notes/rhelai_release_notes#rhelai_release_notes){: external} and the [known issues](https://redhat.atlassian.net/browse/RHELAI-3604){: external}
 
 New base model
 :   {{site.data.keyword.product_name}} now uses the `granite-3.1-8b-starter-v2.1` model. For more information, see the [model specifications](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.5/html/building_and_maintaining_your_environment/download_models){: external}.

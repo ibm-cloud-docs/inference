@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-07-31"
 
 keywords: litellm, openai, api translation, proxy
 
@@ -86,7 +86,7 @@ Install LiteLLM proxy, create a directory to store your configuration file, and 
 
 
 
-    Add or remove model entries as needed. For a full list of available models, see the model catalog in the [{{site.data.keyword.instructlab_short}} service](/instructlab/overview){: external}.
+    Add or remove model entries as needed. For a full list of available models, see the model catalog in the [{{site.data.keyword.instructlab_short}} service](/inference/overview){: external}.
 
     The `POST /v1/chat/completions` endpoint is used for all requests. The `custom_openai` provider prefix instructs LiteLLM to treat the target as a generic OpenAI-compatible API, which is what {{site.data.keyword.instructlab_short}} provides.
     {: note}

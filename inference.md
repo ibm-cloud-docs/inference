@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-07-31"
 
 keywords: instructlab, ai, inference, chatting
 
@@ -37,7 +37,7 @@ Inference solves the challenge of deploying and scaling AI models by providing i
 
 The console provides an interactive playground where you can experiment with different models, test prompts, and refine your AI interactions before integrating them into your applications.
 
-1. In the console, open the [{{site.data.keyword.instructlab_short}} service](/instructlab/overview){: external} and click the name of your project to open it.
+1. In the console, open the [{{site.data.keyword.instructlab_short}} service](/inference/overview){: external} and click the name of your project to open it.
 
 1. From the project page, click **Playground** to open the inference playground.
 
@@ -65,13 +65,13 @@ With the API, you can programmatically integrate AI capabilities into your appli
 Currently, the following APIs are supported:
 
 Chat completions `/v1/chat/completions`
-:   Create - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/create){: external}
-:   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/get){: external}
-:   List - [OGX documentation](https://ogx-ai.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/list){: external}
-:   Delete - [OpenAI documentation](https://platform.openai.com/docs/api-reference/chat/delete){: external}
+:   Create - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create){: external}
+:   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/retrieve){: external}
+:   List - [OGX documentation](https://ogx-ai.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/list){: external}
+:   Delete - [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/delete){: external}
 
 Models `/v1/models`
-:   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-model-v-1-models-model-id-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/models/retrieve){: external}
+:   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-model-v-1-models-model-id-get){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/models/methods/retrieve){: external}
 :   List - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-list-models-v-1-models-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/models/list){: external}
 
 Review the following sections for examples of how to complete common inference tasks by using the API.
@@ -246,7 +246,7 @@ print(completions)
 
 Deleting chat completions helps you clean up test data and comply with privacy requirements.
 
-The following example shows how to delete a chat completion. For a complete list of the available parameters, see [Delete chat completion](https://platform.openai.com/docs/api-reference/chat/delete){: external}.
+The following example shows how to delete a chat completion. For a complete list of the available parameters, see [Delete chat completion](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/delete){: external}.
 
 
 

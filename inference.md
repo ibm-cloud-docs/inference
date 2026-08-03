@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-08-03"
 
 keywords: instructlab, ai, inference, chatting
 
@@ -72,7 +72,7 @@ Chat completions `/v1/chat/completions`
 
 Models `/v1/models`
 :   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-model-v-1-models-model-id-get){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/models/methods/retrieve){: external}
-:   List - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-list-models-v-1-models-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/models/list){: external}
+:   List - [OGX documentation](https://ogx-ai.github.io/docs/api/list-models-v-1-models-get){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/models/methods/list){: external}
 
 Review the following sections for examples of how to complete common inference tasks by using the API.
 

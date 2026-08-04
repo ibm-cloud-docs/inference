@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-07-09"
+lastupdated: "2026-08-04"
 
 keywords: instructlab, ai, inference, chat completions
 
@@ -247,7 +247,7 @@ Now that you've successfully started using inference, here's what you can do nex
 
 * [Learn more about inference](/docs/inference?topic=inference-inference) to discover advanced features like streaming responses, adjusting model parameters, and managing conversation history.
 
-* Explore the [OpenAI Chat Completion API](https://platform.openai.com/docs/api-reference/chat){: external} and [OGX API](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external} documentation for complete API reference.
+* Explore the [OpenAI Chat Completion API](https://developers.openai.com/api/reference/resources/chat){: external} documentation for complete API reference.
 
 * Integrate inference into your applications using the Python SDK or other programming languages.
 

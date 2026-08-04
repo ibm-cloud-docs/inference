@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-08-04"
 
 keywords: instructlab, ai, inference, chatting
 
@@ -65,14 +65,14 @@ With the API, you can programmatically integrate AI capabilities into your appli
 Currently, the following APIs are supported:
 
 Chat completions `/v1/chat/completions`
-:   Create - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create){: external}
-:   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/retrieve){: external}
-:   List - [OGX documentation](https://ogx-ai.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/list){: external}
+:   Create - [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create){: external}
+:   Get - [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/retrieve){: external}
+:   List - [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/list){: external}
 :   Delete - [OpenAI documentation](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/delete){: external}
 
 Models `/v1/models`
-:   Get - [OGX documentation](https://ogx-ai.github.io/docs/api/get-model-v-1-models-model-id-get){: external}, [OpenAI documentation](https://developers.openai.com/api/reference/resources/models/methods/retrieve){: external}
-:   List - [OGX documentation](https://ogx-ai.github.io/docs/api/openai-list-models-v-1-models-get){: external}, [OpenAI documentation](https://platform.openai.com/docs/api-reference/models/list){: external}
+:   Get - [OpenAI documentation](https://developers.openai.com/api/reference/resources/models/methods/retrieve){: external}
+:   List - [OpenAI documentation](https://developers.openai.com/api/reference/resources/models/methods/list){: external}
 
 Review the following sections for examples of how to complete common inference tasks by using the API.
 
@@ -131,7 +131,7 @@ You can also authenticate by using a user API key, as opposed to a service ID AP
 
 Chat completions are the core of inference. They allow you to send messages to a foundation model and receive AI-generated responses. This is how you build conversational experiences, get answers to questions, generate content, or process natural language inputs. You can control the conversation flow by providing system prompts that define the model's behavior and maintain message history for context-aware interactions.
 
-The following example shows how to generate a chat completion. For a complete list of the available parameters, see [OpenAI Chat Completion](https://ogx-ai.github.io/docs/api/openai-chat-completion-v-1-chat-completions-post){: external}.
+The following example shows how to generate a chat completion. For a complete list of the available parameters, see [OpenAI Chat Completion](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create){: external}.
 
 
 
@@ -182,7 +182,7 @@ print(completion.choices[0].message)
 
 Retrieving a specific chat completion by ID is useful for auditing, debugging, or analyzing past interactions.
 
-The following example shows how to get a chat completion by its ID. For a complete list of the available parameters, see [Get Chat Completion](https://ogx-ai.github.io/docs/api/get-chat-completion-v-1-chat-completions-completion-id-get){: external}.
+The following example shows how to get a chat completion by its ID. For a complete list of the available parameters, see [Get Chat Completion](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/retrieve){: external}.
 
 
 
@@ -214,7 +214,7 @@ print(completion)
 
 Listing chat completions provides an overview of all your inference activity, so you can monitor usage patterns, track costs, and analyze how your application is interacting with foundation models. This is particularly valuable for understanding user behavior, identifying popular use cases, and optimizing your AI integration strategy.
 
-The following example shows how to list chat completions. For a complete list of the available parameters, see [List Chat Completions](https://ogx-ai.github.io/docs/api/list-chat-completions-v-1-chat-completions-get){: external}.
+The following example shows how to list chat completions. For a complete list of the available parameters, see [List Chat Completions](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/list){: external}.
 
 
 
@@ -265,7 +265,7 @@ curl -X DELETE https://us-east.rhai.ibm.com/v1/projects/<project_id>/inference/c
 
 Discover which foundation models are accessible in your project and understand their capabilities, so you can use the best model for your specific use case and optimize for factors like response quality, speed, or cost.
 
-The following example shows how to list models. For a complete list of the available parameters, see [OpenAI List Models](https://ogx-ai.github.io/docs/api/openai-list-models-v-1-models-get){: external}.
+The following example shows how to list models. For a complete list of the available parameters, see [OpenAI List Models](https://developers.openai.com/api/reference/resources/models/methods/list){: external}.
 
 
 
@@ -297,7 +297,7 @@ print(models)
 
 Retrieving detailed information about a specific model helps you understand its characteristics, capabilities, and limitations before using it in your application.
 
-The following example shows how to get a model by ID. For a complete list of the available parameters, see [Get Model](https://ogx-ai.github.io/docs/api/get-model-v-1-models-model-id-get){: external}.
+The following example shows how to get a model by ID. For a complete list of the available parameters, see [Retrieve Model](https://developers.openai.com/api/reference/resources/models/methods/retrieve){: external}.
 
 
 

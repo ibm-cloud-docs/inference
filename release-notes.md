@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-08-04"
 
 keywords: release notes
 
@@ -52,7 +52,7 @@ New models available
 {: release-note}
 
 Inference is now generally available
-:   You can now use {{site.data.keyword.instructlab_short}} to run inference workloads in production. Use industry-standard OpenAI and OGX compatible APIs for chat completions to integrate inference capabilities into your applications. A playground is now available in the console where you can test different inference settings and configurations before moving to production. For more information, see [Getting started](/docs/inference?topic=inference-getting-started).
+:   You can now use {{site.data.keyword.instructlab_short}} to run inference workloads in production. Use industry-standard OpenAI compatible APIs for chat completions to integrate inference capabilities into your applications. A playground is now available in the console where you can test different inference settings and configurations before moving to production. For more information, see [Getting started](/docs/inference?topic=inference-getting-started).
 
 
 ## April 2026
@@ -63,7 +63,7 @@ Inference is now generally available
 {: release-note}
 
 Inference with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
-:   You can now use inference to interact with foundation models and evaluate AI-powered responses for your applications. The inference feature provides industry-standard OpenAI and OGX compatible APIs for chat completions and model management. This beta feature is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`. For more information, see [Inference with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
+:   You can now use inference to interact with foundation models and evaluate AI-powered responses for your applications. The inference feature provides industry-standard OpenAI compatible APIs for chat completions and model management. This beta feature is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`. For more information, see [Inference with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
 
 ## October 2025
 {: #oct25}

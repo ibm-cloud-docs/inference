@@ -140,29 +140,6 @@ subcollection: inference
         * Introducing {{site.data.keyword.instructlab_full_notm}}!
 
 
-## Creating text embeddings
-{: #sitemap_creating_text_embeddings}
-
-
-[Creating text embeddings](/docs/inference?topic=inference-embeddings#embeddings)
-
-* [Objectives](/docs/inference?topic=inference-embeddings#embeddings-objectives)
-
-* [Before you begin](/docs/inference?topic=inference-embeddings#embeddings-prereqs)
-
-* [Set up API authentication](/docs/inference?topic=inference-embeddings#embeddings-auth)
-
-    * [Create a service ID and assign access](/docs/inference?topic=inference-embeddings#embeddings-create-service-id)
-
-    * [Create an API key](/docs/inference?topic=inference-embeddings#embeddings-create-api-key)
-
-* [Export your API key](/docs/inference?topic=inference-embeddings#embeddings-export-key)
-
-* [Create text embeddings](/docs/inference?topic=inference-embeddings#embeddings-create)
-
-* [Next steps](/docs/inference?topic=inference-embeddings#embeddings-next-steps)
-
-
 ## Preparing your account
 {: #sitemap_preparing_your_account}
 

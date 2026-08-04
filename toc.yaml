@@ -21,12 +21,6 @@ toc:
       - topic: release-notes.md
         navtitle: Release notes
   - navgroup:
-      id: tutorial
-      topics:
-      - topic: embeddings.md
-        navtitle: Creating text embeddings
-        tag: staging
-  - navgroup:
       id: howto
       topics:
       - topicgroup:

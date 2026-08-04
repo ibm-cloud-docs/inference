@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-24"
+lastupdated: "2026-08-04"
 
 
 keywords: instructlab, sitemap
@@ -138,6 +138,29 @@ subcollection: inference
     * [24 April 2025](/docs/inference?topic=inference-release-notes#24apr25)
 
         * Introducing {{site.data.keyword.instructlab_full_notm}}!
+
+
+## Creating text embeddings
+{: #sitemap_creating_text_embeddings}
+
+
+[Creating text embeddings](/docs/inference?topic=inference-embeddings#embeddings)
+
+* [Objectives](/docs/inference?topic=inference-embeddings#embeddings-objectives)
+
+* [Before you begin](/docs/inference?topic=inference-embeddings#embeddings-prereqs)
+
+* [Set up API authentication](/docs/inference?topic=inference-embeddings#embeddings-auth)
+
+    * [Create a service ID and assign access](/docs/inference?topic=inference-embeddings#embeddings-create-service-id)
+
+    * [Create an API key](/docs/inference?topic=inference-embeddings#embeddings-create-api-key)
+
+* [Export your API key](/docs/inference?topic=inference-embeddings#embeddings-export-key)
+
+* [Create text embeddings](/docs/inference?topic=inference-embeddings#embeddings-create)
+
+* [Next steps](/docs/inference?topic=inference-embeddings#embeddings-next-steps)
 
 
 ## Preparing your account

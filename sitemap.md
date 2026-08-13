@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-24"
+lastupdated: "2026-08-04"
 
 
 keywords: instructlab, sitemap

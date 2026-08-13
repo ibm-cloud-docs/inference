@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-07-09"
+lastupdated: "2026-08-07"
 
 keywords: instructlab, ai, about, how it works, billing
 
@@ -76,6 +76,7 @@ Step 4. Integrate responses
 :   Incorporate the model's responses into your application workflows, whether for conversational interfaces, content generation, or natural language processing tasks.
 
 You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Inference with models](/docs/inference?topic=inference-inference).
+
 
 
 ## What is model alignment?

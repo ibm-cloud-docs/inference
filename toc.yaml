@@ -94,7 +94,7 @@ toc:
               href: https://{DomainName}/apidocs/inference
           - link:
               label: Swagger
-              href: https://us-east.rhai.ibm.com/swagger-instructlab-api/#/
+              href: https://us-east.rhai.ibm.com/swagger-red-hat-ai-inference-api/#/
       - topic: ilab-cli.md
         navtitle: CLI reference
   - navgroup:

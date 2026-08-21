@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-04"
+lastupdated: "2026-08-21"
 
 keywords: instructlab, ai, inference, chatting
 
@@ -73,6 +73,9 @@ Chat completions `/v1/chat/completions`
 Models `/v1/models`
 :   Get - [OpenAI documentation](https://developers.openai.com/api/reference/resources/models/methods/retrieve){: external}
 :   List - [OpenAI documentation](https://developers.openai.com/api/reference/resources/models/methods/list){: external}
+
+
+
 
 Review the following sections for examples of how to complete common inference tasks by using the API.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-04"
+lastupdated: "2026-08-19"
 
 
 keywords: instructlab, sitemap
@@ -477,7 +477,7 @@ subcollection: inference
 
 [IBM Cloud API docs](https://{DomainName}/apidocs/inference){: external}
 
-[Swagger](https://us-east.rhai.ibm.com/swagger-instructlab-api/#/){: external}
+[Swagger](https://us-east.rhai.ibm.com/swagger-red-hat-ai-inference-api/#/){: external}
 
 
 ## CLI reference

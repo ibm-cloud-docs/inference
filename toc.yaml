@@ -125,7 +125,8 @@ toc:
           label: FAQs
           topics:
           - topic: faq.md
-          - topic: faq-inference.md
+          - topic: faq-chat.md
+            navtitle: FAQ about chat models
           - topic: faq-model-alignment.md
           - topic: faq-billing.md
             navtitle: FAQ about billing

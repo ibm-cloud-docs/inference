@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-19"
+lastupdated: "2026-09-14"
 
 
 keywords: instructlab, sitemap
@@ -593,17 +593,17 @@ subcollection: inference
 
 * [What are the benefits of {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq-rhaii#faq-benefits)
 
-* [When should I use {{site.data.keyword.instructlab_short}} for model alignment versus inference?](/docs/inference?topic=inference-faq-rhaii#inference-vs-alignment-faq)
+* [When should I use {{site.data.keyword.instructlab_short}} for chat completions versus embeddings?](/docs/inference?topic=inference-faq-rhaii#faq-chat-vs-embeddings)
 
-[FAQ about inference](/docs/inference?topic=inference-faq-i#faq-i)
+* [What is inference?](/docs/inference?topic=inference-faq-rhaii#faq-what-is-inference)
 
-* [What is inference?](/docs/inference?topic=inference-faq-i#inference-faq)
+[FAQ about chat models](/docs/inference?topic=inference-faq-chat#faq-chat)
 
-* [How do I get started with inference?](/docs/inference?topic=inference-faq-i#inference-start-faq)
+* [How do I get started with chat completions?](/docs/inference?topic=inference-faq-chat#faq-chat-start)
 
-* [What models are available for inference?](/docs/inference?topic=inference-faq-i#inference-models-faq)
+* [What models are available for chat completions?](/docs/inference?topic=inference-faq-chat#faq-chat-models)
 
-* [Can I customize model behavior during inference?](/docs/inference?topic=inference-faq-i#inference-customize-faq)
+* [Can I customize model behavior?](/docs/inference?topic=inference-faq-chat#faq-chat-customize)
 
 [FAQ about model alignment](/docs/inference?topic=inference-faq-ma#faq-ma)
 

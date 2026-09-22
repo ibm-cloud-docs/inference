@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-09-14"
+lastupdated: "2026-09-22"
 
 
 keywords: instructlab, sitemap
@@ -592,8 +592,6 @@ subcollection: inference
 * [What is {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq-rhaii#faq-rhai-1)
 
 * [What are the benefits of {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq-rhaii#faq-benefits)
-
-* [When should I use {{site.data.keyword.instructlab_short}} for chat completions versus embeddings?](/docs/inference?topic=inference-faq-rhaii#faq-chat-vs-embeddings)
 
 * [What is inference?](/docs/inference?topic=inference-faq-rhaii#faq-what-is-inference)
 

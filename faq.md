@@ -40,7 +40,7 @@ Frequently asked questions for {{site.data.keyword.instructlab_short}} might inc
 {{site.data.keyword.short_name}} on {{site.data.keyword.cloud_notm}} provides enterprise-grade AI capabilities with the following key benefits:
 
 Immediate AI integration
-:   Start building AI-powered features without managing infrastructure. Use production-ready APIs to create chat completions and embeddings to integrate conversational AI, semantic search, and retrieval-augmented generation into your applications.
+:   Start building AI-powered features without managing infrastructure. Use production-ready APIs to create chat completions.
 
 Data ownership and portability
 :   Inference users retain ownership of their data. Users can export their content and configuration to other infrastructures.

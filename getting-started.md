@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-08-04"
+lastupdated: "2026-09-25"
 
 keywords: instructlab, ai, inference, chat completions
 
@@ -250,19 +250,3 @@ Now that you've successfully started using inference, here's what you can do nex
 * Explore the [OpenAI Chat Completion API](https://developers.openai.com/api/reference/resources/chat){: external} documentation for complete API reference.
 
 * Integrate inference into your applications using the Python SDK or other programming languages.
-
-### Customize models with your data
-{: #customize-models}
-
-[Deprecated]{: tag-deprecated}
-
-Ready to go beyond general-purpose models? You can customize foundation models with your organization's specific knowledge and skills through model alignment:
-
-1. [Prepare a taxonomy](/docs/inference?topic=inference-taxonomy-prep) containing your business knowledge and skills.
-
-1. [Generate synthetic data](/docs/inference?topic=inference-data-generate) from your taxonomy.
-
-1. [Train a custom model](/docs/inference?topic=inference-model-train) aligned with your specific needs.
-
-
-By doing so, you can fine-tune models so they understand your business context, terminology, and requirements, which goes beyond what the general-purpose models can provide.

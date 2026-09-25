@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-08-07"
+lastupdated: "2026-09-25"
 
 keywords: instructlab, ai, about, how it works, billing
 
@@ -78,40 +78,6 @@ Step 4. Integrate responses
 You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Inference with models](/docs/inference?topic=inference-inference).
 
 
-
-## What is model alignment?
-{: #model-alignment}
-
-[Deprecated]{: tag-deprecated}
-
-Model alignment through allows you to customize foundation models with your organization's specific knowledge and skills. Rather than using a general-purpose model, you can fine-tune models to understand your business context, terminology, and requirements.
-
-The model alignment process involves:
-
-Taxonomy creation
-:   Provide a structured directory of human-curated data containing the knowledge and skills you want the model to learn.
-
-Synthetic data generation
-:   The taxonomy is used to generate synthetic data that augments your human-provided knowledge for more effective training.
-
-Model training
-:   The synthetic data trains the model through knowledge tuning (improving foundational understanding) and skills tuning (developing specific capabilities for your use case).
-
-This approach minimizes the risk of catastrophic forgetting—where models lose previously learned information when learning new concepts—by using built-in Granite models as a foundation.
-
-### How model alignment works
-{: #how-model-alignment-works}
-
-Model alignment follows a structured process to customize foundation models:
-
-Step 1. Provide a taxonomy
-:   A taxonomy is a directory of diverse, human-curated data that is used to train an LLM. The data contains examples of new knowledge and skills for the model to learn from. You can use and contribute to an existing taxonomy, or you can create your own. For more information, see [How taxonomies are structured for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-taxonomy-overview).
-
-Step 2. Generate synthetic data
-:   The information in the taxonomy is used to generate synthetic data that augments the human-provided knowledge and is used to fine-tune the model. [Learn more about the data generation process from Red Hat](https://www.redhat.com/en/blog/how-instructlabs-synthetic-data-generation-enhances-llms){: external}.
-
-Step 3. Train the model
-:   The synthetic data is used to train the model in two phases: knowledge tuning and skills tuning. Knowledge tuning is training that focuses on improving the LLM's foundational knowledge of essential skills. Skills tuning trains the model on more specific skills that are required for its intended purpose, such as responding to customer inquiries or analyzing weather trends.
 
 ## Why Red Hat AI on {{site.data.keyword.cloud_notm}}?
 {: #benefits}

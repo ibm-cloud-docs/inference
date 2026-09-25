@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-08-19"
+lastupdated: "2026-09-25"
 
 
 keywords: instructlab, sitemap
@@ -47,8 +47,6 @@ subcollection: inference
 
     * [Continue with inference](/docs/inference?topic=inference-getting-started#continue-inference)
 
-    * [Customize models with your data](/docs/inference?topic=inference-getting-started#customize-models)
-
 
 ## How it works
 {: #sitemap_how_it_works}
@@ -61,10 +59,6 @@ subcollection: inference
 * [What is inference?](/docs/inference?topic=inference-about#inference)
 
     * [How inference works](/docs/inference?topic=inference-about#how-inference-works)
-
-* [What is model alignment?](/docs/inference?topic=inference-about#model-alignment)
-
-    * [How model alignment works](/docs/inference?topic=inference-about#how-model-alignment-works)
 
 * [Why Red Hat AI on {{site.data.keyword.cloud_notm}}?](/docs/inference?topic=inference-about#benefits)
 
@@ -230,108 +224,6 @@ subcollection: inference
 * [Connecting your client to LiteLLM proxy](/docs/inference?topic=inference-model-gateway#inference-non-openai-connect)
 
 
-## Model alignment
-{: #sitemap_model_alignment}
-
-
-[Creating an Object Storage instance](/docs/inference?topic=inference-storage#storage)
-
-* [Creating an {{site.data.keyword.cos_short}} instance in the console for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-storage&interface=ui#storage-ui)
-
-* [Creating an {{site.data.keyword.cos_short}} instance and bucket by using the CLI for {{site.data.keyword.short_name}}](/docs/inference?topic=inference-storage&interface=cli#storage-cli)
-
-* [What's next?](/docs/inference?topic=inference-storage&interface=cli#whats-next-storage)
-
-[Installing the CLI](/docs/inference?topic=inference-cli-install#cli-install)
-
-* [Running the installation command](/docs/inference?topic=inference-cli-install#cli-install-include-step1-install-idt)
-
-* [Verifying the installation](/docs/inference?topic=inference-cli-install#cli-install-include-step2-verify-idt)
-
-* [Installing CLI plug-ins and tools](/docs/inference?topic=inference-cli-install#cli-install-include-step3-install-idt-manually)
-
-* [Updating the {{site.data.keyword.cloud_notm}} CLI](/docs/inference?topic=inference-cli-install#cli-install-include-update-ibmcloud-cli)
-
-* [Updating installed plug-ins](/docs/inference?topic=inference-cli-install#cli-install-include-cli-update-plugin)
-
-* [Logging in to the CLI](/docs/inference?topic=inference-cli-install#cli-login)
-
-
-### Preparing your taxonomy
-{: #sitemap_preparing_your_taxonomy}
-
-
-[Understanding the taxonomy structure](/docs/inference?topic=inference-taxonomy-overview#taxonomy-overview)
-
-* [Taxonomy data](/docs/inference?topic=inference-taxonomy-overview#taxonomy-data)
-
-* [Taxonomy files](/docs/inference?topic=inference-taxonomy-overview#taxonomy-files)
-
-* [Knowledge documents](/docs/inference?topic=inference-taxonomy-overview#knowledge-docs)
-
-* [Knowledge `qna.yaml` files](/docs/inference?topic=inference-taxonomy-overview#knowledge-qna)
-
-* [Skills `qna.yaml` files](/docs/inference?topic=inference-taxonomy-overview#skills-qna)
-
-[Preparing taxonomies](/docs/inference?topic=inference-taxonomy-prep#taxonomy-prep)
-
-* [Create or clone your taxonomy](/docs/inference?topic=inference-taxonomy-prep#taxonomy-create)
-
-* [Gather your knowledge documents](/docs/inference?topic=inference-taxonomy-prep#taxonomy-gather)
-
-* [Create `qna.yaml` files for knowledge and skills](/docs/inference?topic=inference-taxonomy-prep#taxonomy-qna)
-
-* [Upload your taxonomy to your {{site.data.keyword.cos_short}} bucket](/docs/inference?topic=inference-taxonomy-prep#taxonomy-upload)
-
-* [What's next?](/docs/inference?topic=inference-taxonomy-prep#taxonomy-next)
-
-[Generating data](/docs/inference?topic=inference-data-generate#data-generate)
-
-* [Prerequisites](/docs/inference?topic=inference-data-generate#data-generate-pre)
-
-* [Generating data by using the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-ui)
-
-* [Importing your own training data in the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-byo-ui)
-
-* [Merging training data in the console](/docs/inference?topic=inference-data-generate&interface=ui#data-generate-byo-train-ui)
-
-* [Generating data by using the CLI](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-cli)
-
-* [Importing your own training data by using the CLI](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-byo-cli)
-
-    * [Example commands for importing your own training data](/docs/inference?topic=inference-data-generate&interface=cli#data-generate-byo-cli-examples)
-
-* [Generating data by using the API](/docs/inference?topic=inference-data-generate&interface=api#data-generate-api)
-
-* [What's in my {{site.data.keyword.cos_short}} bucket after generating data?](/docs/inference?topic=inference-data-generate&interface=api#data-bucket)
-
-* [Example `.jsonl` format](/docs/inference?topic=inference-data-generate&interface=api#example-jsonl)
-
-* [Next steps](/docs/inference?topic=inference-data-generate&interface=api#next-data)
-
-[Training models](/docs/inference?topic=inference-model-train#model-train)
-
-* [Prerequisites](/docs/inference?topic=inference-model-train#model-train-pre)
-
-* [Aligning models by using the console](/docs/inference?topic=inference-model-train&interface=ui#model-train-ui)
-
-* [Training models by using the CLI](/docs/inference?topic=inference-model-train&interface=cli#model-train-cli)
-
-* [Training models by using the API](/docs/inference?topic=inference-model-train&interface=api#model-train-api)
-
-* [What's in my {{site.data.keyword.cos_short}} bucket after training?](/docs/inference?topic=inference-model-train&interface=api#model-bucket)
-
-* [What's next?](/docs/inference?topic=inference-model-train&interface=api#next-model)
-
-[Deploying models](/docs/inference?topic=inference-deploy#deploy)
-
-* [Deploying the model to RHEL-AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-deploy#deploy-rhel-ai)
-
-* [Deploying the model to Watsonx on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-deploy#deploy-watson)
-
-* [Deploying the model to Red Hat OpenShift AI](/docs/inference?topic=inference-deploy#deploy-rhoai)
-
-
 ## Enhancing security
 {: #sitemap_enhancing_security}
 
@@ -480,107 +372,11 @@ subcollection: inference
 [Swagger](https://us-east.rhai.ibm.com/swagger-red-hat-ai-inference-api/#/){: external}
 
 
-## CLI reference
-{: #sitemap_cli_reference}
-
-
-[CLI reference](/docs/inference?topic=inference-ilab-cli#ilab-cli)
-
-* [Before you begin](/docs/inference?topic=inference-ilab-cli#ilab-cli-prereqs)
-
-* [Globals](/docs/inference?topic=inference-ilab-cli#ilab-globals)
-
-    * [Options](/docs/inference?topic=inference-ilab-cli#ilab-global-options)
-
-* [Config](/docs/inference?topic=inference-ilab-cli#ilab-cli-config-command)
-
-    * [`ibmcloud ilab config set`](/docs/inference?topic=inference-ilab-cli#ilab-cli-config-set-command)
-
-    * [`ibmcloud ilab config get`](/docs/inference?topic=inference-ilab-cli#ilab-cli-config-get-command)
-
-    * [`ibmcloud ilab config unset`](/docs/inference?topic=inference-ilab-cli#ilab-cli-config-unset-command)
-
-    * [`ibmcloud ilab config list`](/docs/inference?topic=inference-ilab-cli#ilab-cli-config-list-command)
-
-* [Taxonomy](/docs/inference?topic=inference-ilab-cli#ilab-taxonomy-cli)
-
-    * [`ibmcloud ilab taxonomy add`](/docs/inference?topic=inference-ilab-cli#ilab-cli-taxonomy-add-command)
-
-    * [`ibmcloud ilab taxonomy list`](/docs/inference?topic=inference-ilab-cli#ilab-cli-taxonomy-list-command)
-
-    * [`ibmcloud ilab taxonomy get`](/docs/inference?topic=inference-ilab-cli#ilab-cli-taxonomy-get-command)
-
-    * [`ibmcloud ilab taxonomy delete`](/docs/inference?topic=inference-ilab-cli#ilab-cli-taxonomy-delete-command)
-
-* [Data](/docs/inference?topic=inference-ilab-cli#ilab-data-cli)
-
-    * [`ibmcloud ilab data generate`](/docs/inference?topic=inference-ilab-cli#ilab-cli-data-generate-command)
-
-    * [`ibmcloud ilab data list`](/docs/inference?topic=inference-ilab-cli#ilab-cli-data-list-command)
-
-    * [`ibmcloud ilab data get`](/docs/inference?topic=inference-ilab-cli#ilab-cli-data-get-command)
-
-    * [`ibmcloud ilab data delete`](/docs/inference?topic=inference-ilab-cli#ilab-cli-data-delete-command)
-
-    * [`ibmcloud ilab data cancel`](/docs/inference?topic=inference-ilab-cli#ilab-cli-data-cancel-command)
-
-* [Model](/docs/inference?topic=inference-ilab-cli#ilab-model-cli)
-
-    * [`ibmcloud ilab model train`](/docs/inference?topic=inference-ilab-cli#ilab-cli-model-train-command)
-
-    * [`ibmcloud ilab model list`](/docs/inference?topic=inference-ilab-cli#ilab-cli-model-list-command)
-
-    * [`ibmcloud ilab model get`](/docs/inference?topic=inference-ilab-cli#ilab-cli-model-get-command)
-
-    * [`ibmcloud ilab model delete`](/docs/inference?topic=inference-ilab-cli#ilab-cli-model-delete-command)
-
-    * [`ibmcloud ilab model cancel`](/docs/inference?topic=inference-ilab-cli#ilab-cli-model-cancel-command)
-
-* [Schema examples](/docs/inference?topic=inference-ilab-cli#ilab-schema-examples)
-
-    * [CosBucketInformationPrototype](/docs/inference?topic=inference-ilab-cli#cli-cos-bucket-information-prototype-example-schema)
-
-    * [DataDestinationPrototype](/docs/inference?topic=inference-ilab-cli#cli-data-destination-prototype-example-schema)
-
-    * [DataSourcesPrototype](/docs/inference?topic=inference-ilab-cli#cli-data-sources-prototype-example-schema)
-
-    * [SecretsManagerConfigPrototype](/docs/inference?topic=inference-ilab-cli#cli-secrets-manager-config-prototype-example-schema)
-
-    * [UserProvidedPathsPrototype](/docs/inference?topic=inference-ilab-cli#cli-user-provided-paths-prototype-example-schema)
-
-
 ## Getting help and support
 {: #sitemap_getting_help_and_support}
 
 
 [Getting help and support](/docs/inference?topic=inference-get-help#get-help)
-
-
-## Troubleshooting model alignment
-{: #sitemap_troubleshooting_model_alignment}
-
-
-[Debugging](/docs/inference?topic=inference-ts-debug#ts-debug)
-
-* [Debugging configuration issues](/docs/inference?topic=inference-ts-debug#debug-issues)
-
-    * [Step 1: Validate the local taxonomy](/docs/inference?topic=inference-ts-debug#local-taxonomy)
-
-    * [Step 2: Verify the version](/docs/inference?topic=inference-ts-debug#version)
-
-[Failed to retrieve taxonomy from COS error](/docs/inference?topic=inference-ts-taxonomy-retrieve#ts-taxonomy-retrieve)
-
-[No new leaf nodes found error](/docs/inference?topic=inference-ts-no-new-leaf-nodes#ts-no-new-leaf-nodes)
-
-[Failed to process invalid taxonomy files error](/docs/inference?topic=inference-ts-taxonomy-invalid#ts-taxonomy-invalid)
-
-[Failed to read secret data](/docs/inference?topic=inference-ts-taxonomy-secret-auth#ts-taxonomy-secret-auth)
-
-[Failed to parse secret data](/docs/inference?topic=inference-ts-taxonomy-secret-data#ts-taxonomy-secret-data)
-
-[Failed to clone knowledge document repository error](/docs/inference?topic=inference-ts-knowledge-clone#ts-knowledge-clone)
-
-[Failed to find knowledge documents error](/docs/inference?topic=inference-ts-knowledge-find#ts-knowledge-find)
 
 
 ## FAQs
@@ -593,35 +389,15 @@ subcollection: inference
 
 * [What are the benefits of {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq-rhaii#faq-benefits)
 
-* [When should I use {{site.data.keyword.instructlab_short}} for model alignment versus inference?](/docs/inference?topic=inference-faq-rhaii#inference-vs-alignment-faq)
+* [What is inference?](/docs/inference?topic=inference-faq-rhaii#faq-what-is-inference)
 
-[FAQ about inference](/docs/inference?topic=inference-faq-i#faq-i)
+[FAQ about chat models](/docs/inference?topic=inference-faq-chat#faq-chat)
 
-* [What is inference?](/docs/inference?topic=inference-faq-i#inference-faq)
+* [How do I get started with chat completions?](/docs/inference?topic=inference-faq-chat#faq-chat-start)
 
-* [How do I get started with inference?](/docs/inference?topic=inference-faq-i#inference-start-faq)
+* [What models are available for chat completions?](/docs/inference?topic=inference-faq-chat#faq-chat-models)
 
-* [What models are available for inference?](/docs/inference?topic=inference-faq-i#inference-models-faq)
-
-* [Can I customize model behavior during inference?](/docs/inference?topic=inference-faq-i#inference-customize-faq)
-
-[FAQ about model alignment](/docs/inference?topic=inference-faq-ma#faq-ma)
-
-* [What is model alignment?](/docs/inference?topic=inference-faq-ma#faq-model-train)
-
-* [What are Granite models?](/docs/inference?topic=inference-faq-ma#granite)
-
-* [What is a taxonomy?](/docs/inference?topic=inference-faq-ma#taxonomy-faq)
-
-* [What is synthetic data generation?](/docs/inference?topic=inference-faq-ma#faq-data-gen)
-
-* [How does taxonomy validation work?](/docs/inference?topic=inference-faq-ma#faq-tax-validation)
-
-* [How long does data generation take?](/docs/inference?topic=inference-faq-ma#faq-time-data)
-
-* [How long does model training take?](/docs/inference?topic=inference-faq-ma#faq-model)
-
-* [Can I import my own training data?](/docs/inference?topic=inference-faq-ma#faq-byo-sdg)
+* [Can I customize model behavior?](/docs/inference?topic=inference-faq-chat#faq-chat-customize)
 
 [FAQ about billing](/docs/inference?topic=inference-faq-b#faq-b)
 

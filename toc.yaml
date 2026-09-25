@@ -40,26 +40,6 @@ toc:
           - inference.md
           - topic: inference-non-openai.md
       - topicgroup:
-          label: Model alignment
-          topics:
-          - topic: storage.md
-            navtitle: Creating an Object Storage instance
-          - topic: cli-install.md
-            navtitle: Installing the CLI
-          - topicgroup:
-              label: Preparing your taxonomy
-              topics:
-              - topic: taxonomy-overview.md
-                navtitle: Understanding the taxonomy structure
-              - topic: taxonomy-prep.md
-                navtitle: Preparing taxonomies
-          - topic: data-generate.md
-            navtitle: Generating data
-          - topic: model-train.md
-            navtitle: Training models
-          - topic: deploy.md
-            navtitle: Deploying models
-      - topicgroup:
           label: Enhancing security
           topics:
           - topic: architecture-workload-isolation.md
@@ -95,39 +75,17 @@ toc:
           - link:
               label: Swagger
               href: https://us-east.rhai.ibm.com/swagger-red-hat-ai-inference-api/#/
-      - topic: ilab-cli.md
-        navtitle: CLI reference
   - navgroup:
       id: help
       topics:
       - topic: get-help.md
         navtitle: Getting help and support
       - topicgroup:
-          label: Troubleshooting model alignment
-          topics:
-          - topic: ts-debug.md
-            navtitle: Debugging
-          - topic: ts-taxonomy-retrieve.md
-            navtitle: "Failed to retrieve taxonomy from COS error"
-          - topic: ts-no-new-leaf-nodes.md
-            navtitle: "No new leaf nodes found error"
-          - topic: ts-taxonomy-invalid.md
-            navtitle: "Failed to process invalid taxonomy files error"
-          - topic: ts-taxonomy-secret-auth.md
-            navtitle: "Failed to read secret data"
-          - topic: ts-taxonomy-secret-data.md
-            navtitle: "Failed to parse secret data"
-          - topic: ts-knowledge-clone.md
-            navtitle: "Failed to clone knowledge document repository error"
-          - topic: ts-knowledge-find.md
-            navtitle: "Failed to find knowledge documents error"
-      - topicgroup:
           label: FAQs
           topics:
           - topic: faq.md
           - topic: faq-chat.md
             navtitle: FAQ about chat models
-          - topic: faq-model-alignment.md
           - topic: faq-billing.md
             navtitle: FAQ about billing
       - topic: sitemap.md

@@ -21,6 +21,11 @@ toc:
       - topic: release-notes.md
         navtitle: Release notes
   - navgroup:
+      id: tutorial
+      topics:
+      - topic: embeddings.md
+        navtitle: Improving chat completions with vector embeddings
+  - navgroup:
       id: howto
       topics:
       - topicgroup:
@@ -35,9 +40,16 @@ toc:
           - topic: event-notifications.md
             navtitle: Enabling notifications
       - topicgroup:
-          label: Running inference
+          label: Using the models
           topics:
-          - inference.md
+          - topic: inf-auth.md
+            navtitle: Authenticating to the API
+          - topic: inf-list-models.md
+            navtitle: Listing models
+          - topic: inf-chat-completions.md
+            navtitle: Working with chat completions
+          - topic: inf-embeddings.md
+            navtitle: Creating embeddings
           - topic: inference-non-openai.md
       - topicgroup:
           label: Enhancing security
@@ -81,11 +93,18 @@ toc:
       - topic: get-help.md
         navtitle: Getting help and support
       - topicgroup:
+          label: Troubleshooting embeddings
+          topics:
+          - topic: ts-embeddings-exceed-limit.md
+            navtitle: "Why does my embeddings request fail with an HTTP 400 Bad Request error?"
+      - topicgroup:
           label: FAQs
           topics:
           - topic: faq.md
           - topic: faq-chat.md
             navtitle: FAQ about chat models
+          - topic: faq-embeddings.md
+            navtitle: FAQ about embeddings
           - topic: faq-billing.md
             navtitle: FAQ about billing
       - topic: sitemap.md

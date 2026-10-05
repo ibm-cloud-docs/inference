@@ -60,6 +60,10 @@ subcollection: inference
 
     * [How inference works](/docs/inference?topic=inference-about#how-inference-works)
 
+* [What is embedding?](/docs/inference?topic=inference-about#embedding)
+
+    * [How embedding works](/docs/inference?topic=inference-about#how-embedding-works)
+
 * [Why Red Hat AI on {{site.data.keyword.cloud_notm}}?](/docs/inference?topic=inference-about#benefits)
 
 * [Resources for learning more](/docs/inference?topic=inference-about#resources)

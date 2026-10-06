@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-09-25"
+lastupdated: "2026-10-05"
 
 keywords: instructlab, ai, about, how it works, billing
 
@@ -77,7 +77,42 @@ Step 4. Integrate responses
 
 You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Inference with models](/docs/inference?topic=inference-inference).
 
+## What is embedding?
+{: #embedding}
 
+Text embedding is a way of representing text as a numerical vector — a list of numbers that captures the semantic meaning of a sentence or passage. By converting text into these vectors, the model can perform comparisons and groupings based on meaning rather than exact words, which is something computers can do quickly and accurately.
+
+When an embedding model generates a vector for a piece of text, it assigns values that reflect that text's meaning and positions the vector in a multidimensional space relative to all other vectors. Texts with similar meanings are placed closer together in that space, and texts with different meanings are placed farther apart. For example, two sentences about the same subject — even if they use different words — would produce vectors that are near each other, while sentences with unrelated subjects would produce vectors that are far apart.
+
+You can store generated vectors in a vector database. When the same embedding model is used to generate vectors for all content in the database, the vector store can use the relationships between vectors to return relevant results quickly. Unlike traditional keyword-based search, semantic search using embeddings retrieves information that is similar in meaning, not just in vocabulary. This produces better results in cases where users phrase queries differently from the source content.
+
+Common uses for text embeddings include:
+
+- Semantic search and information retrieval
+- Clustering and classification of documents
+- Retrieval-augmented generation (RAG), in which retrieved content is passed to a language model to produce grounded responses
+
+### How embedding works
+{: #how-embedding-works}
+
+Embedding in {{site.data.keyword.instructlab_short}} follows a simple workflow:
+
+Step 1. Authenticate
+:   Use a bearer token or an {{site.data.keyword.cloud_notm}} API key to securely access your project's embedding capabilities.
+
+Step 2. Select a model
+:   Choose an embedding model based on your use case. The `granite-embedding-278m-multilingual` model is available and supports multiple languages.
+
+Step 3. Send input text
+:   Use the embeddings API to submit one or more text inputs. The model returns a vector representation for each input — a list of floating-point numbers that encodes the semantic content of the text.
+
+Step 4. Use the vectors
+:   Store the generated vectors in a vector database, use them to power semantic search, or integrate them into a RAG pipeline to ground model responses in your own data.
+
+For vector storage, use [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-es-ml-ai) or [{{site.data.keyword.lakehouse_full_notm}}](https://www.ibm.com/docs/en/watsonxdata/saas?topic=overview){: external}.
+{: tip}
+
+For a step-by-step walkthrough, see [Improving chat completions with vector embeddings and RAG](/docs/inference?topic=inference-embeddings-rag).
 
 ## Why Red Hat AI on {{site.data.keyword.cloud_notm}}?
 {: #benefits}

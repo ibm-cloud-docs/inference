@@ -1,6 +1,7 @@
 The console provides an interactive playground where you can experiment with different models, test prompts, and refine your AI interactions before integrating them into your applications.
 
-
+The playground does not support embeddings. Use the API to [create embeddings](/docs/inference?topic=inference-inf-create-embeddings).
+{: note}
 
 1. In the console, open the [{{site.data.keyword.instructlab_short}} service](/inference/overview){: external} and click the name of your project to open it.
 

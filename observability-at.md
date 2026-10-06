@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-10-05"
 
 keywords:
 
@@ -29,7 +29,7 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 ## Locations where activity tracking events are generated
 {: #at-locations}
 
-Activity tracking events for {{site.data.keyword.instructlab_short}} are generated in the `us-east` region. 
+Activity tracking events for {{site.data.keyword.instructlab_short}} are generated in the `us-east` region.
 
 
 ## Viewing activity tracking events for {{site.data.keyword.instructlab_short}}
@@ -96,6 +96,7 @@ The following table lists the activity tracking events that are generated when y
 | `instructlab.inference.read`                                | An event is generated when you describe a chat completion by its ID. |
 | `instructlab.inference.list`                                | An event is generated when you list chat completions. |
 | `instructlab.inference.delete`                                | An event is generated when you delete a stored chat completion. |
+| `instructlab.inference-embeddings.create` | An event is generated when you create an embedding vector representing the input text. |
 | `instructlab.inference-session.read` | An event is generated when internal APIs are used for storing session read state in the UI. |
 | `instructlab.inference-session.list` | An event is generated when internal APIs are used for storing session list state for the UI. |
 | `instructlab.inference-session.delete` | An event is generated when internal APIs are used for storing session delete state in the UI. |

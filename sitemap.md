@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-09-25"
+lastupdated: "2026-10-05"
 
 
 keywords: instructlab, sitemap
@@ -60,6 +60,10 @@ subcollection: inference
 
     * [How inference works](/docs/inference?topic=inference-about#how-inference-works)
 
+* [What is embedding?](/docs/inference?topic=inference-about#embedding)
+
+    * [How embedding works](/docs/inference?topic=inference-about#how-embedding-works)
+
 * [Why Red Hat AI on {{site.data.keyword.cloud_notm}}?](/docs/inference?topic=inference-about#benefits)
 
 * [Resources for learning more](/docs/inference?topic=inference-about#resources)
@@ -72,6 +76,12 @@ subcollection: inference
 
 
 [Release notes](/docs/inference?topic=inference-release-notes#release-notes)
+
+* [October 2026](/docs/inference?topic=inference-release-notes#oct26)
+
+    * [05 October 2026](/docs/inference?topic=inference-release-notes#05oct26)
+
+        * Create embeddings with Red Hat AI Inference
 
 * [July 2026](/docs/inference?topic=inference-release-notes#july26)
 
@@ -134,6 +144,37 @@ subcollection: inference
         * Introducing {{site.data.keyword.instructlab_full_notm}}!
 
 
+## Improving chat completions with vector embeddings
+{: #sitemap_improving_chat_completions_with_vector_embeddings}
+
+
+[Improving chat completions with vector embeddings](/docs/inference?topic=inference-embeddings-rag#embeddings-rag)
+
+* [Objectives](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-objectives)
+
+* [Before you begin](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-prereqs)
+
+* [Set up API authentication](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-auth)
+
+    * [Create a service ID and assign access](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-create-service-id)
+
+    * [Create an API key](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-create-api-key)
+
+* [Get your project ID and API endpoint](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-project-id)
+
+* [Set environment variables](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-env)
+
+* [Generate a bearer token](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-token)
+
+* [Build the vector store](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-store)
+
+* [Create the API client](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-client)
+
+* [Seed the memory store and run the demo](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-main)
+
+* [Next steps](/docs/inference?topic=inference-embeddings-rag#embeddings-rag-next-steps)
+
+
 ## Preparing your account
 {: #sitemap_preparing_your_account}
 
@@ -185,33 +226,55 @@ subcollection: inference
     * [Webhooks](/docs/inference?topic=inference-event-notifications-events#event-notifications-webhook)
 
 
-## Running inference
-{: #sitemap_running_inference}
+## Using the models
+{: #sitemap_using_the_models}
 
 
-[Inference a model](/docs/inference?topic=inference-inference#inference)
+[Authenticating to the API](/docs/inference?topic=inference-inf-auth#inf-auth)
 
-* [Before you begin](/docs/inference?topic=inference-inference#inf-prereqs)
+* [Before you begin](/docs/inference?topic=inference-inf-auth#inf-auth-prereqs)
 
-* [Inference a model by using the console](/docs/inference?topic=inference-inference&interface=ui#inf-chat-ui)
+* [Authenticating by using a bearer token](/docs/inference?topic=inference-inf-auth#inf-auth-token)
 
-* [Inference a model by using the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-api)
+* [Authenticating by using an API key](/docs/inference?topic=inference-inf-auth#inf-auth-apikey)
 
-    * [API endpoint](/docs/inference?topic=inference-inference&interface=api#inf-api-endpoint)
+[Listing models](/docs/inference?topic=inference-inf-list-models#inf-list-models)
 
-    * [Authenticating to the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-auth)
+* [Before you begin](/docs/inference?topic=inference-inf-list-models&interface=ui#inf-list-models-prereqs-ui)
 
-    * [Generating a chat completion](/docs/inference?topic=inference-inference&interface=api#inf-chat-generate)
+* [Before you begin](/docs/inference?topic=inference-inf-list-models&interface=api#inf-list-models-prereqs-api)
 
-    * [Getting a chat completion by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-completion)
+* [Listing models by using the console](/docs/inference?topic=inference-inf-list-models&interface=ui#inf-list-models-ui)
 
-    * [Listing chat completions](/docs/inference?topic=inference-inference&interface=api#inf-chat-list)
+* [Listing models by using the API](/docs/inference?topic=inference-inf-list-models&interface=api#inf-list-models-api)
 
-    * [Deleting a chat completion](/docs/inference?topic=inference-inference&interface=api#inf-chat-delete)
+* [Getting a model by ID by using the API](/docs/inference?topic=inference-inf-list-models&interface=api#inf-get-model)
 
-    * [Listing models](/docs/inference?topic=inference-inference&interface=api#inf-chat-list-models)
+[Working with chat completions](/docs/inference?topic=inference-inf-chat-completions#inf-chat-completions)
 
-    * [Getting a model by ID](/docs/inference?topic=inference-inference&interface=api#inf-chat-get-model)
+* [Before you begin](/docs/inference?topic=inference-inf-chat-completions&interface=api#inf-chat-completions-prereqs-api)
+
+* [Before you begin](/docs/inference?topic=inference-inf-chat-completions&interface=ui#inf-chat-completions-prereqs-ui)
+
+* [Working with chat completions by using the console](/docs/inference?topic=inference-inf-chat-completions&interface=ui#inf-chat-completions-ui)
+
+* [Generating a chat completion by using the API](/docs/inference?topic=inference-inf-chat-completions&interface=api#inf-chat-generate)
+
+* [Getting a chat completion by ID by using the API](/docs/inference?topic=inference-inf-chat-completions&interface=api#inf-chat-get-completion)
+
+* [Listing chat completions by using the API](/docs/inference?topic=inference-inf-chat-completions&interface=api#inf-chat-list)
+
+* [Deleting a chat completion by using the API](/docs/inference?topic=inference-inf-chat-completions&interface=api#inf-chat-delete)
+
+[Creating embeddings](/docs/inference?topic=inference-inf-create-embeddings#inf-create-embeddings)
+
+* [Before you begin](/docs/inference?topic=inference-inf-create-embeddings#inf-create-embeddings-prereqs)
+
+* [Input formats and limits](/docs/inference?topic=inference-inf-create-embeddings#embeddings-inputs-limits)
+
+* [Output dimensions](/docs/inference?topic=inference-inf-create-embeddings#embeddings-outputs)
+
+* [Creating embeddings](/docs/inference?topic=inference-inf-create-embeddings#inf-create-embeddings-api)
 
 [Setting up a model gateway with LiteLLM proxy](/docs/inference?topic=inference-model-gateway#model-gateway)
 
@@ -379,6 +442,13 @@ subcollection: inference
 [Getting help and support](/docs/inference?topic=inference-get-help#get-help)
 
 
+## Troubleshooting embeddings
+{: #sitemap_troubleshooting_embeddings}
+
+
+[Why does my embeddings request fail with an HTTP 400 Bad Request error?](/docs/inference?topic=inference-ts-embeddings-exceed-limit#ts-embeddings-exceed-limit)
+
+
 ## FAQs
 {: #sitemap_faqs}
 
@@ -389,6 +459,8 @@ subcollection: inference
 
 * [What are the benefits of {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq-rhaii#faq-benefits)
 
+* [When should I use {{site.data.keyword.instructlab_short}} for chat completions versus embeddings?](/docs/inference?topic=inference-faq-rhaii#faq-chat-vs-embeddings)
+
 * [What is inference?](/docs/inference?topic=inference-faq-rhaii#faq-what-is-inference)
 
 [FAQ about chat models](/docs/inference?topic=inference-faq-chat#faq-chat)
@@ -398,6 +470,26 @@ subcollection: inference
 * [What models are available for chat completions?](/docs/inference?topic=inference-faq-chat#faq-chat-models)
 
 * [Can I customize model behavior?](/docs/inference?topic=inference-faq-chat#faq-chat-customize)
+
+[FAQ about embeddings](/docs/inference?topic=inference-faq-embeddings#faq-embeddings)
+
+* [What is a vector embedding?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-what-is)
+
+* [What is the input token limit for embeddings?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-token-limit)
+
+* [How does the service handle text that exceeds the limit?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-exceed-limit)
+
+* [How are limits applied when multiple text inputs are included in a single API call?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-multiple-inputs)
+
+* [What is the maximum batch size supported per API call?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-max-batch)
+
+* [What are valid inputs to the embeddings API?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-valid-inputs)
+
+* [Does a larger output vector provide a better representation of the input?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-vector-size)
+
+* [Can I configure the size of the output vector?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-configure-dimensions)
+
+* [Do you offer managed vector database services?](/docs/inference?topic=inference-faq-embeddings#faq-embeddings-vector-databases)
 
 [FAQ about billing](/docs/inference?topic=inference-faq-b#faq-b)
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-08"
 
 keywords: instructlab, ai, about, how it works, billing
 
@@ -133,18 +133,6 @@ Cost-effective and scalable
 
 Industry-standard APIs
 :   Use familiar OpenAI-compatible endpoints to integrate AI capabilities into your existing workflows and applications without learning proprietary interfaces.
-
-
-## Resources for learning more
-{: #resources}
-
-See what others have to say about model training with {{site.data.keyword.instructlab_short}}.
-
-- [What is InstructLab?](https://www.redhat.com/en/topics/ai/what-is-instructlab){: external}
-- [InstructLab](https://www.ibm.com/think/topics/instructlab?mhsrc=ibmsearch_a&mhq=instructlab){: external}.
-- [What is InstructLab and why do developers need it?](https://developer.ibm.com/articles/awb-instructlab-why-developers-need-it/){: external}
-- [What is a large language model?](https://www.redhat.com/en/topics/ai/what-are-large-language-models){: external}
-
 
 ## How does billing work?
 {: #billing}

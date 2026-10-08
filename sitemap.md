@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-08"
 
 
 keywords: instructlab, sitemap
@@ -65,8 +65,6 @@ subcollection: inference
     * [How embedding works](/docs/inference?topic=inference-about#how-embedding-works)
 
 * [Why Red Hat AI on {{site.data.keyword.cloud_notm}}?](/docs/inference?topic=inference-about#benefits)
-
-* [Resources for learning more](/docs/inference?topic=inference-about#resources)
 
 * [How does billing work?](/docs/inference?topic=inference-about#billing)
 
@@ -358,19 +356,6 @@ subcollection: inference
 * [Security and regulation compliance](/docs/inference?topic=inference-responsibilities#security-compliance)
 
 * [Disaster recovery](/docs/inference?topic=inference-responsibilities#disaster-recovery)
-
-
-## Service settings
-{: #sitemap_service_settings}
-
-
-[Service settings](/docs/inference?topic=inference-service-settings#service-settings)
-
-* [Training settings](/docs/inference?topic=inference-service-settings#training-defaults)
-
-* [Synthetic data generation (SDG) settings](/docs/inference?topic=inference-service-settings#sdg-defaults)
-
-* [Model settings](/docs/inference?topic=inference-service-settings#model-defaults)
 
 
 ## Lifecycle policy

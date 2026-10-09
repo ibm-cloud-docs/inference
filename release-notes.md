@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-09"
 
 keywords: release notes
 
@@ -74,7 +74,7 @@ Inference is now generally available
 {: release-note}
 
 Inference with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
-:   You can now use inference to interact with foundation models and evaluate AI-powered responses for your applications. The inference feature provides industry-standard OpenAI compatible APIs for chat completions and model management. This beta feature is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`. For more information, see [Inference with Red Hat AI on {{site.data.keyword.cloud_notm}}](/docs/inference?topic=inference-inference).
+:   You can now use inference to interact with foundation models and evaluate AI-powered responses for your applications. The inference feature provides industry-standard OpenAI compatible APIs for chat completions and model management. This beta feature is available for evaluation and testing purposes. To get access to the beta, send an email to `instructlab@ibm.com`. For more information, see [Working with chat completions](/docs/inference?topic=inference-inf-chat-completions&interface=ui).
 
 ## October 2025
 {: #oct25}
@@ -111,13 +111,13 @@ New base model
 {: release-note}
 
 New! Import your own training data
-:   You can now import your own training data for training models. When you import your own training data, you can specify previously generated data IDs, or add knowledge and skills files to a data generation job by uploading files from {{site.data.keyword.cos_short}} or your local machine. For more information, see [Generating data](/docs/inference?topic=inference-data-generate).
+:   You can now import your own training data for training models. When you import your own training data, you can specify previously generated data IDs, or add knowledge and skills files to a data generation job by uploading files from {{site.data.keyword.cos_short}} or your local machine.
 
 New! Taxonomy validation
 :   When you upload a taxonomy to {{site.data.keyword.short_name}}, it's now checked for formatting and syntax errors. Also, if you reference external knowledge documents in your `qna.yaml` files, {{site.data.keyword.short_name}} checks for access to those files. Additionally, {{site.data.keyword.short_name}} checks for the proper service authorizations for services like {{site.data.keyword.cos_short}} and {{site.data.keyword.secrets-manager_short}}.
 
 {{site.data.keyword.short_name}} CLI plug-in version `0.0.24`
-:   Version `0.0.24` of the plug-in adds support for importing your own training data to the `data generate` command. For more information, see [Generating data](/docs/inference?topic=inference-data-generate) or run `ibmcloud ilab data generate --help` to see the new options.
+:   Version `0.0.24` of the plug-in adds support for importing your own training data to the `data generate` command.
 
 ## May 2025
 {: #may25}

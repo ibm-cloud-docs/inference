@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-10-09"
 
 keywords: litellm, openai, api translation, proxy
 
@@ -34,7 +34,7 @@ Before you can set up a model gateway with LiteLLM proxy, make sure that you com
 
 * Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui).
 
-* Create a [service ID API key](/docs/inference?topic=inference-getting-started&interface=api#create-service-id) to authenticate your requests. For other authentication options, see [authenticating to the API](/docs/inference?topic=inference-inference&interface=api#inf-chat-auth).
+* Create a [service ID API key](/docs/inference?topic=inference-getting-started&interface=api#create-service-id) to authenticate your requests. For other authentication options, see [authenticating to the API](/docs/inference?topic=inference-inf-auth).
 
 * Install `uv`, a Python package manager. For example, on macOS you can install it with Homebrew:
 

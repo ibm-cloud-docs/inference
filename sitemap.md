@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-08"
+lastupdated: "2026-10-09"
 
 
 keywords: instructlab, sitemap
@@ -307,17 +307,7 @@ subcollection: inference
 
 * [How your data is stored and encrypted in {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-storage)
 
-    * [How model alignment data is stored and encrypted](/docs/inference?topic=inference-mng-data#data-ma)
-
-    * [How inference data is stored and encrypted](/docs/inference?topic=inference-mng-data#data-inference)
-
 * [Deleting your data in {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-delete)
-
-* [Deleting or canceling jobs in {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-jobs)
-
-    * [Deleting {{site.data.keyword.instructlab_short}} instances](/docs/inference?topic=inference-mng-data#service-delete)
-
-    * [Restoring deleted data for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-restore)
 
 * [Removing access to {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-access-remove)
 
@@ -478,10 +468,6 @@ subcollection: inference
 
 [FAQ about billing](/docs/inference?topic=inference-faq-b#faq-b)
 
-* [How does billing work?](/docs/inference?topic=inference-faq-b#costs-faq)
-
 * [How is cost calculated in {{site.data.keyword.product_name}}?](/docs/inference?topic=inference-faq-b#costs-ilab)
-
-* [How do I find and track cost information as I train a model?](/docs/inference?topic=inference-faq-b#costs-tracking)
 
 * [Are failed operations billed?](/docs/inference?topic=inference-faq-b#costs-operations)

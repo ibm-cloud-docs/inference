@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-09-25"
+lastupdated: "2026-10-09"
 
 keywords: instructlab, ai, project
 
@@ -64,4 +64,4 @@ ibmcloud resource service-instance-create <project_name> instructlab instructlab
 
 After creating your project, you can run inference with models. You can also [assign users in your account access to your project](/docs/inference?topic=inference-project) so they can collaborate on the project as well.
 
-For more information about running inference, see [inference a model](/docs/inference?topic=inference-inference).
+For more information about running inference, see [Working with chat completions](/docs/inference?topic=inference-inf-chat-completions&interface=ui).

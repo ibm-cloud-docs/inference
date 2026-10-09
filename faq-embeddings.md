@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-09"
 
 keywords: embeddings, faq, vector database, limits
 
@@ -83,6 +83,6 @@ The size of the output vector is model-dependent. Although the embeddings API su
 {: #faq-embeddings-vector-databases}
 {: faq}
 
-Yes. {{site.data.keyword.IBM_notm}} offers managed vector database services. You can use [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-es-ml-ai) or [{{site.data.keyword.lakehouse_full_notm}}](/docs/watsonxdata?topic=watsonxdata-wxd_ov) to store and search your vector embeddings.
+Yes. {{site.data.keyword.IBM_notm}} offers managed vector database services. You can use [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-es-ml-ai) or [{{site.data.keyword.lakehouse_full_notm}}](https://www.ibm.com/docs/en/watsonxdata/saas?topic=overview){: external} to store and search your vector embeddings.
 
 <!--</qna:embeddings>-->

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-09"
 
 keywords: ai, embeddings, text embeddings, rag, retrieval-augmented generation, vector store, cosine similarity, chat completions
 
@@ -410,4 +410,3 @@ Now that you've built a complete RAG pipeline, here are some ways to extend it:
 * **Bring your own knowledge base** — Replace the `KNOWLEDGE` list in `main.py` with any list of strings: product documentation, support tickets, internal wikis, or domain-specific data.
 * **Persist the vector store** — Serialize the store's entries to disk (for example, as JSON) so you don't re-embed on every run.
 * **Tune retrieval** — Adjust `TOP_K` in `main.py` to retrieve more or fewer facts per query and observe the effect on response quality.
-* **Explore other inference capabilities** — See the [Running inference](/docs/inference?topic=inference-inference) topic to learn about additional models and parameters available through the {{site.data.keyword.instructlab_short}} API.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-09-25"
+lastupdated: "2026-10-09"
 
 keywords: instructlab, ai, inference, chat completions
 
@@ -83,7 +83,7 @@ Replace `<project_id>` with your project ID.
 {: #authenticate}
 {: step}
 
-Before you can interact with foundation models, you need to authenticate your API requests. You can use either a bearer token or an {{site.data.keyword.cloud_notm}} API key. This tutorial shows how to use a service ID with an API key for programmatic access. For more information on using a bearer token, see [Authenticating by using a bearer token](/docs/inference?topic=inference-inference&interface=api#inf-chat-token).
+Before you can interact with foundation models, you need to authenticate your API requests. You can use either a bearer token or an {{site.data.keyword.cloud_notm}} API key. This tutorial shows how to use a service ID with an API key for programmatic access. For more information on using a bearer token, see [Authenticating by using a bearer token](/docs/inference?topic=inference-inf-auth&interface=ui#inf-auth-token).
 
 ### Create a service ID and assign access
 {: #create-service-id}
@@ -245,7 +245,7 @@ Now that you've successfully started using inference, here's what you can do nex
 ### Continue with inference
 {: #continue-inference}
 
-* [Learn more about inference](/docs/inference?topic=inference-inference) to discover advanced features like streaming responses, adjusting model parameters, and managing conversation history.
+* [Learn more about inference](/docs/inference?topic=inference-inf-chat-completions&interface=ui) to discover advanced features like streaming responses, adjusting model parameters, and managing conversation history.
 
 * Explore the [OpenAI Chat Completion API](https://developers.openai.com/api/reference/resources/chat){: external} documentation for complete API reference.
 

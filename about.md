@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-08"
+lastupdated: "2026-10-09"
 
 keywords: instructlab, ai, about, how it works, billing
 
@@ -55,7 +55,7 @@ Interactive testing
 
 For more information about inference, see [AI inference, simplified and explained](https://www.ibm.com/think/topics/ai-inference){: external}.
 
-For more information about how to inference, see [Inference with models](/docs/inference?topic=inference-inference).
+For more information about how to inference, see [Working with chat completions](/docs/inference?topic=inference-inf-chat-completions&interface=ui).
 
 
 ### How inference works
@@ -75,7 +75,7 @@ Step 3. Send requests
 Step 4. Integrate responses
 :   Incorporate the model's responses into your application workflows, whether for conversational interfaces, content generation, or natural language processing tasks.
 
-You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Inference with models](/docs/inference?topic=inference-inference).
+You can test and refine your interactions in the console playground before integrating them into production applications. For detailed examples, see [Working with chat completions](/docs/inference?topic=inference-inf-chat-completions&interface=ui).
 
 ## What is embedding?
 {: #embedding}

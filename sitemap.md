@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-13"
 
 
 keywords: instructlab, sitemap
@@ -33,9 +33,7 @@ subcollection: inference
 
 * [Authenticate to the API](/docs/inference?topic=inference-getting-started#authenticate)
 
-    * [Create a service ID and assign access](/docs/inference?topic=inference-getting-started#create-service-id)
-
-    * [Create an API key](/docs/inference?topic=inference-getting-started#create-api-key)
+    * [Creating a service ID and an API key](/docs/inference?topic=inference-getting-started#create-service-id)
 
 * [Explore available models](/docs/inference?topic=inference-getting-started#explore-models)
 

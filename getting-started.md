@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-13"
 
 keywords: instructlab, ai, inference, chat completions
 
@@ -85,47 +85,16 @@ Replace `<project_id>` with your project ID.
 
 Before you can interact with foundation models, you need to authenticate your API requests. You can use either a bearer token or an {{site.data.keyword.cloud_notm}} API key. This tutorial shows how to use a service ID with an API key for programmatic access. For more information on using a bearer token, see [Authenticating by using a bearer token](/docs/inference?topic=inference-inf-auth&interface=ui#inf-auth-token).
 
-### Create a service ID and assign access
+### Creating a service ID and an API key
 {: #create-service-id}
 
-A service ID is a useful way to control and distribute access to {{site.data.keyword.instructlab_short}} projects. Create the service ID, then assign it access to your project.
+A service ID manages access for applications and automated workflows. When you create a service ID directly within your project, the Writer service access role is automatically assigned so that you can create chat completions.
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **[Service IDs](/iam/serviceids){: external}** and click **Create**.
-
-2. Enter a name and description for your service ID, then click **Create**.
-
-3. From the service ID page, click **Assign access**.
-
-4. Select **{{site.data.keyword.instructlab_short}}** as the service.
-
-5. Within **Resources**, select **Specific resources** and choose your project. By doing so, you limit access to a specific project.
-
-6. Within **Roles and actions**, select the appropriate service access role:
-   - Select **Writer** if you need to create chat completions.
-   - Select **Reader** if you only need to read chat completions or view model information.
-
-   Platform access roles are not required for API access.
-
-7. (Optional) Add conditions such as time-based access to further scope the service ID access.
-
-8. Review the access summary and click **Assign**.
-
-### Create an API key
-{: #create-api-key}
-
-Now that your service ID has access to your {{site.data.keyword.instructlab_short}} project, create a service ID API key to use in your API calls.
-
-1. From the service ID page, click **API keys**.
-
-2. Click **Create** and enter a name for your API key.
-
-3. For leaked key handling, select **Disable the leaked key** to automatically disable the key if it's detected as leaked.
-
-4. Set an expiration date for the key. Regular key rotation is recommended for security.
-
-5. Click **Create**.
-
-6. Copy the API key and save it in a secure location. The key cannot be viewed again.
+1. Go to the [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/instructlab/projects){: external} page, and select your project.
+1. In the **Using the API** section, click **Create API key**.
+1. Click **Next**, and select **This project only** to restrict access to the current project.
+1. Click **Create**.
+1. Copy the API key and store it securely. The API key value cannot be displayed again after you close the dialog.
 
 You can now use that API key to authenticate your requests. In the next step, you'll use this key in the `Authorization: Bearer` header of your API calls.
 

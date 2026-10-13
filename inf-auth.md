@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-13"
 
 keywords: instructlab, ai, inference, authentication, bearer token, api key
 
@@ -50,6 +50,11 @@ The bearer token is the `access_token` in the response. These tokens have an exp
 ## Authenticating by using an API key
 {: #inf-auth-apikey}
 
-There are two ways to authenticate with an API key: You can [create a service ID](/docs/iam?topic=iam-serviceids&interface=ui), which is the recommended way to distribute access and controls. If you create a service ID, you need to [create a service ID API key](/docs/iam?topic=iam-serviceidapikeys&interface=ui) as well, which you use to authenticate. [Getting started with {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-getting-started#authenticate) explains how to create a service ID and an API key to authenticate programmatically.
+You can authenticate with an API key by using either a service ID API key or a user API key.
 
-You can also authenticate by using a user API key, as opposed to a service ID API key. For more information, see [Managing user API keys](/docs/iam?topic=iam-userapikey&interface=ui).
+Using a [service ID](/docs/iam?topic=iam-serviceids&interface=ui) is the recommended method to manage and delegate access permissions. After you create a service ID, [create a service ID API key](/docs/iam?topic=iam-serviceidapikeys&interface=ui) to authenticate your requests. For details on creating a service ID and an API key within your project, see [Getting started with {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-getting-started#authenticate).
+
+When you create the service ID in IAM, assign the Writer service access role to create chat completions. Assign the Reader service access role if you need only to view model information or read chat completions. Platform access roles are not required for API access.
+{: tip}
+
+Alternatively, you can authenticate by using a personal user API key. For more information, see [Managing user API keys](/docs/iam?topic=iam-userapikey&interface=ui).

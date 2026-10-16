@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-16"
 
 keywords: instructlab, ai, project
 
@@ -49,7 +49,26 @@ After your project is created, the project details page is shown.
 {: cli}
 
 To log in:
-{{_include-segments/login.md}}
+
+1. Log in to your {{site.data.keyword.cloud_notm}} account from the CLI.
+
+    ```sh
+    ibmcloud login -a https://cloud.ibm.com --sso -r us-east
+    ```
+    {: pre}
+
+1. If you plan to allow {{site.data.keyword.short_name}} to create {{site.data.keyword.cos_full}} Instance resources for you, target a resource group.
+    ```sh
+    ibmcloud target -g RESOURCE_GROUP
+    ```
+    {: pre}
+
+    Example:
+    ```sh
+    ibmcloud target -g Default
+    ```
+    {: pre}
+
 
 To create a project, run the following command.
 

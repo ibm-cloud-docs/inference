@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-09-14"
+lastupdated: "2026-10-16"
 
 keywords: red hat ai, chat, chat completions, faq
 
@@ -20,7 +20,7 @@ content-type: faq
 {: #faq-chat}
 
 
-Frequently asked questions about chat models might include questions about how to get started, available models, and customization. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+Frequently asked questions about chat models include questions about how to get started, available models, and customization. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
 <!--<qna:faq-chat>-->

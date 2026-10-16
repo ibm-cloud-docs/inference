@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-16"
 
 keywords: embeddings, chat completions, faq
 
@@ -20,7 +20,7 @@ content-type: faq
 {: #faq-rhaii}
 
 
-Frequently asked questions for {{site.data.keyword.instructlab_short}} might include questions about benefits, inference, and when to use chat completions versus embeddings. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+Frequently asked questions for {{site.data.keyword.instructlab_short}} include questions about benefits, inference, and when to use chat completions versus embeddings. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
 

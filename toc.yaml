@@ -35,8 +35,6 @@ toc:
             navtitle: Creating an Inference project
           - topic: iam.md
             navtitle: Assigning access
-          - topic: logging.md
-            navtitle: Setting up logging
           - topic: event-notifications.md
             navtitle: Enabling notifications
       - topicgroup:

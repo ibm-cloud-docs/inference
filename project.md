@@ -57,7 +57,8 @@ To log in:
     ```
     {: pre}
 
-1. If you plan to allow {{site.data.keyword.short_name}} to create {{site.data.keyword.cos_full}} Instance resources for you, target a resource group.
+1. Target a resource group for the project.
+
     ```sh
     ibmcloud target -g RESOURCE_GROUP
     ```

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-13"
+lastupdated: "2026-10-16"
 
 
 keywords: instructlab, sitemap
@@ -203,14 +203,6 @@ subcollection: inference
 
     * [Assigning access within a resource group by using the API](/docs/inference?topic=inference-iam&interface=api#iam-include-access-resourcegroups-api)
 
-[Setting up logging](/docs/inference?topic=inference-logging#logging)
-
-* [Enabling logging](/docs/inference?topic=inference-logging#log-enable)
-
-* [Setting up {{site.data.keyword.atracker_short}}](/docs/inference?topic=inference-logging#at-event-routing)
-
-* [Viewing logs](/docs/inference?topic=inference-logging#log-viewing)
-
 [Enabling notifications](/docs/inference?topic=inference-event-notifications-events#event-notifications-events)
 
 * [Enabling resource lifecycle events](/docs/inference?topic=inference-event-notifications-events#event-notifications-events-include-en-enabling-resource-lifecycle-events)
@@ -324,9 +316,9 @@ subcollection: inference
 
 * [List of platform events](/docs/inference?topic=inference-at_events#at_actions_platform)
 
-* [Events for model alignment](/docs/inference?topic=inference-at_events#at_actions_model_alignment)
-
 * [Events for inference](/docs/inference?topic=inference-at_events#at_actions_inference)
+
+* [Mapping events to IAM roles and actions](/docs/inference?topic=inference-at_events#at-events-iam)
 
 
 ## Your responsibilities

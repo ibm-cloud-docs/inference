@@ -16,7 +16,7 @@ content-type: faq
 {{site.data.keyword.attribute-definition-list}}
 
 
-# FAQ about chat models
+# FAQ for chat models
 {: #faq-chat}
 
 

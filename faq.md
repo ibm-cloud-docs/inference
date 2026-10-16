@@ -16,7 +16,7 @@ content-type: faq
 {{site.data.keyword.attribute-definition-list}}
 
 
-# FAQ about {{site.data.keyword.instructlab_short}}
+# FAQ for {{site.data.keyword.instructlab_short}}
 {: #faq-rhaii}
 
 

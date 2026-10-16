@@ -27,8 +27,8 @@ IAM access policies enable access at different levels. Some options include the 
 
 
 - Giving Reader or Writer access to a specific project.
-- Giving Reader or Writer access to a specific resource group where there could be many projects.
-- Giving Reader or Writer access to the entire account where there could be many resource groups with many projects.
+- Giving Reader or Writer access to a specific resource group that contains many projects.
+- Giving Reader or Writer access to the entire account that contains many resource groups with many projects.
 - Giving Viewer access to the {{site.data.keyword.short_name}} project(s) within a resource group and the account level.
 - Giving creation access to create {{site.data.keyword.short_name}} project(s) within a resource group and the account level.
 

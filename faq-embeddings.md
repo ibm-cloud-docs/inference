@@ -16,7 +16,7 @@ content-type: faq
 {{site.data.keyword.attribute-definition-list}}
 
 
-# FAQ about embeddings
+# FAQ for embeddings
 {: #faq-embeddings}
 
 

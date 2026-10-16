@@ -418,7 +418,7 @@ subcollection: inference
 {: #sitemap_faqs}
 
 
-[FAQ about {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-faq-rhaii#faq-rhaii)
+[FAQ for {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-faq-rhaii#faq-rhaii)
 
 * [What is {{site.data.keyword.short_name}}?](/docs/inference?topic=inference-faq-rhaii#faq-rhai-1)
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-16"
 
 keywords: red hat ai, inference, model alignment, faq
 
@@ -19,7 +19,7 @@ content-type: faq
 {: #faq-b}
 
 
-Frequently asked questions about billing for {{site.data.keyword.instructlab_short}} might include questions about how cost is calculated. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+Frequently asked questions about billing for {{site.data.keyword.instructlab_short}} include questions about how cost is calculated. To find all of the FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
 ## How is cost calculated in {{site.data.keyword.product_name}}?

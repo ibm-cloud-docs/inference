@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-16"
 
 keywords: embeddings, faq, vector database, limits
 
@@ -20,7 +20,7 @@ content-type: faq
 {: #faq-embeddings}
 
 
-Frequently asked questions about embeddings might include questions about limits, inputs, and vector databases.
+Frequently asked questions about embeddings include questions about limits, inputs, and vector databases.
 {: shortdesc}
 
 <!--<qna:embeddings>-->

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-13"
+lastupdated: "2026-10-20"
 
 keywords: instructlab, ai, inference, chat completions
 
@@ -25,7 +25,7 @@ completion-time: 15m
 {: toc-services="{{site.data.keyword.subcollection}}"}
 {: toc-completion-time="15m"}
 
-Ready to start using AI in your applications? In this tutorial, you'll learn how to inference with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
+Ready to start using artificial intelligence (AI) in your applications? In this tutorial, you'll learn how to inference with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
 {: shortdesc}
 
 {{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. This tutorial focuses on getting you started with inference for interacting with foundation models, the fastest way to start using AI.

@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-10-16"
+lastupdated: "2026-10-20"
 
 keywords: embeddings, chat completions, faq
 
@@ -16,7 +16,7 @@ content-type: faq
 {{site.data.keyword.attribute-definition-list}}
 
 
-# FAQ about {{site.data.keyword.instructlab_short}}
+# FAQ for {{site.data.keyword.instructlab_short}}
 {: #faq-rhaii}
 
 
@@ -29,7 +29,7 @@ Frequently asked questions for {{site.data.keyword.instructlab_short}} include q
 {: #faq-rhai-1}
 {: faq}
 
-{{site.data.keyword.short_name}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI, available on {{site.data.keyword.cloud_notm}}. It provides inference capabilities for interacting with foundation models, including creating chat completions and embeddings.
+{{site.data.keyword.short_name}} is a business-ready, private, and secure generative artificial intelligence (AI) solution powered by Red Hat OpenShift AI, available on {{site.data.keyword.cloud_notm}}. It provides inference capabilities for interacting with foundation models, including creating chat completions and embeddings.
 
 ## What are the benefits of {{site.data.keyword.short_name}}?
 {: #faq-benefits}

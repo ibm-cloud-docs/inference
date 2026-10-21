@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-16"
 
 keywords:
 
@@ -57,32 +57,6 @@ The following table lists the activity tracking event actions that the {{site.da
 | `instructlab.instance.schedule_reclaim` | An event is generated when a service instance is pending reclamation. |
 {: caption="Actions that generate platform events" caption-side="bottom"}
 
-## Events for model alignment
-{: #at_actions_model_alignment}
-
-The following table lists the activity tracking events that are generated when you perform model alignment operations in {{site.data.keyword.instructlab_short}}. These events track actions related to managing models, taxonomies, and synthetic data generation (SDG) throughout the model alignment workflow. The events also include {{site.data.keyword.cos_short}} operations that occur when {{site.data.keyword.instructlab_short}} accesses or stores data in your connected storage buckets during the alignment process.
-
-| Action                           | Description                        |
-|----------------------------------|------------------------------------|
-| `instructlab.model.read`                                 | An event is generated when you read details of a model training run. |
-| `instructlab.model.list`                                 | An event is generated when you list model training runs. |
-| `instructlab.model.create`                                 | An event is generated when you create a model training run. |
-| `instructlab.model.delete`                                 | An event is generated when you delete a model training run. |
-| `instructlab.model.stop`                                 | An event is generated when you stop a model training run. |
-| `cloud-object-storage.bucket.get`                                 | An event is generated when you list all the objects in a bucket.                                   |
-| `cloud-object-storage.object.put`                                 | An event is generated when you write and upload objects.                                   |
-| `cloud-object-storage.object.get`                                 | An event is generated when you view and download objects.                                    |
-| `instructlab.taxonomy.read`                                 | An event is generated when you read details of a taxonomy. |
-| `instructlab.taxonomy.list`      | An event is generated when you list taxonomies. |
-| `instructlab.taxonomy.create`      | An event is generated when you create taxonomies. |
-| `instructlab.taxonomy.delete`      | An event is generated when you delete taxonomies. |
-| `instructlab.sdgdata.read`      | An event is generated when you read details of a data generation run. |
-| `instructlab.sdgdata.list`      | An event is generated when you list data generation runs. |
-| `instructlab.sdgdata.create`      | An event is generated when you create a data generation run. |
-| `instructlab.sdgdata.delete`      | An event is generated when you delete a data generation run. |
-| `instructlab.sdgdata.stop`      | An event is generated when you stop a data generation run. |
-{: caption="List of model alignment events" caption-side="bottom"}
-
 ## Events for inference
 {: #at_actions_inference}
 
@@ -102,3 +76,53 @@ The following table lists the activity tracking events that are generated when y
 | `instructlab.inference-session.delete` | An event is generated when internal APIs are used for storing session delete state in the UI. |
 | `instructlab.inference-session.update` | An event is generated when internal APIs are used for storing session update state in the UI. |
 {: caption="Lists of inference events" caption-side="bottom"}
+
+## Mapping events to IAM roles and actions
+{: #at-events-iam}
+
+The following tables list actions and events along with the roles in {{site.data.keyword.iamlong}} (IAM) that you need to perform the action and generate the event.
+
+| Platform role | Description |
+| --- | --- |
+| Viewer | As a viewer, you can view projects, but you can't modify them. |
+| Operator | As an operator, you can perform platform actions required to configure and operate projects, such as viewing a service's dashboard. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Administrator | As an administrator, you can perform all platform actions based on the resource to which this role is assigned, including assigning access policies to other users. |
+| Service Configurator Reader | As a Service Configurator Reader, you can read service configurations for governance management. |
+| Key Manager | As a key manager, you can perform platform actions required to manage resource keys, such as creating a new resource key. |
+{: class="simple-tab-table"}
+{: caption="IAM platform roles" caption-side="bottom"}
+{: #iamrolesplatform}
+{: tab-title="Platform roles"}
+{: tab-group="IAM"}
+
+| Service role | Description |
+| --- | --- |
+| Reader | As a reader, you can perform read-only actions within a service, such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+{: class="simple-tab-table"}
+{: caption="IAM service access roles" caption-side="bottom"}
+{: #iamrolesservice}
+{: tab-title="Service roles"}
+{: tab-group="IAM"}
+
+| Actions and events | Description | Roles |
+| --- | --- | --- |
+| `instructlab.dashboard.view` | View {{site.data.keyword.instructlab_short}} dashboards. | Operator, Administrator, Editor |
+| `instructlab.inference.create` | Generate an OpenAI-compatible chat completion for the given messages by using the specified model. | Manager, Writer |
+| `instructlab.inference.read` | Describe a chat completion by its ID. | Manager, Reader, Writer |
+| `instructlab.inference.list` | List chat completions. | Manager, Reader, Writer |
+| `instructlab.inference-model.read` | Get a model by its identifier. | Manager, Reader, Writer |
+| `instructlab.inference-model.list` | List models by using the OpenAI API. | Manager, Reader, Writer |
+| `instructlab.inference.delete` | Delete a stored chat completion. | Manager, Writer |
+| `instructlab.inference-embeddings.create` | Create an embedding vector that represents the input text. | Manager, Writer |
+| `instructlab.inference-session.read` | Internal APIs used for storing session read state in the console. | Manager, Reader, Writer |
+| `instructlab.inference-session.list` | Internal APIs used for storing session list state for the console. | Manager, Reader, Writer |
+| `instructlab.inference-session.delete` | Internal APIs used for storing session delete state in the console. | Manager, Writer |
+| `instructlab.inference-session.update` | Internal APIs used for storing session update state for the console. | Manager, Writer |
+{: class="simple-tab-table"}
+{: caption="IAM actions" caption-side="bottom"}
+{: #iamactions}
+{: tab-title="Actions"}
+{: tab-group="IAM"}

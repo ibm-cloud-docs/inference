@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-23"
 
 keywords: instructlab, ai, inference, models, list models
 
@@ -51,7 +51,7 @@ Discover which foundation models are accessible in your project and understand t
 
    
 
-   Replace `<project_id>` with your project ID. To find it, go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects) and open your project.
+   Replace `<project_id>` with your project ID. To find it, go to [{{site.data.keyword.instructlab_short}} projects](/inference/projects) and open your project.
 
 ## Listing models by using the console
 {: #inf-list-models-ui}

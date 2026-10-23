@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-23"
 
 keywords: ai, embeddings, text embeddings, rag, retrieval-augmented generation, vector store, cosine similarity, chat completions
 
@@ -121,7 +121,7 @@ Now that your service ID has access to your project, create a service ID API key
 
 Your project ID is required for all API requests.
 
-1. Go to [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/instructlab/projects){: external}.
+1. Go to [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/inference/projects){: external}.
 
 1. Open your project.
 

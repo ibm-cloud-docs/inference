@@ -3,7 +3,7 @@
 copyright:
   years: 2025, 2026
 
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-23"
 
 keywords: red hat ai, chat, chat completions, faq
 
@@ -29,7 +29,7 @@ Frequently asked questions about chat models include questions about how to get 
 {: #faq-chat-start}
 {: faq}
 
-Getting started with chat completions is straightforward. First, create a {{site.data.keyword.short_name}} project and obtain your project ID. Then, authenticate using either a bearer token or an {{site.data.keyword.cloud_notm}} API key. Finally, use the OpenAI-compatible APIs to send messages to foundation models and receive generated responses from artificial intelligence (AI). You can test and refine your interactions in the console playground before integrating them into production applications. For detailed instructions, see [Getting started with {{site.data.keyword.short_name}}](/docs/inference?topic=inference-getting-started).
+Getting started with chat completions is straightforward. First, create a {{site.data.keyword.short_name}} project and obtain your project ID. Then, authenticate using either a bearer token or an {{site.data.keyword.cloud_notm}} API key. Finally, use the OpenAI-compatible APIs to send messages to foundation models and receive generated responses from AI. You can test and refine your interactions in the console playground before integrating them into production applications. For detailed instructions, see [Getting started with {{site.data.keyword.short_name}}](/docs/inference?topic=inference-getting-started).
 
 ## What models are available for chat completions?
 {: #faq-chat-models}

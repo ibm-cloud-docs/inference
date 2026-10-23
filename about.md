@@ -2,9 +2,9 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-23"
 
-keywords: instructlab, ai, about, how it works, billing
+keywords: instructlab, about, how it works, billing
 
 subcollection: inference
 
@@ -16,7 +16,7 @@ subcollection: inference
 # About {{site.data.keyword.instructlab_full_notm}}
 {: #about}
 
-{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative artificial intelligence (AI) solution powered by Red Hat OpenShift AI. {{site.data.keyword.instructlab_short}} provides two core capabilities: inference for interacting with foundation models and model alignment for fine-tuning models to your specific needs.
+{{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. {{site.data.keyword.instructlab_short}} provides two core capabilities: inference for interacting with foundation models and model alignment for fine-tuning models to your specific needs.
 {: shortdesc}
 
 With inference, you can immediately start using foundation models through production-ready APIs to build AI-powered applications, test model behavior, and integrate conversational AI capabilities into your workflows. Whether you're prototyping a chatbot, building an AI assistant, or adding natural language understanding to your application, inference provides immediate access to foundation models without the complexity of model hosting.

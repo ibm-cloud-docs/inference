@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-23"
 
 keywords: release notes
 
@@ -53,7 +53,7 @@ Model alignment is deprecated
 {: release-note}
 
 New models available
-:   Two new models are now available for inference: `gemma-4-31b-it` and `granite-4-1-30b`. To view all available models, open your project in [{{site.data.keyword.instructlab_short}}](/instructlab/projects){: external} and click **Model catalog**.
+:   Two new models are now available for inference: `gemma-4-31b-it` and `granite-4-1-30b`. To view all available models, open your project in [{{site.data.keyword.instructlab_short}}](/inference/projects){: external} and click **Model catalog**.
 
 ## May 2026
 {: #may26}
@@ -95,7 +95,7 @@ Inference with Red Hat AI on {{site.data.keyword.cloud_notm}} (Beta)
 {: release-note}
 
 Version 1.5 of {{site.data.keyword.product_name}} is available
-:   For the best results, run training on newly generated synthetic data with version 1.5. Review the updated [service settings](/docs/inference?topic=inference-service-settings) in 1.5.
+:   For the best results, run training on newly generated synthetic data with version 1.5.
 :   For more information, see the [release notes](https://redhat.atlassian.net/browse/RHELAI-4993){: external}, the [RHEL AI documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.5/html/release_notes/rhelai_release_notes#rhelai_release_notes){: external} and the [known issues](https://redhat.atlassian.net/browse/RHELAI-3604){: external}
 
 New base model

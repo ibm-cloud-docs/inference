@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-05"
+lastupdated: "2026-10-23"
 
 keywords: instructlab, ai, inference, embeddings, vectors
 
@@ -41,7 +41,7 @@ Embeddings convert text into numerical vectors that capture semantic meaning, en
 
    
 
-   Replace `<project_id>` with your project ID. To find it, go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects) and open your project.
+   Replace `<project_id>` with your project ID. To find it, go to [{{site.data.keyword.instructlab_short}} projects](/inference/projects) and open your project.
 
 To check whether a model supports embeddings, [list the models](/docs/inference?topic=inference-inf-list-models) or [get a model by ID](/docs/inference?topic=inference-inf-list-models#inf-get-model) and verify that `supports_embeddings` is set to `true`.
 {: tip}
@@ -128,6 +128,3 @@ print(response.data[0].embedding)
 ```
 {: codeblock}
 {: python}
-
-
-

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-23"
 
-keywords: instructlab, ai, inference, chat completions
+keywords: instructlab, inference, chat completions
 
 subcollection: inference
 
@@ -25,7 +25,7 @@ completion-time: 15m
 {: toc-services="{{site.data.keyword.subcollection}}"}
 {: toc-completion-time="15m"}
 
-Ready to start using artificial intelligence (AI) in your applications? In this tutorial, you'll learn how to inference with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
+Ready to start using AI in your applications? In this tutorial, you'll learn how to inference with foundation models and generate AI-powered responses. In just 15 minutes, you'll be chatting with a large language model and integrating conversational AI into your workflows.
 {: shortdesc}
 
 {{site.data.keyword.instructlab_full}} is a business-ready, private, and secure generative AI solution powered by Red Hat OpenShift AI. This tutorial focuses on getting you started with inference for interacting with foundation models, the fastest way to start using AI.
@@ -58,7 +58,7 @@ Make sure you have the following:
 
 Your project ID is required for all API requests.
 
-1. Go to [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/instructlab/projects){: external}.
+1. Go to [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/inference/projects){: external}.
 
 1. Open your project.
 
@@ -90,7 +90,7 @@ Before you can interact with foundation models, you need to authenticate your AP
 
 A service ID manages access for applications and automated workflows. When you create a service ID directly within your project, the Writer service access role is automatically assigned so that you can create chat completions.
 
-1. Go to the [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/instructlab/projects){: external} page, and select your project.
+1. Go to the [{{site.data.keyword.instructlab_short}} projects](https://cloud.ibm.com/inference/projects){: external} page, and select your project.
 1. In the **Using the API** section, click **Create API key**.
 1. Click **Next**, and select **This project only** to restrict access to the current project.
 1. Click **Create**.

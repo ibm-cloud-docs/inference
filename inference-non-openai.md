@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-10-23"
 
 keywords: litellm, openai, api translation, proxy
 
@@ -30,7 +30,7 @@ Before you can set up a model gateway with LiteLLM proxy, make sure that you com
 
 * Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project){: external}.
 
-* Find your project ID. Go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects){: external} and open the project.
+* Find your project ID. Go to [{{site.data.keyword.instructlab_short}} projects](/inference/projects){: external} and open the project.
 
 * Make sure that you have the Writer role or greater on the {{site.data.keyword.instructlab_short}} service. For more information, see [Managing IAM access](/docs/inference?topic=inference-iam&interface=ui).
 

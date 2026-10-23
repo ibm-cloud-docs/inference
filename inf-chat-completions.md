@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-16"
+lastupdated: "2026-10-23"
 
 keywords: instructlab, ai, inference, chat completions, chatting
 
@@ -49,7 +49,7 @@ Chat completions `/v1/chat/completions`
 
    
 
-   Replace `<project_id>` with your project ID. To find it, go to [{{site.data.keyword.instructlab_short}} projects](/instructlab/projects) and open your project.
+   Replace `<project_id>` with your project ID. To find it, go to [{{site.data.keyword.instructlab_short}} projects](/inference/projects) and open your project.
 
 ## Before you begin
 {: #inf-chat-completions-prereqs-ui}

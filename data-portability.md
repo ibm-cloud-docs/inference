@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-10-26"
 
 keywords: data portability, compliance, dora
 
@@ -35,14 +35,6 @@ To find out more about responsibility ownership for using {{site.data.keyword.cl
 {: #data-portability-procedures}
 
 {{site.data.keyword.instructlab_short}} provides the mechanisms to export your content that is uploaded, stored, and processed when you use the service.
-
-The data you process for model alignment in {{site.data.keyword.instructlab_short}} is stored in an {{site.data.keyword.cos_full_notm}} instance in your {{site.data.keyword.cloud_notm}} account.
-
-You can export data from {{site.data.keyword.cos_short}} in the following ways.
-
-- Download objects from your bucket by using the [console](https://cloud.ibm.com/objectstorage){: external}.
-- Access the objects in your bucket by using the [COS CLI](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli).
-- Access the objects in your bucket by using the `rclone` [CLI tool](/docs/cloud-object-storage?topic=cloud-object-storage-rclone).
 
 For inference, chat completions remain stored in {{site.data.keyword.instructlab_short}} and are not stored in {{site.data.keyword.cos_short}}. You can delete chat completion data at any time.
 

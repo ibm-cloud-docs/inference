@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-30"
 
 keywords: release notes
 
@@ -30,6 +30,8 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, sec
 ### 05 October 2026
 {: #05oct26}
 {: release-note}
+
+
 
 Create embeddings with Red Hat AI Inference
 :   You can now use Red Hat AI Inference to generate text embeddings. Embeddings convert text into numerical vectors that capture semantic meaning, enabling semantic search, similarity comparisons, and retrieval-augmented generation (RAG) workflows. For more information, see [What is embedding?](/docs/inference?topic=inference-about#embedding) and [Improving chat completions with vector embeddings and RAG](/docs/inference?topic=inference-embeddings-rag).

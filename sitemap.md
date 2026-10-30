@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-16"
+lastupdated: "2026-10-30"
 
 
 keywords: instructlab, sitemap
@@ -405,6 +405,15 @@ subcollection: inference
 
 
 [Getting help and support](/docs/inference?topic=inference-get-help#get-help)
+
+
+## Troubleshooting virtual private endpoints
+{: #sitemap_troubleshooting_virtual_private_endpoints}
+
+
+[Why doesn't the private hostname resolve to my endpoint gateway?](/docs/inference?topic=inference-troubleshoot-vpe-hostname#troubleshoot-vpe-hostname)
+
+[Why do my requests to the private endpoint time out or get refused?](/docs/inference?topic=inference-troubleshoot-vpe-requests#troubleshoot-vpe-requests)
 
 
 ## Troubleshooting embeddings

@@ -89,6 +89,15 @@ toc:
       - topic: get-help.md
         navtitle: Getting help and support
       - topicgroup:
+          label: Troubleshooting virtual private endpoints
+          topics:
+          - topic: ts-vpe-hostname.md
+            navtitle: "Why doesn't the private hostname resolve to my endpoint gateway?"
+            tag: staging
+          - topic: ts-vpe-requests.md
+            navtitle: "Why do my requests to the private endpoint time out or get refused?"
+            tag: staging
+      - topicgroup:
           label: Troubleshooting embeddings
           topics:
           - topic: ts-embeddings-exceed-limit.md

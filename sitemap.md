@@ -77,6 +77,8 @@ subcollection: inference
 
     * [05 October 2026](/docs/inference?topic=inference-release-notes#05oct26)
 
+        * Private endpoints with virtual private endpoint gateways
+
         * Create embeddings with Red Hat AI Inference
 
 * [July 2026](/docs/inference?topic=inference-release-notes#july26)
@@ -300,6 +302,20 @@ subcollection: inference
 * [Deleting your data in {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-delete)
 
 * [Removing access to {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-access-remove)
+
+[Using virtual private endpoints](/docs/inference?topic=inference-vpe-connection#vpe-connection)
+
+* [Before you begin](/docs/inference?topic=inference-vpe-connection#vpe-prereqs)
+
+* [Private endpoint hostname and CRN](/docs/inference?topic=inference-vpe-connection#vpe-endpoint-details)
+
+* [Configuring an endpoint gateway](/docs/inference?topic=inference-vpe-connection#vpe-setup)
+
+* [Verifying the private connection](/docs/inference?topic=inference-vpe-connection#vpe-verify)
+
+* [Using the private endpoint](/docs/inference?topic=inference-vpe-connection#vpe-using)
+
+* [Troubleshooting the private connection](/docs/inference?topic=inference-vpe-connection#vpe-troubleshooting)
 
 
 ## Observability

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-26"
+lastupdated: "2026-10-30"
 
 keywords: data portability, compliance, dora
 
@@ -46,7 +46,7 @@ For inference, chat completions remain stored in {{site.data.keyword.instructlab
 
 {{site.data.keyword.instructlab_short}} resources are created in several file types such as `tar.gz` packages, `.jsonl`, `safetensor`, and `.log` files.
 
-When you export your {{site.data.keyword.instructlab_short}} data from COS, the data is in the same format as was originally uploaded.
+When you export your {{site.data.keyword.instructlab_short}} data from {{site.data.keyword.cos_short}}, the data is in the same format as was originally uploaded.
 
 
 ## Data ownership

@@ -56,6 +56,8 @@ toc:
             navtitle: Learning the architecture
           - topic: data-security.md
             navtitle: Securing your data
+          - topic: vpe.md
+            navtitle: Using virtual private endpoints
       - topicgroup:
           label: Observability
           topics:
@@ -93,10 +95,8 @@ toc:
           topics:
           - topic: ts-vpe-hostname.md
             navtitle: "Why doesn't the private hostname resolve to my endpoint gateway?"
-            tag: staging
           - topic: ts-vpe-requests.md
             navtitle: "Why do my requests to the private endpoint time out or get refused?"
-            tag: staging
       - topicgroup:
           label: Troubleshooting embeddings
           topics:

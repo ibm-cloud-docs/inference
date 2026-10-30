@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-30"
 
 keywords: ai, embeddings, text embeddings, rag, retrieval-augmented generation, vector store, cosine similarity, chat completions
 
@@ -55,7 +55,7 @@ The application you build has the following architecture:
 
 Make sure you have the following:
 
-* A Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
+* A Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts-types).
 
 * [A {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 

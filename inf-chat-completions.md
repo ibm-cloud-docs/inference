@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-30"
 
 keywords: instructlab, ai, inference, chat completions, chatting
 
@@ -31,7 +31,7 @@ Chat completions `/v1/chat/completions`
 {: #inf-chat-completions-prereqs-api}
 {: api}
 
-* Create a Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
+* Create a Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts-types).
 
 * Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 
@@ -55,7 +55,7 @@ Chat completions `/v1/chat/completions`
 {: #inf-chat-completions-prereqs-ui}
 {: ui}
 
-* Create a Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
+* Create a Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts-types).
 
 * Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project).
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-16"
+lastupdated: "2026-10-30"
 
 
 keywords: instructlab, sitemap
@@ -76,6 +76,8 @@ subcollection: inference
 * [October 2026](/docs/inference?topic=inference-release-notes#oct26)
 
     * [05 October 2026](/docs/inference?topic=inference-release-notes#05oct26)
+
+        * Private endpoints with virtual private endpoint gateways
 
         * Create embeddings with Red Hat AI Inference
 
@@ -301,6 +303,20 @@ subcollection: inference
 
 * [Removing access to {{site.data.keyword.instructlab_short}}](/docs/inference?topic=inference-mng-data#data-access-remove)
 
+[Using virtual private endpoints](/docs/inference?topic=inference-vpe-connection#vpe-connection)
+
+* [Before you begin](/docs/inference?topic=inference-vpe-connection#vpe-prereqs)
+
+* [Private endpoint hostname and CRN](/docs/inference?topic=inference-vpe-connection#vpe-endpoint-details)
+
+* [Configuring an endpoint gateway](/docs/inference?topic=inference-vpe-connection#vpe-setup)
+
+* [Verifying the private connection](/docs/inference?topic=inference-vpe-connection#vpe-verify)
+
+* [Using the private endpoint](/docs/inference?topic=inference-vpe-connection#vpe-using)
+
+* [Troubleshooting the private connection](/docs/inference?topic=inference-vpe-connection#vpe-troubleshooting)
+
 
 ## Observability
 {: #sitemap_observability}
@@ -405,6 +421,15 @@ subcollection: inference
 
 
 [Getting help and support](/docs/inference?topic=inference-get-help#get-help)
+
+
+## Troubleshooting virtual private endpoints
+{: #sitemap_troubleshooting_virtual_private_endpoints}
+
+
+[Why doesn't the private hostname resolve to my endpoint gateway?](/docs/inference?topic=inference-troubleshoot-vpe-hostname#troubleshoot-vpe-hostname)
+
+[Why do my requests to the private endpoint time out or get refused?](/docs/inference?topic=inference-troubleshoot-vpe-requests#troubleshoot-vpe-requests)
 
 
 ## Troubleshooting embeddings

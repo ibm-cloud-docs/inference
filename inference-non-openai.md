@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-30"
 
 keywords: litellm, openai, api translation, proxy
 
@@ -26,7 +26,7 @@ You can use LiteLLM proxy to set up a model gateway in front of {{site.data.keyw
 
 Before you can set up a model gateway with LiteLLM proxy, make sure that you complete the following steps:
 
-* Create a Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts#compare).
+* Create a Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. Trial accounts are not supported. For more information or to upgrade your account, see [Account types](/docs/account?topic=account-accounts-types).
 
 * Create [a {{site.data.keyword.instructlab_short}} project](/docs/inference?topic=inference-project){: external}.
 

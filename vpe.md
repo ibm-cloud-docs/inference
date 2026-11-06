@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-30"
+lastupdated: "2026-11-06"
 
 keywords: ai, vpe, virtual private endpoint, private endpoint, endpoint gateway, VPC, private network
 
@@ -34,7 +34,6 @@ Before you set up a virtual private endpoint for {{site.data.keyword.instructlab
 * A [plan for your virtual private endpoints](/docs/vpc?topic=vpc-vpe-planning-considerations), including the subnets and reserved IP addresses that you want to use.
 * A way to [authenticate your requests](/docs/inference?topic=inference-inf-auth). Authentication is the same as for the public endpoint.
 * Ensure that [correct access controls](/docs/vpc?topic=vpc-configure-acls-sgs-endpoint-gateways) are set for your virtual private endpoint.
-* Understand the [limitations](/docs/vpc?topic=vpc-limitations-vpe) of having a virtual private endpoint.
 * Understand how to [view details](/docs/vpc?topic=vpc-vpe-viewing-details-of-an-endpoint-gateway) about a virtual private endpoint.
 
 ## Private endpoint hostname and CRN

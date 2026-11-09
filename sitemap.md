@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-30"
+lastupdated: "2026-11-09"
 
 
 keywords: instructlab, sitemap
@@ -379,9 +379,7 @@ subcollection: inference
 
     * [Planning for DR](/docs/inference?topic=inference-ilab-ha-dr#features-for-disaster-recovery)
 
-* [Your responsibilities for HA and DR for model alignment](/docs/inference?topic=inference-ilab-ha-dr#feature-responsibilities)
-
-* [Recovery time objective (RTO) and recovery point objective (RPO)](/docs/inference?topic=inference-ilab-ha-dr#rto-rpo-features)
+* [Your responsibilities for HA and DR](/docs/inference?topic=inference-ilab-ha-dr#feature-responsibilities)
 
 * [Change management](/docs/inference?topic=inference-ilab-ha-dr#change-management-hadr)
 

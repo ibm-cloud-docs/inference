@@ -396,8 +396,6 @@ subcollection: inference
 
 * [Data export procedures](/docs/inference?topic=inference-data-portability#data-portability-procedures)
 
-* [Exported data formats](/docs/inference?topic=inference-data-portability#data-portability-data-formats)
-
 * [Data ownership](/docs/inference?topic=inference-data-portability#data-portability-ownership)
 
 [Service availability by location](/docs/overview?topic=overview-services_region)

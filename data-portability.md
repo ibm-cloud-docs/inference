@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-30"
+lastupdated: "2026-11-09"
 
 keywords: data portability, compliance, dora
 
@@ -36,18 +36,7 @@ To find out more about responsibility ownership for using {{site.data.keyword.cl
 
 {{site.data.keyword.instructlab_short}} provides the mechanisms to export your content that is uploaded, stored, and processed when you use the service.
 
-For inference, chat completions remain stored in {{site.data.keyword.instructlab_short}} and are not stored in {{site.data.keyword.cos_short}}. You can delete chat completion data at any time.
-
-
-
-
-## Exported data formats
-{: #data-portability-data-formats}
-
-{{site.data.keyword.instructlab_short}} resources are created in several file types such as `tar.gz` packages, `.jsonl`, `safetensor`, and `.log` files.
-
-When you export your {{site.data.keyword.instructlab_short}} data from {{site.data.keyword.cos_short}}, the data is in the same format as was originally uploaded.
-
+Chat completions remain stored in {{site.data.keyword.instructlab_short}}. You can delete chat completion data at any time.
 
 ## Data ownership
 {: #data-portability-ownership}

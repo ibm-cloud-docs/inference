@@ -2,9 +2,9 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-06-03"
+lastupdated: "2026-11-09"
 
-keywords: responsibilities, rhel ai, instructlab
+keywords: responsibilities
 
 subcollection: inference
 
@@ -28,7 +28,6 @@ Incident and operations management includes tasks such as monitoring, event mana
 
 | Area | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
-| Logging | {{site.data.keyword.IBM_notm}} responsibility description  | Create an instance of {{site.data.keyword.logs_full_notm}} and configure the instance to receive {{site.data.keyword.short_name}} logs. Review logs and make fixes as needed. |
 | Tracking user activity | Send activity tracking events.   | Create an instance of {{site.data.keyword.logs_full_notm}} and configure the instance to receive {{site.data.keyword.atracker_short}} events from {{site.data.keyword.short_name}} logs. Review user events and make fixes as needed. |
 {: row-headers}
 {: caption="Responsibilities for incident and operations" caption-side="bottom"}
@@ -42,8 +41,7 @@ Change management includes tasks such as deployment, configuration, upgrades, pa
 
 | Area | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
-| Version updates | Provide version updates and patches.  | Start or restart jobs on new versions as they are available. |
-| Model deployment for fine-tuning or model alignment | N/A | Deploy the model and update deployments with new versions as needed. |
+| Version updates | Provide version updates and patches.  | N/A |
 | Inference models | Host models for inference. | Edit system prompts and inference settings to achieve the best possible output for your business objectives. |
 {: row-headers}
 {: caption="Responsibilities for change management" caption-side="bottom"}
@@ -59,7 +57,6 @@ Identity and access management includes tasks such as authentication, authorizat
 | Area | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
 | User permissions | Align with the IAM controls documented for the IAM operations a client can perform at the service and platform level. | Manage IAM policies with users to give them proper access to use the service based on their needs. |
-| {{site.data.keyword.cos_short}} permissions for model alignment | Use service delegation to read, write, and list objects within the {{site.data.keyword.cos_short}} specified when adding a taxonomy. | Give {{site.data.keyword.instructlab_short}} authorization to allow operations on the {{site.data.keyword.cos_short}} bucket. Revoke the permissions if they're no longer using the service. |
 {: row-headers}
 {: caption="Responsibilities for identity and access management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
@@ -88,8 +85,6 @@ For more information, see [High availability and disaster recovery](/docs/infere
 
 | Area| {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |----------|-----------------------|--------|
-| Data generation and model alignment | Ensure data generation and model alignment jobs resume after an incident. | Verify job completion after an incident. Sometimes, restarting a job after an incident might be required. |
-| {{site.data.keyword.cos_short}} back up for model alignment| N/A | Ensure data in your {{site.data.keyword.cos_short}} bucket is replicated and backed up. |
 | Inference requests | N/A | Ensure inference requests are backed up if needed. |
 | {{site.data.keyword.instructlab_short}} project backup | N/A | Create a back up project. |
 {: row-headers}

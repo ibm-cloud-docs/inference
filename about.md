@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-10-30"
+lastupdated: "2026-11-09"
 
 keywords: instructlab, about, how it works, billing
 
@@ -119,12 +119,6 @@ Red Hat AI on {{site.data.keyword.cloud_notm}} provides comprehensive AI capabil
 
 Immediate AI integration with inference
 :   Start building AI-powered features immediately without managing infrastructure. Use production-ready APIs to integrate conversational AI, test model behavior, and scale your applications alongside your business needs.
-
-Flexible deployment options
-:   You control your data and your models. Choose to use them in the cloud, on-premises, or anywhere else your business requires. Leverage unique business data to unlock efficiencies and drive innovation by creating AI-powered solutions.
-
-Minimize the risk of catastrophic forgetting
-:   For higher accuracy and less risk, built-in Granite models are used as a foundation for learning new skills and knowledge. Previously learned information is not lost when the models learn new information.
 
 Cost-effective and scalable
 :   Because Red Hat AI on {{site.data.keyword.cloud_notm}} is available as a service, you can reduce unnecessary costs by paying just for what you need. Optimize IT expenditures by delivering simpler, faster, and more economical AI solutions.

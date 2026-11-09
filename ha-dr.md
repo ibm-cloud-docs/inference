@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-19"
+lastupdated: "2026-11-09"
 
 keywords: HA for {{site.data.keyword.short_name}}, DR for {{site.data.keyword.short_name}}, {{site.data.keyword.short_name}} recovery time objective, {{site.data.keyword.short_name}} recovery point objective
 
@@ -39,7 +39,6 @@ For more information about the available region and data center locations, see [
 | Feature | Description | Consideration |
 | --- | --- | --- |
 | Global load balancing | When a node or availability zone fails, the service continues to run with API requests being routed through a global load balancer to the surviving HA instance nodes. | A brief delay of seconds exists between a failure and the global load balancer rerouting traffic. Requests sent during this interval are routed to the failed instance. |
-| Active model alignment requests | When a node or availability zone fails, the service continues to run with API requests being routed through a global load balancer to the surviving HA instance nodes. Active synthetic data generation jobs and active model alignment jobs executing on nodes within the zone are retried on nodes in a different zone on failure automatically. In certain regions due to capacity constraints, model alignment nodes are deployed within one zone. When the zone is restored active model alignment jobs are automatically retried. | A brief delay of seconds exists between a failure and the global load balancer rerouting traffic. Requests sent during this interval are routed to the failed instance. |
 | Active inference requests | Active requests are queued within {{site.data.keyword.instructlab_short}}, so even if the model is not available, the request is still processed. If requests are canceled on the client side, they continue to be processed on the backend and can be retrieved later.| N/A |
 {: caption="HA features for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 
@@ -50,8 +49,7 @@ For more information about the available region and data center locations, see [
 
 | Feature | Description | Consideration |
 | --- | --- | --- |
-| {{site.data.keyword.short_name}} follows a regional deployment model. | In the case of a regional failure APIs could become unavailable until the region is restored. | Other active regions where {{site.data.keyword.short_name}} is deployed to can be used to generate synthetic data and execute model alignments until the region is restored. |
-| {{site.data.keyword.cos_short}} replication for model alignment | {{site.data.keyword.short_name}} persists all SDG and aligned models into the client provided object storage bucket. Reference the {{site.data.keyword.cos_short}} service documentation for disaster recovery strategies. | You can use bucket replication to replicate taxonomy content, generated synthetic data, and aligned models to a different region. For more information, see [Understanding high availability and disaster recovery for {{site.data.keyword.cos_full}}](/docs/cloud-object-storage?topic=cloud-object-storage-cos-ha-dr). |
+| {{site.data.keyword.short_name}} follows a regional deployment model. | In the case of a regional failure APIs could become unavailable until the region is restored. | - |
 {: caption="DR features for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 
 ### Planning for DR
@@ -64,10 +62,9 @@ The DR steps must be practiced regularly. As you build your plan, consider the f
 | -------------- | -------------- |
 | Hardware failure (single point) | IBM provides an instance that's resilient from single point of hardware failure within a zone . No configuration required. |
 | Zone failure | IBM provides an instance that's resilient from a zone failure. No configuration required. |
-| Model alignment data corruption | Restore a point in time uncorrupted version of the client {{site.data.keyword.cos_short}} bucket contents from backup. {{site.data.keyword.short_name}} restoration handled by service team. |
 {: caption="DR scenarios" caption-side="bottom"}
 
-## Your responsibilities for HA and DR for model alignment
+## Your responsibilities for HA and DR
 {: #feature-responsibilities}
 
 It is your responsibility to continuously test your plan for HA and DR.
@@ -75,40 +72,7 @@ It is your responsibility to continuously test your plan for HA and DR.
 Interruptions in network connectivity and short periods of unavailability of a service might occur. It is your responsibility to make sure that application source code includes [client availability retry logic](/docs/resiliency?topic=resiliency-high-availability-design#client-retry-logic-for-ha) to maintain high availability of the application.
 {: note}
 
-Use the following checklists associated with each feature to help you create and practice your plan.
-
-{{site.data.keyword.cos_short}} replication for model alignment
-- [ ] Verify replication policy in place from primary bucket to backup bucket
-- [ ] Verify a sample taxonomy file is synced within expected synchronization time from source to primary bucket
-- [ ] Verify a sample synthetic data file is synced within expected synchronization time from source to primary bucket
-- [ ] Verify a sample aligned model file is synced within expected synchronization time from source to primary bucket
-
-
-Example checklist for {{site.data.keyword.cos_short}} replication for model alignment:
-```txt
-- [ ] Create a primary Red Hat AI Inference instance in primary region.
-- [ ] Create a primary Cloud Object Storage bucket in primary region.
-- [ ] Create a secondary Red Hat AI Inference instance in secondary region.
-- [ ] Create a secondary object storage bucket in secondary region.
-- [ ] Enable object replication from primary object bucket to secondary object bucket
-- [ ] Upload taxonomy to primary object storage bucket and create taxonomy object in primary Red Hat AI Inference instance
-- [ ] Ensure taxonomy object storage bucket object replicates to secondary region
-- [ ] Generate training data from taxonomy in primary Red Hat AI Inference instance
-- [ ] Ensure training data file replicates from primary object storage bucket to secondary object storage bucket
-- [ ] Fine tune a model in the Red Hat AI Inference primary instance
-- [ ] Ensure model alignment file replicates from primary object storage bucket to secondary object storage bucket
-```
-{: codeblock}
-
 For more information about responsibility ownership between you and {{site.data.keyword.cloud_notm}} for {{site.data.keyword.instructlab_short}}, see [Your responsibilities](/docs/inference?topic=inference-responsibilities).
-
-## Recovery time objective (RTO) and recovery point objective (RPO)
-{: #rto-rpo-features}
-
-| Feature | RTO and RPO |
-| -------------- | -------------- |
-| Object storage replication with backup instance | RTO = minutes, RPO = near 0 |
-{: caption="RTO/RPO features for {{site.data.keyword.instructlab_short}}" caption-side="bottom"}
 
 ## Change management
 {: #change-management-hadr}
@@ -118,8 +82,6 @@ Change management includes tasks such as upgrades, configuration changes, and de
 
 Grant users and processes the IAM roles and actions with the least privilege that is required for their work. For more information, see [How can I prevent accidental deletion of services?](/docs/resiliency?topic=resiliency-dr-faq#prevent-accidental-deletion).
 {: tip}
-
-Consider creating a manual backup of your taxonomy, generated data, and aligned models before upgrading to a new version of {{site.data.keyword.instructlab_short}}.
 
 ## How {{site.data.keyword.IBM_notm}} recovers from regional failures
 {: #ibm-regional-failure}

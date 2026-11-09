@@ -187,9 +187,7 @@ subcollection: inference
 
 [Assigning access](/docs/inference?topic=inference-iam#iam)
 
-* [Give InstuctLab permission to create and update {{site.data.keyword.cos_short}} artifacts](/docs/inference?topic=inference-iam&interface=cli#iam-ilab)
-
-* [Assign user access to your resources](/docs/inference?topic=inference-iam&interface=cli#assign-access)
+* [Assign user access to your resources](/docs/inference?topic=inference-iam#assign-access)
 
     * [Assigning access to resources in the console](/docs/inference?topic=inference-iam&interface=ui#iam-include-access-resources-console)
 

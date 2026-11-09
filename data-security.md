@@ -2,9 +2,9 @@
 
 copyright:
   years: 2025, 2026
-lastupdated: "2026-10-09"
+lastupdated: "2026-11-09"
 
-keywords: data, secure, encrypt, cos, bucket, storage
+keywords: data, secure, encrypt, storage
 
 subcollection: inference
 

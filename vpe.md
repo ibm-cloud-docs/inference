@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-11-06"
+lastupdated: "2026-11-11"
 
 keywords: ai, vpe, virtual private endpoint, private endpoint, endpoint gateway, VPC, private network
 

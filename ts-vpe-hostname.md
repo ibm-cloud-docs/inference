@@ -2,7 +2,7 @@
 
 copyright:
   years: 2026
-lastupdated: "2026-10-30"
+lastupdated: "2026-11-11"
 
 keywords: vpe, virtual private endpoint, hostname, dig, endpoint gateway, private endpoint, resolve
 

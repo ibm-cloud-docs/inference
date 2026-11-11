@@ -31,6 +31,9 @@ Looking for {{site.data.keyword.cloud_notm}} status, platform announcements, sec
 {: #05oct26}
 {: release-note}
 
+Private endpoints with virtual private endpoint gateways
+:   You can now connect to Red Hat AI Inference from your VPC over the {{site.data.keyword.cloud_notm}} private network by using a virtual private endpoint (VPE) gateway. The private endpoint is available in the Washington DC (`us-east`) region and uses the same API and authentication as the public endpoint. For more information, see [Using virtual private endpoints for VPC to privately connect to Red Hat AI Inference](/docs/inference?topic=inference-vpe-connection).
+
 Create embeddings with Red Hat AI Inference
 :   You can now use Red Hat AI Inference to generate text embeddings. Embeddings convert text into numerical vectors that capture semantic meaning, enabling semantic search, similarity comparisons, and retrieval-augmented generation (RAG) workflows. For more information, see [What is embedding?](/docs/inference?topic=inference-about#embedding) and [Improving chat completions with vector embeddings and RAG](/docs/inference?topic=inference-embeddings-rag).
 
